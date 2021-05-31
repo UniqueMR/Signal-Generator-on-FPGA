@@ -1,0 +1,107 @@
+{
+   guistr: "# # String gsaved with Nlview 6.6.5b  2016-09-06 bk=1.3687 VDI=39 GEI=35 GUI=JA:1.6
+#  -string -flagsOSRD
+preplace port M07_AXI -pg 1 -y 1280 -defaultsOSRD
+preplace port S01_ARESETN -pg 1 -y 560 -defaultsOSRD
+preplace port M09_ARESETN -pg 1 -y 1620 -defaultsOSRD
+preplace port M09_ACLK -pg 1 -y 1600 -defaultsOSRD
+preplace port M05_ARESETN -pg 1 -y 770 -defaultsOSRD
+preplace port M06_AXI -pg 1 -y 1110 -defaultsOSRD
+preplace port S00_AXI -pg 1 -y 830 -defaultsOSRD
+preplace port M08_ACLK -pg 1 -y 1430 -defaultsOSRD
+preplace port M03_ARESETN -pg 1 -y 600 -defaultsOSRD
+preplace port M01_ARESETN -pg 1 -y 260 -defaultsOSRD
+preplace port M00_ACLK -pg 1 -y 70 -defaultsOSRD
+preplace port ACLK -pg 1 -y 850 -defaultsOSRD
+preplace port S01_AXI -pg 1 -y 510 -defaultsOSRD
+preplace port M01_AXI -pg 1 -y 260 -defaultsOSRD
+preplace port S01_ACLK -pg 1 -y 540 -defaultsOSRD
+preplace port M02_ACLK -pg 1 -y 410 -defaultsOSRD
+preplace port ARESETN -pg 1 -y 870 -defaultsOSRD
+preplace port M03_ACLK -pg 1 -y 580 -defaultsOSRD
+preplace port M04_AXI -pg 1 -y 770 -defaultsOSRD
+preplace port M01_ACLK -pg 1 -y 240 -defaultsOSRD
+preplace port M08_AXI -pg 1 -y 1450 -defaultsOSRD
+preplace port S00_ARESETN -pg 1 -y 910 -defaultsOSRD
+preplace port S00_ACLK -pg 1 -y 890 -defaultsOSRD
+preplace port M03_AXI -pg 1 -y 600 -defaultsOSRD
+preplace port M07_ACLK -pg 1 -y 1260 -defaultsOSRD
+preplace port M09_AXI -pg 1 -y 1620 -defaultsOSRD
+preplace port M05_ACLK -pg 1 -y 750 -defaultsOSRD
+preplace port M02_ARESETN -pg 1 -y 430 -defaultsOSRD
+preplace port M05_AXI -pg 1 -y 940 -defaultsOSRD
+preplace port M02_AXI -pg 1 -y 430 -defaultsOSRD
+preplace port M06_ARESETN -pg 1 -y 1110 -defaultsOSRD
+preplace port M04_ACLK -pg 1 -y 710 -defaultsOSRD
+preplace port M04_ARESETN -pg 1 -y 730 -defaultsOSRD
+preplace port M00_ARESETN -pg 1 -y 90 -defaultsOSRD
+preplace port M08_ARESETN -pg 1 -y 1450 -defaultsOSRD
+preplace port M07_ARESETN -pg 1 -y 1280 -defaultsOSRD
+preplace port M06_ACLK -pg 1 -y 1090 -defaultsOSRD
+preplace port M00_AXI -pg 1 -y 90 -defaultsOSRD
+preplace inst m02_couplers -pg 1 -lvl 3 -y 430 -defaultsOSRD
+preplace inst m00_couplers -pg 1 -lvl 3 -y 90 -defaultsOSRD
+preplace inst s01_couplers -pg 1 -lvl 1 -y 550 -defaultsOSRD
+preplace inst m06_couplers -pg 1 -lvl 3 -y 1110 -defaultsOSRD
+preplace inst s00_couplers -pg 1 -lvl 1 -y 870 -defaultsOSRD
+preplace inst m01_couplers -pg 1 -lvl 3 -y 260 -defaultsOSRD
+preplace inst m05_couplers -pg 1 -lvl 3 -y 940 -defaultsOSRD
+preplace inst m09_couplers -pg 1 -lvl 3 -y 1620 -defaultsOSRD
+preplace inst m04_couplers -pg 1 -lvl 3 -y 770 -defaultsOSRD
+preplace inst xbar -pg 1 -lvl 2 -y 890 -defaultsOSRD
+preplace inst m08_couplers -pg 1 -lvl 3 -y 1450 -defaultsOSRD
+preplace inst m07_couplers -pg 1 -lvl 3 -y 1280 -defaultsOSRD
+preplace inst m03_couplers -pg 1 -lvl 3 -y 600 -defaultsOSRD
+preplace netloc xbar_to_m09_couplers 1 2 1 500
+preplace netloc m03_couplers_to_microblaze_0_axi_periph 1 3 1 NJ
+preplace netloc M08_ARESETN_1 1 0 3 NJ 1450 NJ 1450 NJ
+preplace netloc M03_ARESETN_1 1 0 3 0J 450 NJ 450 550J
+preplace netloc S01_ACLK_1 1 0 1 10J
+preplace netloc xbar_to_m06_couplers 1 2 1 530
+preplace netloc xbar_to_m05_couplers 1 2 1 N
+preplace netloc microblaze_0_axi_periph_ARESETN_net 1 0 3 20 130 220 130 540
+preplace netloc xbar_to_m02_couplers 1 2 1 560
+preplace netloc xbar_to_m00_couplers 1 2 1 520
+preplace netloc M07_ARESETN_1 1 0 3 NJ 1280 NJ 1280 NJ
+preplace netloc xbar_to_m08_couplers 1 2 1 510
+preplace netloc m04_couplers_to_microblaze_0_axi_periph 1 3 1 NJ
+preplace netloc microblaze_0_axi_periph_to_s00_couplers 1 0 1 NJ
+preplace netloc S00_ACLK_1 1 0 1 NJ
+preplace netloc M07_ACLK_1 1 0 3 NJ 1260 NJ 1260 NJ
+preplace netloc M06_ACLK_1 1 0 3 NJ 1090 NJ 1090 NJ
+preplace netloc M04_ACLK_1 1 0 3 NJ 710 NJ 710 620J
+preplace netloc M02_ARESETN_1 1 0 3 NJ 430 NJ 430 NJ
+preplace netloc S01_ARESETN_1 1 0 1 -20J
+preplace netloc m08_couplers_to_microblaze_0_axi_periph 1 3 1 NJ
+preplace netloc xbar_to_m01_couplers 1 2 1 530
+preplace netloc M05_ACLK_1 1 0 3 30J 690 NJ 690 600J
+preplace netloc microblaze_0_axi_periph_ACLK_net 1 0 3 -10 110 240 110 570
+preplace netloc xbar_to_m03_couplers 1 2 1 580
+preplace netloc s01_couplers_to_xbar 1 1 1 210
+preplace netloc M06_ARESETN_1 1 0 3 NJ 1110 NJ 1110 NJ
+preplace netloc M05_ARESETN_1 1 0 3 NJ 770 230J 750 550J
+preplace netloc M03_ACLK_1 1 0 3 -30J 440 230J 580 NJ
+preplace netloc m00_couplers_to_microblaze_0_axi_periph 1 3 1 NJ
+preplace netloc microblaze_0_axi_periph_to_s01_couplers 1 0 1 N
+preplace netloc s00_couplers_to_xbar 1 1 1 250
+preplace netloc M09_ACLK_1 1 0 3 NJ 1600 NJ 1600 NJ
+preplace netloc M04_ARESETN_1 1 0 3 NJ 730 NJ 730 590J
+preplace netloc M02_ACLK_1 1 0 3 NJ 410 NJ 410 NJ
+preplace netloc M00_ARESETN_1 1 0 3 NJ 90 NJ 90 NJ
+preplace netloc m09_couplers_to_microblaze_0_axi_periph 1 3 1 NJ
+preplace netloc xbar_to_m07_couplers 1 2 1 520
+preplace netloc m06_couplers_to_microblaze_0_axi_periph 1 3 1 NJ
+preplace netloc xbar_to_m04_couplers 1 2 1 610
+preplace netloc m02_couplers_to_microblaze_0_axi_periph 1 3 1 NJ
+preplace netloc M01_ACLK_1 1 0 3 NJ 240 NJ 240 NJ
+preplace netloc M00_ACLK_1 1 0 3 NJ 70 NJ 70 NJ
+preplace netloc m07_couplers_to_microblaze_0_axi_periph 1 3 1 NJ
+preplace netloc m05_couplers_to_microblaze_0_axi_periph 1 3 1 NJ
+preplace netloc m01_couplers_to_microblaze_0_axi_periph 1 3 1 NJ
+preplace netloc M09_ARESETN_1 1 0 3 NJ 1620 NJ 1620 NJ
+preplace netloc M08_ACLK_1 1 0 3 NJ 1430 NJ 1430 NJ
+preplace netloc M01_ARESETN_1 1 0 3 NJ 260 NJ 260 NJ
+preplace netloc S00_ARESETN_1 1 0 1 NJ
+levelinfo -pg 1 -50 120 380 710 820 -top 0 -bot 1710
+",
+}

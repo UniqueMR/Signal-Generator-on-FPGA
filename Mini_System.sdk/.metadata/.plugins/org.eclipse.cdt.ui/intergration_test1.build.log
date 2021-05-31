@@ -1,0 +1,24 @@
+14:45:45 **** Incremental Build of configuration Debug for project intergration_test1 ****
+make all 
+Building file: ../src/DA_Transformer.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/DA_Transformer.o" -I../../intergration_test1_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/DA_Transformer.d" -MT"src/DA_Transformer.o" -o "src/DA_Transformer.o" "../src/DA_Transformer.c"
+In file included from ../src/DA_Transformer.c:8:0:
+../src/waves.h:12:23: error: expected ';', ',' or ')' before '&' token
+ void triangle_wave(int& volt, int& edge);
+                       ^
+../src/DA_Transformer.c: In function 'DA_Transformer':
+../src/DA_Transformer.c:21:20: warning: passing argument 1 of 'sawtooth_wave' makes integer from pointer without a cast [-Wint-conversion]
+      sawtooth_wave(&volt);
+                    ^
+In file included from ../src/DA_Transformer.c:8:0:
+../src/waves.h:13:6: note: expected 'int' but argument is of type 'u16 * {aka short unsigned int *}'
+ void sawtooth_wave(int volt);
+      ^
+../src/DA_Transformer.c:25:9: warning: implicit declaration of function 'triangle_wave' [-Wimplicit-function-declaration]
+         triangle_wave(&volt,&edge);
+         ^
+make: *** [src/DA_Transformer.o] ´íÎó 1
+
+14:45:46 Build Finished (took 831ms)
+

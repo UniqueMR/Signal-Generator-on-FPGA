@@ -1,0 +1,22 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1733598 on Wed Dec 14 22:35:39 MST 2016
+# IP Build 1731160 on Wed Dec 14 23:47:21 MST 2016
+# Start of session at: Sun May 30 10:40:40 2021
+# Process ID: 3988
+# Current directory: C:/vivado/project/Mini_System
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent3100 C:\vivado\project\Mini_System\Mini_System.xpr
+# Log file: C:/vivado/project/Mini_System/vivado.log
+# Journal file: C:/vivado/project/Mini_System\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/vivado/project/Mini_System/Mini_System.xpr
+INFO: [Project 1-313] Project file moved from 'D:/Vivado/digital_circuits/Mini_System' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2016.4/data/ip'.
+open_project: Time (s): cpu = 00:00:21 ; elapsed = 00:00:16 . Memory (MB): peak = 993.301 ; gain = 334.965
+exit
+INFO: [Common 17-206] Exiting Vivado at Sun May 30 10:42:05 2021...

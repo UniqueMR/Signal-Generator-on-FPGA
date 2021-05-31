@@ -1,0 +1,24 @@
+/*
+ * square_wave.cpp
+ *
+ *  Created on: 2021Äê5ÔÂ31ÈÕ
+ *      Author: Unique MR
+ */
+#include "include.hpp"
+
+void square_wave(int &volt,int &edge,int &counter)
+{
+	if(counter >= 0xfff)
+	{
+		if(edge == 1)
+			edge = 0;
+		else
+			edge = 1;
+		counter = 0;
+	}
+	if(edge == 0)
+		volt = 0xfff;
+	else
+		volt = 0;
+	counter++;
+}

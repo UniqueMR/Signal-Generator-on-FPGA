@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1733598 on Wed Dec 14 22:35:39 MST 2016
+# IP Build 1731160 on Wed Dec 14 23:47:21 MST 2016
+# Start of session at: Sun May 30 10:40:40 2021
+# Process ID: 3988
+# Current directory: C:/vivado/project/Mini_System
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent3100 C:\vivado\project\Mini_System\Mini_System.xpr
+# Log file: C:/vivado/project/Mini_System/vivado.log
+# Journal file: C:/vivado/project/Mini_System\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/vivado/project/Mini_System/Mini_System.xpr

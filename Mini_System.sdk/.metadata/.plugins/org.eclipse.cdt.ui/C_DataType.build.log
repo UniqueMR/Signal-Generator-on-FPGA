@@ -1,0 +1,17 @@
+20:10:28 **** Auto Build of configuration Debug for project C_DataType ****
+make all 
+'Building file: ../src/DataType.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/DataType.o" -I../../standalone_bsp_0/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/DataType.d" -MT"src/DataType.o" -o "src/DataType.o" "../src/DataType.c"
+'Finished building: ../src/DataType.c'
+' '
+'Building target: C_DataType.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -o "C_DataType.elf"  ./src/DataType.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+d:/vivado/xilinx_vivado_sdk_2016.4_1215_1/sdk/2016.4/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/5.2.0/../../../../microblaze-xilinx-elf/lib/le/crtinit.o: In function `_crtinit':
+(.text+0x78): undefined reference to `main'
+collect2.exe: error: ld returned 1 exit status
+make: *** [C_DataType.elf] ´íÎó 1
+
+20:10:32 Build Finished (took 3s.997ms)
+

@@ -1,0 +1,36 @@
+/*
+ * DA_Transformer.cpp
+ *
+ *  Created on: 2021年5月31日
+ *      Author: Unique MR
+ */
+#include "include.hpp"
+#include "waves.hpp"
+
+int volt,lastvolt;
+int edge = 0;
+
+void DA_Transformer(int control)
+{
+	//清除SPI中断状态寄存器
+	Xil_Out32(XPAR_AXI_QUAD_SPI_0_BASEADDR+XSP_IISR_OFFSET,Xil_In32(XPAR_AXI_QUAD_SPI_0_BASEADDR+XSP_IISR_OFFSET));
+	//写INTC中断响应寄存器
+	Xil_Out32(XPAR_AXI_INTC_0_BASEADDR+XIN_IAR_OFFSET,Xil_In32(XPAR_AXI_INTC_0_BASEADDR+XIN_ISR_OFFSET));
+    if(control == 8192)
+    {
+    	sawtooth_wave(volt);
+    }
+    else
+    {
+    	//triangle_wave(volt,edge);
+    	if(volt == 0xfff)
+    			edge = 1;
+    		if(volt == 5)
+    			edge = 0;
+    		if(edge == 0)
+    			volt++;
+    		if(edge == 1)
+    			volt--;
+    		Xil_Out16(XPAR_AXI_QUAD_SPI_0_BASEADDR+XSP_DTR_OFFSET,volt&0xfff);//启动SPI传输，产生时钟和片选信号
+    }
+}

@@ -1,0 +1,17 @@
+/*
+ * uart_com_iowr.c
+ *
+ *  Created on: 2021年5月26日
+ *      Author: win10
+ */
+#include"xil_io.h"
+#include"stdio.h"
+#include"xintc_l.h"
+#include"xuartlite_l.h"
+void UART_SEND();
+void UART_RECV();
+void My_ISR() __attribute__((interrupt_handler));//总中断程序
+int main()
+{
+	Xil_Out32(XPAR_AXI_UARTLITE_0_BASEADDR+XUL_CONTROL_REG_OFFSET,XUL_CR_FIFO_RX_RESET|XUL_CR_TX_RESET);//使能中断，清除RX,TX寄存器
+}

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1622023328">
+  <File Type="RDS-PROPCONSTRS" Name="design_CPU_System_wrapper_drc_synth.rpt"/>
+  <File Type="PA-TCL" Name="design_CPU_System_wrapper.tcl"/>
+  <File Type="RDS-RDS" Name="design_CPU_System_wrapper.vds"/>
+  <File Type="RDS-UTIL" Name="design_CPU_System_wrapper_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="design_CPU_System_wrapper_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="design_CPU_System_wrapper.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="design_CPU_System_wrapper_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="design_CPU_System_wrapper_timing_summary_synth.pb"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/bd/design_CPU_System/design_CPU_System.bd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/bd/design_CPU_System/hdl/design_CPU_System_wrapper.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="design_CPU_System_wrapper"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/new/Mini.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/constrs_1/new/adda.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TargetConstrsFile" Val="$PSRCDIR/constrs_1/new/Mini.xdc"/>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="design_CPU_System_ilmb_bram_if_cntlr_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_CPU_System_axi_gpio_1_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_CPU_System_dlmb_bram_if_cntlr_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_CPU_System_system_ila_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_CPU_System_ilmb_v10_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_CPU_System_axi_gpio_2_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_CPU_System_microblaze_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_CPU_System_dlmb_v10_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_CPU_System_lmb_bram_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_CPU_System_rst_clk_wiz_1_100M_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_CPU_System_mdm_1_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_CPU_System_axi_gpio_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_CPU_System_axi_uartlite_1_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_CPU_System_xbar_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_CPU_System_axi_timer_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_CPU_System_xlconcat_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_CPU_System_axi_quad_spi_1_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_CPU_System_axi_quad_spi_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_CPU_System_axi_intc_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_CPU_System_axi_uartlite_2_0"/>
+</GenRun>

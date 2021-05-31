@@ -1,0 +1,11 @@
+/*
+ * waves.hpp
+ *
+ *  Created on: 2021Äê5ÔÂ31ÈÕ
+ *      Author: Unique MR
+ */
+
+
+void triangle_wave(int& volt, int& edge,const int peak);
+void sawtooth_wave(int& volt);
+

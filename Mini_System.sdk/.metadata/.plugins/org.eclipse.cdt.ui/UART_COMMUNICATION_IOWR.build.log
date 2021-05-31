@@ -1,0 +1,6 @@
+18:45:06 **** Incremental Build of configuration Debug for project UART_COMMUNICATION_IOWR ****
+make all 
+make: Nothing to be done for `all'.
+
+18:45:06 Build Finished (took 248ms)
+

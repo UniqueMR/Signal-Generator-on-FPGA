@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1733598 on Wed Dec 14 22:35:39 MST 2016
+# IP Build 1731160 on Wed Dec 14 23:47:21 MST 2016
+# Start of session at: Wed May 19 13:09:45 2021
+# Process ID: 12976
+# Current directory: D:/Vivado/digital_circuits/Mini_System/Mini_System.runs/design_CPU_System_axi_gpio_0_0_synth_1
+# Command line: vivado.exe -log design_CPU_System_axi_gpio_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_CPU_System_axi_gpio_0_0.tcl
+# Log file: D:/Vivado/digital_circuits/Mini_System/Mini_System.runs/design_CPU_System_axi_gpio_0_0_synth_1/design_CPU_System_axi_gpio_0_0.vds
+# Journal file: D:/Vivado/digital_circuits/Mini_System/Mini_System.runs/design_CPU_System_axi_gpio_0_0_synth_1\vivado.jou
+#-----------------------------------------------------------
+source design_CPU_System_axi_gpio_0_0.tcl -notrace
