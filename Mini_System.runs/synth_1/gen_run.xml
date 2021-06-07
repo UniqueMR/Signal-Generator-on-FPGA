@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1622023328">
+<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1623025986">
   <File Type="RDS-PROPCONSTRS" Name="design_CPU_System_wrapper_drc_synth.rpt"/>
   <File Type="PA-TCL" Name="design_CPU_System_wrapper.tcl"/>
   <File Type="RDS-RDS" Name="design_CPU_System_wrapper.vds"/>

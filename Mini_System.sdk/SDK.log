@@ -1728,3 +1728,1319 @@ con
 16:28:34 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4 210274505629A" && level==0} -index 0' command is executed.
 16:28:36 INFO  : FPGA configured successfully with bitstream "C:/vivado/project/Mini_System/Mini_System.sdk/design_CPU_System_wrapper_hw_platform_0/download.bit"
 16:29:42 INFO  : Disconnected from the channel tcfchan#1.
+08:37:43 INFO  : Registering command handlers for SDK TCF services
+08:37:43 INFO  : Launching XSCT server: xsct.bat -interactive E:\signal_generator\Mini_System-main\Mini_System.sdk\temp_xsdb_launch_script.tcl
+08:37:45 INFO  : XSCT server has started successfully.
+08:37:46 INFO  : Successfully done setting XSCT server connection channel  
+08:37:46 INFO  : Successfully done setting SDK workspace  
+08:37:46 INFO  : Processing command line option -hwspec E:/signal_generator/Mini_System-main/Mini_System.sdk/design_CPU_System_wrapper.hdf.
+08:42:22 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+08:42:23 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4 210274533151A" && level==0} -index 0' command is executed.
+08:42:25 INFO  : FPGA configured successfully with bitstream "E:/signal_generator/Mini_System-main/Mini_System.sdk/design_CPU_System_wrapper_hw_platform_0/download.bit"
+09:02:24 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4 210274533151A" && level==0} -index 0' command is executed.
+09:02:24 INFO  : 'fpga -state' command is executed.
+09:02:24 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+09:02:25 INFO  : Jtag cable 'Digilent Nexys4 210274533151A' is selected.
+09:02:25 INFO  : 'jtag frequency' command is executed.
+09:02:25 INFO  : Context for processor 'microblaze_0' is selected.
+09:02:25 INFO  : Hardware design information is loaded from 'E:/signal_generator/Mini_System-main/Mini_System.sdk/design_CPU_System_wrapper_hw_platform_0/system.hdf'.
+09:02:25 INFO  : Context for processor 'microblaze_0' is selected.
+09:02:25 INFO  : Processor reset is completed for 'microblaze_0'.
+09:02:25 INFO  : Context for processor 'microblaze_0' is selected.
+09:02:25 INFO  : The application 'E:/signal_generator/Mini_System-main/Mini_System.sdk/signal_generator/Debug/signal_generator.elf' is downloaded to processor 'microblaze_0'.
+09:02:25 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274533151A"} -index 0
+loadhw E:/signal_generator/Mini_System-main/Mini_System.sdk/design_CPU_System_wrapper_hw_platform_0/system.hdf
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274533151A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274533151A"} -index 0
+dow E:/signal_generator/Mini_System-main/Mini_System.sdk/signal_generator/Debug/signal_generator.elf
+----------------End of Script----------------
+
+09:02:25 INFO  : Memory regions updated for context MicroBlaze #0
+09:02:25 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+09:02:25 INFO  : Context for processor 'microblaze_0' is selected.
+09:02:25 INFO  : 'con' command is executed.
+09:02:25 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274533151A"} -index 0
+con
+----------------End of Script----------------
+
+09:02:25 INFO  : Launch script is exported to file 'E:\signal_generator\Mini_System-main\Mini_System.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_signal_generator.elf_on_local.tcl'
+09:02:35 INFO  : Disconnected from the channel tcfchan#1.
+09:02:36 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4 210274533151A" && level==0} -index 0' command is executed.
+09:02:36 INFO  : 'fpga -state' command is executed.
+09:02:36 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+09:02:36 INFO  : Jtag cable 'Digilent Nexys4 210274533151A' is selected.
+09:02:36 INFO  : 'jtag frequency' command is executed.
+09:02:36 INFO  : Context for processor 'microblaze_0' is selected.
+09:02:37 INFO  : Hardware design information is loaded from 'E:/signal_generator/Mini_System-main/Mini_System.sdk/design_CPU_System_wrapper_hw_platform_0/system.hdf'.
+09:02:37 INFO  : Context for processor 'microblaze_0' is selected.
+09:02:37 INFO  : Processor reset is completed for 'microblaze_0'.
+09:02:37 INFO  : Context for processor 'microblaze_0' is selected.
+09:02:37 INFO  : The application 'E:/signal_generator/Mini_System-main/Mini_System.sdk/signal_generator/Debug/signal_generator.elf' is downloaded to processor 'microblaze_0'.
+09:02:37 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274533151A"} -index 0
+loadhw E:/signal_generator/Mini_System-main/Mini_System.sdk/design_CPU_System_wrapper_hw_platform_0/system.hdf
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274533151A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274533151A"} -index 0
+dow E:/signal_generator/Mini_System-main/Mini_System.sdk/signal_generator/Debug/signal_generator.elf
+----------------End of Script----------------
+
+09:02:37 INFO  : Memory regions updated for context MicroBlaze #0
+09:02:37 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+09:02:37 INFO  : Context for processor 'microblaze_0' is selected.
+09:02:37 INFO  : 'con' command is executed.
+09:02:37 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274533151A"} -index 0
+con
+----------------End of Script----------------
+
+09:02:37 INFO  : Launch script is exported to file 'E:\signal_generator\Mini_System-main\Mini_System.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_signal_generator.elf_on_local.tcl'
+09:07:46 INFO  : Disconnected from the channel tcfchan#2.
+09:07:47 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4 210274533151A" && level==0} -index 0' command is executed.
+09:07:47 INFO  : 'fpga -state' command is executed.
+09:07:47 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+09:07:47 INFO  : Jtag cable 'Digilent Nexys4 210274533151A' is selected.
+09:07:47 INFO  : 'jtag frequency' command is executed.
+09:07:47 INFO  : Context for processor 'microblaze_0' is selected.
+09:07:47 INFO  : Hardware design information is loaded from 'E:/signal_generator/Mini_System-main/Mini_System.sdk/design_CPU_System_wrapper_hw_platform_0/system.hdf'.
+09:07:47 INFO  : Context for processor 'microblaze_0' is selected.
+09:07:47 INFO  : Processor reset is completed for 'microblaze_0'.
+09:07:47 INFO  : Context for processor 'microblaze_0' is selected.
+09:07:47 INFO  : The application 'E:/signal_generator/Mini_System-main/Mini_System.sdk/signal_generator/Debug/signal_generator.elf' is downloaded to processor 'microblaze_0'.
+09:07:47 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274533151A"} -index 0
+loadhw E:/signal_generator/Mini_System-main/Mini_System.sdk/design_CPU_System_wrapper_hw_platform_0/system.hdf
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274533151A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274533151A"} -index 0
+dow E:/signal_generator/Mini_System-main/Mini_System.sdk/signal_generator/Debug/signal_generator.elf
+----------------End of Script----------------
+
+09:07:47 INFO  : Memory regions updated for context MicroBlaze #0
+09:07:47 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+09:07:47 INFO  : Context for processor 'microblaze_0' is selected.
+09:07:47 INFO  : 'con' command is executed.
+09:07:47 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274533151A"} -index 0
+con
+----------------End of Script----------------
+
+09:07:47 INFO  : Launch script is exported to file 'E:\signal_generator\Mini_System-main\Mini_System.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_signal_generator.elf_on_local.tcl'
+09:08:33 INFO  : Disconnected from the channel tcfchan#3.
+09:08:34 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4 210274533151A" && level==0} -index 0' command is executed.
+09:08:34 INFO  : 'fpga -state' command is executed.
+09:08:34 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+09:08:34 INFO  : Jtag cable 'Digilent Nexys4 210274533151A' is selected.
+09:08:34 INFO  : 'jtag frequency' command is executed.
+09:08:34 INFO  : Context for processor 'microblaze_0' is selected.
+09:08:34 INFO  : Hardware design information is loaded from 'E:/signal_generator/Mini_System-main/Mini_System.sdk/design_CPU_System_wrapper_hw_platform_0/system.hdf'.
+09:08:34 INFO  : Context for processor 'microblaze_0' is selected.
+09:08:34 INFO  : Processor reset is completed for 'microblaze_0'.
+09:08:34 INFO  : Context for processor 'microblaze_0' is selected.
+09:08:35 INFO  : The application 'E:/signal_generator/Mini_System-main/Mini_System.sdk/signal_generator/Debug/signal_generator.elf' is downloaded to processor 'microblaze_0'.
+09:08:35 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274533151A"} -index 0
+loadhw E:/signal_generator/Mini_System-main/Mini_System.sdk/design_CPU_System_wrapper_hw_platform_0/system.hdf
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274533151A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274533151A"} -index 0
+dow E:/signal_generator/Mini_System-main/Mini_System.sdk/signal_generator/Debug/signal_generator.elf
+----------------End of Script----------------
+
+09:08:35 INFO  : Memory regions updated for context MicroBlaze #0
+09:08:35 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+09:08:35 INFO  : Context for processor 'microblaze_0' is selected.
+09:08:35 INFO  : 'con' command is executed.
+09:08:35 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274533151A"} -index 0
+con
+----------------End of Script----------------
+
+09:08:35 INFO  : Launch script is exported to file 'E:\signal_generator\Mini_System-main\Mini_System.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_signal_generator.elf_on_local.tcl'
+09:10:23 INFO  : Disconnected from the channel tcfchan#4.
+09:10:24 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4 210274533151A" && level==0} -index 0' command is executed.
+09:10:24 INFO  : 'fpga -state' command is executed.
+09:10:24 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+09:10:25 INFO  : Jtag cable 'Digilent Nexys4 210274533151A' is selected.
+09:10:25 INFO  : 'jtag frequency' command is executed.
+09:10:25 INFO  : Context for processor 'microblaze_0' is selected.
+09:10:25 INFO  : Hardware design information is loaded from 'E:/signal_generator/Mini_System-main/Mini_System.sdk/design_CPU_System_wrapper_hw_platform_0/system.hdf'.
+09:10:25 INFO  : Context for processor 'microblaze_0' is selected.
+09:10:25 INFO  : Processor reset is completed for 'microblaze_0'.
+09:10:25 INFO  : Context for processor 'microblaze_0' is selected.
+09:10:25 INFO  : The application 'E:/signal_generator/Mini_System-main/Mini_System.sdk/signal_generator/Debug/signal_generator.elf' is downloaded to processor 'microblaze_0'.
+09:10:25 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274533151A"} -index 0
+loadhw E:/signal_generator/Mini_System-main/Mini_System.sdk/design_CPU_System_wrapper_hw_platform_0/system.hdf
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274533151A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274533151A"} -index 0
+dow E:/signal_generator/Mini_System-main/Mini_System.sdk/signal_generator/Debug/signal_generator.elf
+----------------End of Script----------------
+
+09:10:25 INFO  : Memory regions updated for context MicroBlaze #0
+09:10:25 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+09:10:25 INFO  : Context for processor 'microblaze_0' is selected.
+09:10:25 INFO  : 'con' command is executed.
+09:10:25 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274533151A"} -index 0
+con
+----------------End of Script----------------
+
+09:10:25 INFO  : Launch script is exported to file 'E:\signal_generator\Mini_System-main\Mini_System.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_signal_generator.elf_on_local.tcl'
+09:13:32 INFO  : Disconnected from the channel tcfchan#5.
+09:13:33 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4 210274533151A" && level==0} -index 0' command is executed.
+09:13:33 INFO  : 'fpga -state' command is executed.
+09:13:33 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+09:13:33 INFO  : Jtag cable 'Digilent Nexys4 210274533151A' is selected.
+09:13:33 INFO  : 'jtag frequency' command is executed.
+09:13:33 INFO  : Context for processor 'microblaze_0' is selected.
+09:13:33 INFO  : Hardware design information is loaded from 'E:/signal_generator/Mini_System-main/Mini_System.sdk/design_CPU_System_wrapper_hw_platform_0/system.hdf'.
+09:13:33 INFO  : Context for processor 'microblaze_0' is selected.
+09:13:33 INFO  : Processor reset is completed for 'microblaze_0'.
+09:13:33 INFO  : Context for processor 'microblaze_0' is selected.
+09:13:33 INFO  : The application 'E:/signal_generator/Mini_System-main/Mini_System.sdk/signal_generator/Debug/signal_generator.elf' is downloaded to processor 'microblaze_0'.
+09:13:33 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274533151A"} -index 0
+loadhw E:/signal_generator/Mini_System-main/Mini_System.sdk/design_CPU_System_wrapper_hw_platform_0/system.hdf
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274533151A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274533151A"} -index 0
+dow E:/signal_generator/Mini_System-main/Mini_System.sdk/signal_generator/Debug/signal_generator.elf
+----------------End of Script----------------
+
+09:13:33 INFO  : Memory regions updated for context MicroBlaze #0
+09:13:33 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+09:13:33 INFO  : Context for processor 'microblaze_0' is selected.
+09:13:33 INFO  : 'con' command is executed.
+09:13:33 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274533151A"} -index 0
+con
+----------------End of Script----------------
+
+09:13:33 INFO  : Launch script is exported to file 'E:\signal_generator\Mini_System-main\Mini_System.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_signal_generator.elf_on_local.tcl'
+09:14:16 INFO  : Disconnected from the channel tcfchan#6.
+09:14:17 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4 210274533151A" && level==0} -index 0' command is executed.
+09:14:17 INFO  : 'fpga -state' command is executed.
+09:14:17 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+09:14:17 INFO  : Jtag cable 'Digilent Nexys4 210274533151A' is selected.
+09:14:17 INFO  : 'jtag frequency' command is executed.
+09:14:17 INFO  : Context for processor 'microblaze_0' is selected.
+09:14:17 INFO  : Hardware design information is loaded from 'E:/signal_generator/Mini_System-main/Mini_System.sdk/design_CPU_System_wrapper_hw_platform_0/system.hdf'.
+09:14:17 INFO  : Context for processor 'microblaze_0' is selected.
+09:14:17 INFO  : Processor reset is completed for 'microblaze_0'.
+09:14:17 INFO  : Context for processor 'microblaze_0' is selected.
+09:14:17 INFO  : The application 'E:/signal_generator/Mini_System-main/Mini_System.sdk/signal_generator/Debug/signal_generator.elf' is downloaded to processor 'microblaze_0'.
+09:14:17 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274533151A"} -index 0
+loadhw E:/signal_generator/Mini_System-main/Mini_System.sdk/design_CPU_System_wrapper_hw_platform_0/system.hdf
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274533151A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274533151A"} -index 0
+dow E:/signal_generator/Mini_System-main/Mini_System.sdk/signal_generator/Debug/signal_generator.elf
+----------------End of Script----------------
+
+09:14:17 INFO  : Memory regions updated for context MicroBlaze #0
+09:14:17 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+09:14:17 INFO  : Context for processor 'microblaze_0' is selected.
+09:14:17 INFO  : 'con' command is executed.
+09:14:17 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274533151A"} -index 0
+con
+----------------End of Script----------------
+
+09:14:17 INFO  : Launch script is exported to file 'E:\signal_generator\Mini_System-main\Mini_System.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_signal_generator.elf_on_local.tcl'
+09:15:16 INFO  : Disconnected from the channel tcfchan#7.
+09:15:17 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4 210274533151A" && level==0} -index 0' command is executed.
+09:15:17 INFO  : 'fpga -state' command is executed.
+09:15:17 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+09:15:17 INFO  : Jtag cable 'Digilent Nexys4 210274533151A' is selected.
+09:15:18 INFO  : 'jtag frequency' command is executed.
+09:15:18 INFO  : Context for processor 'microblaze_0' is selected.
+09:15:18 INFO  : Hardware design information is loaded from 'E:/signal_generator/Mini_System-main/Mini_System.sdk/design_CPU_System_wrapper_hw_platform_0/system.hdf'.
+09:15:18 INFO  : Context for processor 'microblaze_0' is selected.
+09:15:18 INFO  : Processor reset is completed for 'microblaze_0'.
+09:15:18 INFO  : Context for processor 'microblaze_0' is selected.
+09:15:18 INFO  : The application 'E:/signal_generator/Mini_System-main/Mini_System.sdk/signal_generator/Debug/signal_generator.elf' is downloaded to processor 'microblaze_0'.
+09:15:18 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274533151A"} -index 0
+loadhw E:/signal_generator/Mini_System-main/Mini_System.sdk/design_CPU_System_wrapper_hw_platform_0/system.hdf
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274533151A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274533151A"} -index 0
+dow E:/signal_generator/Mini_System-main/Mini_System.sdk/signal_generator/Debug/signal_generator.elf
+----------------End of Script----------------
+
+09:15:18 INFO  : Memory regions updated for context MicroBlaze #0
+09:15:18 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+09:15:18 INFO  : Context for processor 'microblaze_0' is selected.
+09:15:18 INFO  : 'con' command is executed.
+09:15:18 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274533151A"} -index 0
+con
+----------------End of Script----------------
+
+09:15:18 INFO  : Launch script is exported to file 'E:\signal_generator\Mini_System-main\Mini_System.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_signal_generator.elf_on_local.tcl'
+09:16:09 INFO  : Disconnected from the channel tcfchan#8.
+09:16:10 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4 210274533151A" && level==0} -index 0' command is executed.
+09:16:10 INFO  : 'fpga -state' command is executed.
+09:16:10 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+09:16:10 INFO  : Jtag cable 'Digilent Nexys4 210274533151A' is selected.
+09:16:10 INFO  : 'jtag frequency' command is executed.
+09:16:10 INFO  : Context for processor 'microblaze_0' is selected.
+09:16:10 INFO  : Hardware design information is loaded from 'E:/signal_generator/Mini_System-main/Mini_System.sdk/design_CPU_System_wrapper_hw_platform_0/system.hdf'.
+09:16:10 INFO  : Context for processor 'microblaze_0' is selected.
+09:16:10 INFO  : Processor reset is completed for 'microblaze_0'.
+09:16:10 INFO  : Context for processor 'microblaze_0' is selected.
+09:16:10 INFO  : The application 'E:/signal_generator/Mini_System-main/Mini_System.sdk/signal_generator/Debug/signal_generator.elf' is downloaded to processor 'microblaze_0'.
+09:16:10 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274533151A"} -index 0
+loadhw E:/signal_generator/Mini_System-main/Mini_System.sdk/design_CPU_System_wrapper_hw_platform_0/system.hdf
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274533151A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274533151A"} -index 0
+dow E:/signal_generator/Mini_System-main/Mini_System.sdk/signal_generator/Debug/signal_generator.elf
+----------------End of Script----------------
+
+09:16:10 INFO  : Memory regions updated for context MicroBlaze #0
+09:16:10 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+09:16:10 INFO  : Context for processor 'microblaze_0' is selected.
+09:16:10 INFO  : 'con' command is executed.
+09:16:10 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274533151A"} -index 0
+con
+----------------End of Script----------------
+
+09:16:10 INFO  : Launch script is exported to file 'E:\signal_generator\Mini_System-main\Mini_System.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_signal_generator.elf_on_local.tcl'
+09:19:03 INFO  : Disconnected from the channel tcfchan#9.
+09:19:04 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4 210274533151A" && level==0} -index 0' command is executed.
+09:19:05 INFO  : 'fpga -state' command is executed.
+09:19:05 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+09:19:05 INFO  : Jtag cable 'Digilent Nexys4 210274533151A' is selected.
+09:19:05 INFO  : 'jtag frequency' command is executed.
+09:19:05 INFO  : Context for processor 'microblaze_0' is selected.
+09:19:05 INFO  : Hardware design information is loaded from 'E:/signal_generator/Mini_System-main/Mini_System.sdk/design_CPU_System_wrapper_hw_platform_0/system.hdf'.
+09:19:05 INFO  : Context for processor 'microblaze_0' is selected.
+09:19:05 INFO  : Processor reset is completed for 'microblaze_0'.
+09:19:05 INFO  : Context for processor 'microblaze_0' is selected.
+09:19:05 INFO  : The application 'E:/signal_generator/Mini_System-main/Mini_System.sdk/signal_generator/Debug/signal_generator.elf' is downloaded to processor 'microblaze_0'.
+09:19:05 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274533151A"} -index 0
+loadhw E:/signal_generator/Mini_System-main/Mini_System.sdk/design_CPU_System_wrapper_hw_platform_0/system.hdf
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274533151A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274533151A"} -index 0
+dow E:/signal_generator/Mini_System-main/Mini_System.sdk/signal_generator/Debug/signal_generator.elf
+----------------End of Script----------------
+
+09:19:05 INFO  : Memory regions updated for context MicroBlaze #0
+09:19:05 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+09:19:05 INFO  : Context for processor 'microblaze_0' is selected.
+09:19:05 INFO  : 'con' command is executed.
+09:19:05 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274533151A"} -index 0
+con
+----------------End of Script----------------
+
+09:19:05 INFO  : Launch script is exported to file 'E:\signal_generator\Mini_System-main\Mini_System.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_signal_generator.elf_on_local.tcl'
+09:20:31 INFO  : Disconnected from the channel tcfchan#10.
+09:20:32 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4 210274533151A" && level==0} -index 0' command is executed.
+09:20:32 INFO  : 'fpga -state' command is executed.
+09:20:32 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+09:20:32 INFO  : Jtag cable 'Digilent Nexys4 210274533151A' is selected.
+09:20:32 INFO  : 'jtag frequency' command is executed.
+09:20:32 INFO  : Context for processor 'microblaze_0' is selected.
+09:20:32 INFO  : Hardware design information is loaded from 'E:/signal_generator/Mini_System-main/Mini_System.sdk/design_CPU_System_wrapper_hw_platform_0/system.hdf'.
+09:20:32 INFO  : Context for processor 'microblaze_0' is selected.
+09:20:32 INFO  : Processor reset is completed for 'microblaze_0'.
+09:20:32 INFO  : Context for processor 'microblaze_0' is selected.
+09:20:32 INFO  : The application 'E:/signal_generator/Mini_System-main/Mini_System.sdk/signal_generator/Debug/signal_generator.elf' is downloaded to processor 'microblaze_0'.
+09:20:32 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274533151A"} -index 0
+loadhw E:/signal_generator/Mini_System-main/Mini_System.sdk/design_CPU_System_wrapper_hw_platform_0/system.hdf
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274533151A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274533151A"} -index 0
+dow E:/signal_generator/Mini_System-main/Mini_System.sdk/signal_generator/Debug/signal_generator.elf
+----------------End of Script----------------
+
+09:20:32 INFO  : Memory regions updated for context MicroBlaze #0
+09:20:32 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+09:20:32 INFO  : Context for processor 'microblaze_0' is selected.
+09:20:32 INFO  : 'con' command is executed.
+09:20:32 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274533151A"} -index 0
+con
+----------------End of Script----------------
+
+09:20:32 INFO  : Launch script is exported to file 'E:\signal_generator\Mini_System-main\Mini_System.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_signal_generator.elf_on_local.tcl'
+09:28:38 INFO  : Disconnected from the channel tcfchan#11.
+09:28:39 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4 210274533151A" && level==0} -index 0' command is executed.
+09:28:39 INFO  : 'fpga -state' command is executed.
+09:28:39 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+09:28:39 INFO  : Jtag cable 'Digilent Nexys4 210274533151A' is selected.
+09:28:39 INFO  : 'jtag frequency' command is executed.
+09:28:39 INFO  : Context for processor 'microblaze_0' is selected.
+09:28:39 INFO  : Hardware design information is loaded from 'E:/signal_generator/Mini_System-main/Mini_System.sdk/design_CPU_System_wrapper_hw_platform_0/system.hdf'.
+09:28:39 INFO  : Context for processor 'microblaze_0' is selected.
+09:28:39 INFO  : Processor reset is completed for 'microblaze_0'.
+09:28:39 INFO  : Context for processor 'microblaze_0' is selected.
+09:28:39 INFO  : The application 'E:/signal_generator/Mini_System-main/Mini_System.sdk/signal_generator/Debug/signal_generator.elf' is downloaded to processor 'microblaze_0'.
+09:28:39 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274533151A"} -index 0
+loadhw E:/signal_generator/Mini_System-main/Mini_System.sdk/design_CPU_System_wrapper_hw_platform_0/system.hdf
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274533151A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274533151A"} -index 0
+dow E:/signal_generator/Mini_System-main/Mini_System.sdk/signal_generator/Debug/signal_generator.elf
+----------------End of Script----------------
+
+09:28:39 INFO  : Memory regions updated for context MicroBlaze #0
+09:28:39 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+09:28:39 INFO  : Context for processor 'microblaze_0' is selected.
+09:28:39 INFO  : 'con' command is executed.
+09:28:39 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274533151A"} -index 0
+con
+----------------End of Script----------------
+
+09:28:39 INFO  : Launch script is exported to file 'E:\signal_generator\Mini_System-main\Mini_System.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_signal_generator.elf_on_local.tcl'
+09:40:08 INFO  : Disconnected from the channel tcfchan#12.
+09:40:09 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4 210274533151A" && level==0} -index 0' command is executed.
+09:40:09 INFO  : 'fpga -state' command is executed.
+09:40:09 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+09:40:10 INFO  : Jtag cable 'Digilent Nexys4 210274533151A' is selected.
+09:40:10 INFO  : 'jtag frequency' command is executed.
+09:40:10 INFO  : Context for processor 'microblaze_0' is selected.
+09:40:10 INFO  : Hardware design information is loaded from 'E:/signal_generator/Mini_System-main/Mini_System.sdk/design_CPU_System_wrapper_hw_platform_0/system.hdf'.
+09:40:10 INFO  : Context for processor 'microblaze_0' is selected.
+09:40:10 INFO  : Processor reset is completed for 'microblaze_0'.
+09:40:10 INFO  : Context for processor 'microblaze_0' is selected.
+09:40:10 INFO  : The application 'E:/signal_generator/Mini_System-main/Mini_System.sdk/signal_generator/Debug/signal_generator.elf' is downloaded to processor 'microblaze_0'.
+09:40:10 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274533151A"} -index 0
+loadhw E:/signal_generator/Mini_System-main/Mini_System.sdk/design_CPU_System_wrapper_hw_platform_0/system.hdf
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274533151A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274533151A"} -index 0
+dow E:/signal_generator/Mini_System-main/Mini_System.sdk/signal_generator/Debug/signal_generator.elf
+----------------End of Script----------------
+
+09:40:10 INFO  : Memory regions updated for context MicroBlaze #0
+09:40:10 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+09:40:10 INFO  : Context for processor 'microblaze_0' is selected.
+09:40:10 INFO  : 'con' command is executed.
+09:40:10 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274533151A"} -index 0
+con
+----------------End of Script----------------
+
+09:40:10 INFO  : Launch script is exported to file 'E:\signal_generator\Mini_System-main\Mini_System.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_signal_generator.elf_on_local.tcl'
+09:46:27 INFO  : Disconnected from the channel tcfchan#13.
+09:46:28 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4 210274533151A" && level==0} -index 0' command is executed.
+09:46:28 INFO  : 'fpga -state' command is executed.
+09:46:28 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+09:46:28 INFO  : Jtag cable 'Digilent Nexys4 210274533151A' is selected.
+09:46:28 INFO  : 'jtag frequency' command is executed.
+09:46:28 INFO  : Context for processor 'microblaze_0' is selected.
+09:46:28 INFO  : Hardware design information is loaded from 'E:/signal_generator/Mini_System-main/Mini_System.sdk/design_CPU_System_wrapper_hw_platform_0/system.hdf'.
+09:46:28 INFO  : Context for processor 'microblaze_0' is selected.
+09:46:28 INFO  : Processor reset is completed for 'microblaze_0'.
+09:46:28 INFO  : Context for processor 'microblaze_0' is selected.
+09:46:28 INFO  : The application 'E:/signal_generator/Mini_System-main/Mini_System.sdk/signal_generator/Debug/signal_generator.elf' is downloaded to processor 'microblaze_0'.
+09:46:28 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274533151A"} -index 0
+loadhw E:/signal_generator/Mini_System-main/Mini_System.sdk/design_CPU_System_wrapper_hw_platform_0/system.hdf
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274533151A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274533151A"} -index 0
+dow E:/signal_generator/Mini_System-main/Mini_System.sdk/signal_generator/Debug/signal_generator.elf
+----------------End of Script----------------
+
+09:46:28 INFO  : Memory regions updated for context MicroBlaze #0
+09:46:28 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+09:46:28 INFO  : Context for processor 'microblaze_0' is selected.
+09:46:28 INFO  : 'con' command is executed.
+09:46:28 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274533151A"} -index 0
+con
+----------------End of Script----------------
+
+09:46:28 INFO  : Launch script is exported to file 'E:\signal_generator\Mini_System-main\Mini_System.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_signal_generator.elf_on_local.tcl'
+09:50:22 INFO  : Disconnected from the channel tcfchan#14.
+09:50:23 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4 210274533151A" && level==0} -index 0' command is executed.
+09:50:23 INFO  : 'fpga -state' command is executed.
+09:50:23 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+09:50:23 INFO  : Jtag cable 'Digilent Nexys4 210274533151A' is selected.
+09:50:23 INFO  : 'jtag frequency' command is executed.
+09:50:23 INFO  : Context for processor 'microblaze_0' is selected.
+09:50:23 INFO  : Hardware design information is loaded from 'E:/signal_generator/Mini_System-main/Mini_System.sdk/design_CPU_System_wrapper_hw_platform_0/system.hdf'.
+09:50:23 INFO  : Context for processor 'microblaze_0' is selected.
+09:50:23 INFO  : Processor reset is completed for 'microblaze_0'.
+09:50:23 INFO  : Context for processor 'microblaze_0' is selected.
+09:50:23 INFO  : The application 'E:/signal_generator/Mini_System-main/Mini_System.sdk/signal_generator/Debug/signal_generator.elf' is downloaded to processor 'microblaze_0'.
+09:50:23 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274533151A"} -index 0
+loadhw E:/signal_generator/Mini_System-main/Mini_System.sdk/design_CPU_System_wrapper_hw_platform_0/system.hdf
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274533151A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274533151A"} -index 0
+dow E:/signal_generator/Mini_System-main/Mini_System.sdk/signal_generator/Debug/signal_generator.elf
+----------------End of Script----------------
+
+09:50:23 INFO  : Memory regions updated for context MicroBlaze #0
+09:50:23 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+09:50:23 INFO  : Context for processor 'microblaze_0' is selected.
+09:50:23 INFO  : 'con' command is executed.
+09:50:23 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274533151A"} -index 0
+con
+----------------End of Script----------------
+
+09:50:23 INFO  : Launch script is exported to file 'E:\signal_generator\Mini_System-main\Mini_System.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_signal_generator.elf_on_local.tcl'
+09:53:24 INFO  : Disconnected from the channel tcfchan#15.
+09:53:25 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4 210274533151A" && level==0} -index 0' command is executed.
+09:53:25 INFO  : 'fpga -state' command is executed.
+09:53:25 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+09:53:25 INFO  : Jtag cable 'Digilent Nexys4 210274533151A' is selected.
+09:53:25 INFO  : 'jtag frequency' command is executed.
+09:53:25 INFO  : Context for processor 'microblaze_0' is selected.
+09:53:25 INFO  : Hardware design information is loaded from 'E:/signal_generator/Mini_System-main/Mini_System.sdk/design_CPU_System_wrapper_hw_platform_0/system.hdf'.
+09:53:25 INFO  : Context for processor 'microblaze_0' is selected.
+09:53:26 INFO  : Processor reset is completed for 'microblaze_0'.
+09:53:26 INFO  : Context for processor 'microblaze_0' is selected.
+09:53:26 INFO  : The application 'E:/signal_generator/Mini_System-main/Mini_System.sdk/signal_generator/Debug/signal_generator.elf' is downloaded to processor 'microblaze_0'.
+09:53:26 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274533151A"} -index 0
+loadhw E:/signal_generator/Mini_System-main/Mini_System.sdk/design_CPU_System_wrapper_hw_platform_0/system.hdf
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274533151A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274533151A"} -index 0
+dow E:/signal_generator/Mini_System-main/Mini_System.sdk/signal_generator/Debug/signal_generator.elf
+----------------End of Script----------------
+
+09:53:26 INFO  : Memory regions updated for context MicroBlaze #0
+09:53:26 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+09:53:26 INFO  : Context for processor 'microblaze_0' is selected.
+09:53:26 INFO  : 'con' command is executed.
+09:53:26 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274533151A"} -index 0
+con
+----------------End of Script----------------
+
+09:53:26 INFO  : Launch script is exported to file 'E:\signal_generator\Mini_System-main\Mini_System.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_signal_generator.elf_on_local.tcl'
+10:18:23 INFO  : Disconnected from the channel tcfchan#16.
+10:18:24 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4 210274533151A" && level==0} -index 0' command is executed.
+10:18:24 INFO  : 'fpga -state' command is executed.
+10:18:24 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:18:24 INFO  : Jtag cable 'Digilent Nexys4 210274533151A' is selected.
+10:18:24 INFO  : 'jtag frequency' command is executed.
+10:18:24 INFO  : Context for processor 'microblaze_0' is selected.
+10:18:24 INFO  : Hardware design information is loaded from 'E:/signal_generator/Mini_System-main/Mini_System.sdk/design_CPU_System_wrapper_hw_platform_0/system.hdf'.
+10:18:24 INFO  : Context for processor 'microblaze_0' is selected.
+10:18:24 INFO  : Processor reset is completed for 'microblaze_0'.
+10:18:24 INFO  : Context for processor 'microblaze_0' is selected.
+10:18:25 INFO  : The application 'E:/signal_generator/Mini_System-main/Mini_System.sdk/signal_generator/Debug/signal_generator.elf' is downloaded to processor 'microblaze_0'.
+10:18:25 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274533151A"} -index 0
+loadhw E:/signal_generator/Mini_System-main/Mini_System.sdk/design_CPU_System_wrapper_hw_platform_0/system.hdf
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274533151A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274533151A"} -index 0
+dow E:/signal_generator/Mini_System-main/Mini_System.sdk/signal_generator/Debug/signal_generator.elf
+----------------End of Script----------------
+
+10:18:25 INFO  : Memory regions updated for context MicroBlaze #0
+10:18:25 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+10:18:25 INFO  : Context for processor 'microblaze_0' is selected.
+10:18:25 INFO  : 'con' command is executed.
+10:18:25 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274533151A"} -index 0
+con
+----------------End of Script----------------
+
+10:18:25 INFO  : Launch script is exported to file 'E:\signal_generator\Mini_System-main\Mini_System.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_signal_generator.elf_on_local.tcl'
+10:19:24 INFO  : Disconnected from the channel tcfchan#17.
+10:19:25 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4 210274533151A" && level==0} -index 0' command is executed.
+10:19:25 INFO  : 'fpga -state' command is executed.
+10:19:25 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:19:25 INFO  : Jtag cable 'Digilent Nexys4 210274533151A' is selected.
+10:19:25 INFO  : 'jtag frequency' command is executed.
+10:19:25 INFO  : Context for processor 'microblaze_0' is selected.
+10:19:25 INFO  : Hardware design information is loaded from 'E:/signal_generator/Mini_System-main/Mini_System.sdk/design_CPU_System_wrapper_hw_platform_0/system.hdf'.
+10:19:25 INFO  : Context for processor 'microblaze_0' is selected.
+10:19:25 INFO  : Processor reset is completed for 'microblaze_0'.
+10:19:25 INFO  : Context for processor 'microblaze_0' is selected.
+10:19:25 INFO  : The application 'E:/signal_generator/Mini_System-main/Mini_System.sdk/signal_generator/Debug/signal_generator.elf' is downloaded to processor 'microblaze_0'.
+10:19:25 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274533151A"} -index 0
+loadhw E:/signal_generator/Mini_System-main/Mini_System.sdk/design_CPU_System_wrapper_hw_platform_0/system.hdf
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274533151A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274533151A"} -index 0
+dow E:/signal_generator/Mini_System-main/Mini_System.sdk/signal_generator/Debug/signal_generator.elf
+----------------End of Script----------------
+
+10:19:25 INFO  : Memory regions updated for context MicroBlaze #0
+10:19:25 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+10:19:25 INFO  : Context for processor 'microblaze_0' is selected.
+10:19:25 INFO  : 'con' command is executed.
+10:19:25 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274533151A"} -index 0
+con
+----------------End of Script----------------
+
+10:19:25 INFO  : Launch script is exported to file 'E:\signal_generator\Mini_System-main\Mini_System.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_signal_generator.elf_on_local.tcl'
+10:21:33 INFO  : Disconnected from the channel tcfchan#18.
+10:21:34 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4 210274533151A" && level==0} -index 0' command is executed.
+10:21:34 INFO  : 'fpga -state' command is executed.
+10:21:34 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:21:34 INFO  : Jtag cable 'Digilent Nexys4 210274533151A' is selected.
+10:21:34 INFO  : 'jtag frequency' command is executed.
+10:21:34 INFO  : Context for processor 'microblaze_0' is selected.
+10:21:34 INFO  : Hardware design information is loaded from 'E:/signal_generator/Mini_System-main/Mini_System.sdk/design_CPU_System_wrapper_hw_platform_0/system.hdf'.
+10:21:34 INFO  : Context for processor 'microblaze_0' is selected.
+10:21:34 INFO  : Processor reset is completed for 'microblaze_0'.
+10:21:34 INFO  : Context for processor 'microblaze_0' is selected.
+10:21:34 INFO  : The application 'E:/signal_generator/Mini_System-main/Mini_System.sdk/signal_generator/Debug/signal_generator.elf' is downloaded to processor 'microblaze_0'.
+10:21:34 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274533151A"} -index 0
+loadhw E:/signal_generator/Mini_System-main/Mini_System.sdk/design_CPU_System_wrapper_hw_platform_0/system.hdf
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274533151A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274533151A"} -index 0
+dow E:/signal_generator/Mini_System-main/Mini_System.sdk/signal_generator/Debug/signal_generator.elf
+----------------End of Script----------------
+
+10:21:34 INFO  : Memory regions updated for context MicroBlaze #0
+10:21:34 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+10:21:34 INFO  : Context for processor 'microblaze_0' is selected.
+10:21:34 INFO  : 'con' command is executed.
+10:21:34 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274533151A"} -index 0
+con
+----------------End of Script----------------
+
+10:21:34 INFO  : Launch script is exported to file 'E:\signal_generator\Mini_System-main\Mini_System.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_signal_generator.elf_on_local.tcl'
+10:22:33 INFO  : Disconnected from the channel tcfchan#19.
+10:22:34 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4 210274533151A" && level==0} -index 0' command is executed.
+10:22:34 INFO  : 'fpga -state' command is executed.
+10:22:34 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:22:34 INFO  : Jtag cable 'Digilent Nexys4 210274533151A' is selected.
+10:22:34 INFO  : 'jtag frequency' command is executed.
+10:22:34 INFO  : Context for processor 'microblaze_0' is selected.
+10:22:34 INFO  : Hardware design information is loaded from 'E:/signal_generator/Mini_System-main/Mini_System.sdk/design_CPU_System_wrapper_hw_platform_0/system.hdf'.
+10:22:34 INFO  : Context for processor 'microblaze_0' is selected.
+10:22:35 INFO  : Processor reset is completed for 'microblaze_0'.
+10:22:35 INFO  : Context for processor 'microblaze_0' is selected.
+10:22:35 INFO  : The application 'E:/signal_generator/Mini_System-main/Mini_System.sdk/signal_generator/Debug/signal_generator.elf' is downloaded to processor 'microblaze_0'.
+10:22:35 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274533151A"} -index 0
+loadhw E:/signal_generator/Mini_System-main/Mini_System.sdk/design_CPU_System_wrapper_hw_platform_0/system.hdf
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274533151A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274533151A"} -index 0
+dow E:/signal_generator/Mini_System-main/Mini_System.sdk/signal_generator/Debug/signal_generator.elf
+----------------End of Script----------------
+
+10:22:35 INFO  : Memory regions updated for context MicroBlaze #0
+10:22:35 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+10:22:35 INFO  : Context for processor 'microblaze_0' is selected.
+10:22:35 INFO  : 'con' command is executed.
+10:22:35 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274533151A"} -index 0
+con
+----------------End of Script----------------
+
+10:22:35 INFO  : Launch script is exported to file 'E:\signal_generator\Mini_System-main\Mini_System.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_signal_generator.elf_on_local.tcl'
+10:23:35 INFO  : Disconnected from the channel tcfchan#20.
+10:23:36 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4 210274533151A" && level==0} -index 0' command is executed.
+10:23:36 INFO  : 'fpga -state' command is executed.
+10:23:36 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:23:36 INFO  : Jtag cable 'Digilent Nexys4 210274533151A' is selected.
+10:23:36 INFO  : 'jtag frequency' command is executed.
+10:23:36 INFO  : Context for processor 'microblaze_0' is selected.
+10:23:36 INFO  : Hardware design information is loaded from 'E:/signal_generator/Mini_System-main/Mini_System.sdk/design_CPU_System_wrapper_hw_platform_0/system.hdf'.
+10:23:36 INFO  : Context for processor 'microblaze_0' is selected.
+10:23:36 INFO  : Processor reset is completed for 'microblaze_0'.
+10:23:36 INFO  : Context for processor 'microblaze_0' is selected.
+10:23:36 INFO  : The application 'E:/signal_generator/Mini_System-main/Mini_System.sdk/signal_generator/Debug/signal_generator.elf' is downloaded to processor 'microblaze_0'.
+10:23:36 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274533151A"} -index 0
+loadhw E:/signal_generator/Mini_System-main/Mini_System.sdk/design_CPU_System_wrapper_hw_platform_0/system.hdf
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274533151A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274533151A"} -index 0
+dow E:/signal_generator/Mini_System-main/Mini_System.sdk/signal_generator/Debug/signal_generator.elf
+----------------End of Script----------------
+
+10:23:36 INFO  : Memory regions updated for context MicroBlaze #0
+10:23:36 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+10:23:36 INFO  : Context for processor 'microblaze_0' is selected.
+10:23:36 INFO  : 'con' command is executed.
+10:23:36 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274533151A"} -index 0
+con
+----------------End of Script----------------
+
+10:23:36 INFO  : Launch script is exported to file 'E:\signal_generator\Mini_System-main\Mini_System.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_signal_generator.elf_on_local.tcl'
+10:24:41 INFO  : Disconnected from the channel tcfchan#21.
+10:24:42 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4 210274533151A" && level==0} -index 0' command is executed.
+10:24:42 INFO  : 'fpga -state' command is executed.
+10:24:42 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:24:42 INFO  : Jtag cable 'Digilent Nexys4 210274533151A' is selected.
+10:24:42 INFO  : 'jtag frequency' command is executed.
+10:24:42 INFO  : Context for processor 'microblaze_0' is selected.
+10:24:42 INFO  : Hardware design information is loaded from 'E:/signal_generator/Mini_System-main/Mini_System.sdk/design_CPU_System_wrapper_hw_platform_0/system.hdf'.
+10:24:42 INFO  : Context for processor 'microblaze_0' is selected.
+10:24:42 INFO  : Processor reset is completed for 'microblaze_0'.
+10:24:42 INFO  : Context for processor 'microblaze_0' is selected.
+10:24:43 INFO  : The application 'E:/signal_generator/Mini_System-main/Mini_System.sdk/signal_generator/Debug/signal_generator.elf' is downloaded to processor 'microblaze_0'.
+10:24:43 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274533151A"} -index 0
+loadhw E:/signal_generator/Mini_System-main/Mini_System.sdk/design_CPU_System_wrapper_hw_platform_0/system.hdf
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274533151A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274533151A"} -index 0
+dow E:/signal_generator/Mini_System-main/Mini_System.sdk/signal_generator/Debug/signal_generator.elf
+----------------End of Script----------------
+
+10:24:43 INFO  : Memory regions updated for context MicroBlaze #0
+10:24:43 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+10:24:43 INFO  : Context for processor 'microblaze_0' is selected.
+10:24:43 INFO  : 'con' command is executed.
+10:24:43 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274533151A"} -index 0
+con
+----------------End of Script----------------
+
+10:24:43 INFO  : Launch script is exported to file 'E:\signal_generator\Mini_System-main\Mini_System.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_signal_generator.elf_on_local.tcl'
+10:40:24 INFO  : Disconnected from the channel tcfchan#22.
+10:40:25 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4 210274533151A" && level==0} -index 0' command is executed.
+10:40:25 INFO  : 'fpga -state' command is executed.
+10:40:25 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:40:25 INFO  : Jtag cable 'Digilent Nexys4 210274533151A' is selected.
+10:40:25 INFO  : 'jtag frequency' command is executed.
+10:40:25 INFO  : Context for processor 'microblaze_0' is selected.
+10:40:25 INFO  : Hardware design information is loaded from 'E:/signal_generator/Mini_System-main/Mini_System.sdk/design_CPU_System_wrapper_hw_platform_0/system.hdf'.
+10:40:25 INFO  : Context for processor 'microblaze_0' is selected.
+10:40:25 INFO  : Processor reset is completed for 'microblaze_0'.
+10:40:25 INFO  : Context for processor 'microblaze_0' is selected.
+10:40:25 INFO  : The application 'E:/signal_generator/Mini_System-main/Mini_System.sdk/signal_generator/Debug/signal_generator.elf' is downloaded to processor 'microblaze_0'.
+10:40:25 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274533151A"} -index 0
+loadhw E:/signal_generator/Mini_System-main/Mini_System.sdk/design_CPU_System_wrapper_hw_platform_0/system.hdf
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274533151A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274533151A"} -index 0
+dow E:/signal_generator/Mini_System-main/Mini_System.sdk/signal_generator/Debug/signal_generator.elf
+----------------End of Script----------------
+
+10:40:25 INFO  : Memory regions updated for context MicroBlaze #0
+10:40:25 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+10:40:25 INFO  : Context for processor 'microblaze_0' is selected.
+10:40:25 INFO  : 'con' command is executed.
+10:40:25 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274533151A"} -index 0
+con
+----------------End of Script----------------
+
+10:40:25 INFO  : Launch script is exported to file 'E:\signal_generator\Mini_System-main\Mini_System.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_signal_generator.elf_on_local.tcl'
+10:41:04 INFO  : Disconnected from the channel tcfchan#23.
+10:41:06 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4 210274533151A" && level==0} -index 0' command is executed.
+10:41:06 INFO  : 'fpga -state' command is executed.
+10:41:06 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:41:06 INFO  : Jtag cable 'Digilent Nexys4 210274533151A' is selected.
+10:41:06 INFO  : 'jtag frequency' command is executed.
+10:41:06 INFO  : Context for processor 'microblaze_0' is selected.
+10:41:06 INFO  : Hardware design information is loaded from 'E:/signal_generator/Mini_System-main/Mini_System.sdk/design_CPU_System_wrapper_hw_platform_0/system.hdf'.
+10:41:06 INFO  : Context for processor 'microblaze_0' is selected.
+10:41:06 INFO  : Processor reset is completed for 'microblaze_0'.
+10:41:06 INFO  : Context for processor 'microblaze_0' is selected.
+10:41:06 INFO  : The application 'E:/signal_generator/Mini_System-main/Mini_System.sdk/signal_generator/Debug/signal_generator.elf' is downloaded to processor 'microblaze_0'.
+10:41:06 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274533151A"} -index 0
+loadhw E:/signal_generator/Mini_System-main/Mini_System.sdk/design_CPU_System_wrapper_hw_platform_0/system.hdf
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274533151A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274533151A"} -index 0
+dow E:/signal_generator/Mini_System-main/Mini_System.sdk/signal_generator/Debug/signal_generator.elf
+----------------End of Script----------------
+
+10:41:06 INFO  : Memory regions updated for context MicroBlaze #0
+10:41:06 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+10:41:06 INFO  : Context for processor 'microblaze_0' is selected.
+10:41:06 INFO  : 'con' command is executed.
+10:41:06 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274533151A"} -index 0
+con
+----------------End of Script----------------
+
+10:41:06 INFO  : Launch script is exported to file 'E:\signal_generator\Mini_System-main\Mini_System.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_signal_generator.elf_on_local.tcl'
+10:42:57 INFO  : Disconnected from the channel tcfchan#24.
+10:42:58 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4 210274533151A" && level==0} -index 0' command is executed.
+10:42:58 INFO  : 'fpga -state' command is executed.
+10:42:58 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:42:59 INFO  : Jtag cable 'Digilent Nexys4 210274533151A' is selected.
+10:42:59 INFO  : 'jtag frequency' command is executed.
+10:42:59 INFO  : Context for processor 'microblaze_0' is selected.
+10:42:59 INFO  : Hardware design information is loaded from 'E:/signal_generator/Mini_System-main/Mini_System.sdk/design_CPU_System_wrapper_hw_platform_0/system.hdf'.
+10:42:59 INFO  : Context for processor 'microblaze_0' is selected.
+10:42:59 INFO  : Processor reset is completed for 'microblaze_0'.
+10:42:59 INFO  : Context for processor 'microblaze_0' is selected.
+10:42:59 INFO  : The application 'E:/signal_generator/Mini_System-main/Mini_System.sdk/signal_generator/Debug/signal_generator.elf' is downloaded to processor 'microblaze_0'.
+10:42:59 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274533151A"} -index 0
+loadhw E:/signal_generator/Mini_System-main/Mini_System.sdk/design_CPU_System_wrapper_hw_platform_0/system.hdf
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274533151A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274533151A"} -index 0
+dow E:/signal_generator/Mini_System-main/Mini_System.sdk/signal_generator/Debug/signal_generator.elf
+----------------End of Script----------------
+
+10:42:59 INFO  : Memory regions updated for context MicroBlaze #0
+10:42:59 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+10:42:59 INFO  : Context for processor 'microblaze_0' is selected.
+10:42:59 INFO  : 'con' command is executed.
+10:42:59 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274533151A"} -index 0
+con
+----------------End of Script----------------
+
+10:42:59 INFO  : Launch script is exported to file 'E:\signal_generator\Mini_System-main\Mini_System.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_signal_generator.elf_on_local.tcl'
+10:46:50 INFO  : Disconnected from the channel tcfchan#25.
+10:46:51 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4 210274533151A" && level==0} -index 0' command is executed.
+10:46:51 INFO  : 'fpga -state' command is executed.
+10:46:51 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:46:51 INFO  : Jtag cable 'Digilent Nexys4 210274533151A' is selected.
+10:46:51 INFO  : 'jtag frequency' command is executed.
+10:46:51 INFO  : Context for processor 'microblaze_0' is selected.
+10:46:51 INFO  : Hardware design information is loaded from 'E:/signal_generator/Mini_System-main/Mini_System.sdk/design_CPU_System_wrapper_hw_platform_0/system.hdf'.
+10:46:51 INFO  : Context for processor 'microblaze_0' is selected.
+10:46:51 INFO  : Processor reset is completed for 'microblaze_0'.
+10:46:51 INFO  : Context for processor 'microblaze_0' is selected.
+10:46:51 INFO  : The application 'E:/signal_generator/Mini_System-main/Mini_System.sdk/signal_generator/Debug/signal_generator.elf' is downloaded to processor 'microblaze_0'.
+10:46:51 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274533151A"} -index 0
+loadhw E:/signal_generator/Mini_System-main/Mini_System.sdk/design_CPU_System_wrapper_hw_platform_0/system.hdf
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274533151A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274533151A"} -index 0
+dow E:/signal_generator/Mini_System-main/Mini_System.sdk/signal_generator/Debug/signal_generator.elf
+----------------End of Script----------------
+
+10:46:51 INFO  : Memory regions updated for context MicroBlaze #0
+10:46:51 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+10:46:52 INFO  : Context for processor 'microblaze_0' is selected.
+10:46:52 INFO  : 'con' command is executed.
+10:46:52 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274533151A"} -index 0
+con
+----------------End of Script----------------
+
+10:46:52 INFO  : Launch script is exported to file 'E:\signal_generator\Mini_System-main\Mini_System.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_signal_generator.elf_on_local.tcl'
+10:56:02 INFO  : Disconnected from the channel tcfchan#26.
+10:56:04 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4 210274533151A" && level==0} -index 0' command is executed.
+10:56:04 INFO  : 'fpga -state' command is executed.
+10:56:04 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:56:04 INFO  : Jtag cable 'Digilent Nexys4 210274533151A' is selected.
+10:56:04 INFO  : 'jtag frequency' command is executed.
+10:56:04 INFO  : Context for processor 'microblaze_0' is selected.
+10:56:04 INFO  : Hardware design information is loaded from 'E:/signal_generator/Mini_System-main/Mini_System.sdk/design_CPU_System_wrapper_hw_platform_0/system.hdf'.
+10:56:04 INFO  : Context for processor 'microblaze_0' is selected.
+10:56:04 INFO  : Processor reset is completed for 'microblaze_0'.
+10:56:04 INFO  : Context for processor 'microblaze_0' is selected.
+10:56:04 INFO  : The application 'E:/signal_generator/Mini_System-main/Mini_System.sdk/signal_generator/Debug/signal_generator.elf' is downloaded to processor 'microblaze_0'.
+10:56:04 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274533151A"} -index 0
+loadhw E:/signal_generator/Mini_System-main/Mini_System.sdk/design_CPU_System_wrapper_hw_platform_0/system.hdf
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274533151A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274533151A"} -index 0
+dow E:/signal_generator/Mini_System-main/Mini_System.sdk/signal_generator/Debug/signal_generator.elf
+----------------End of Script----------------
+
+10:56:04 INFO  : Memory regions updated for context MicroBlaze #0
+10:56:04 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+10:56:04 INFO  : Context for processor 'microblaze_0' is selected.
+10:56:04 INFO  : 'con' command is executed.
+10:56:04 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274533151A"} -index 0
+con
+----------------End of Script----------------
+
+10:56:04 INFO  : Launch script is exported to file 'E:\signal_generator\Mini_System-main\Mini_System.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_signal_generator.elf_on_local.tcl'
+10:58:04 INFO  : Disconnected from the channel tcfchan#27.
+10:58:05 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4 210274533151A" && level==0} -index 0' command is executed.
+10:58:05 INFO  : 'fpga -state' command is executed.
+10:58:05 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:58:05 INFO  : Jtag cable 'Digilent Nexys4 210274533151A' is selected.
+10:58:05 INFO  : 'jtag frequency' command is executed.
+10:58:05 INFO  : Context for processor 'microblaze_0' is selected.
+10:58:05 INFO  : Hardware design information is loaded from 'E:/signal_generator/Mini_System-main/Mini_System.sdk/design_CPU_System_wrapper_hw_platform_0/system.hdf'.
+10:58:05 INFO  : Context for processor 'microblaze_0' is selected.
+10:58:05 INFO  : Processor reset is completed for 'microblaze_0'.
+10:58:05 INFO  : Context for processor 'microblaze_0' is selected.
+10:58:05 INFO  : The application 'E:/signal_generator/Mini_System-main/Mini_System.sdk/signal_generator/Debug/signal_generator.elf' is downloaded to processor 'microblaze_0'.
+10:58:05 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274533151A"} -index 0
+loadhw E:/signal_generator/Mini_System-main/Mini_System.sdk/design_CPU_System_wrapper_hw_platform_0/system.hdf
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274533151A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274533151A"} -index 0
+dow E:/signal_generator/Mini_System-main/Mini_System.sdk/signal_generator/Debug/signal_generator.elf
+----------------End of Script----------------
+
+10:58:05 INFO  : Memory regions updated for context MicroBlaze #0
+10:58:05 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+10:58:05 INFO  : Context for processor 'microblaze_0' is selected.
+10:58:05 INFO  : 'con' command is executed.
+10:58:05 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274533151A"} -index 0
+con
+----------------End of Script----------------
+
+10:58:05 INFO  : Launch script is exported to file 'E:\signal_generator\Mini_System-main\Mini_System.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_signal_generator.elf_on_local.tcl'
+10:58:44 INFO  : Disconnected from the channel tcfchan#28.
+10:58:45 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4 210274533151A" && level==0} -index 0' command is executed.
+10:58:45 INFO  : 'fpga -state' command is executed.
+10:58:45 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:58:46 INFO  : Jtag cable 'Digilent Nexys4 210274533151A' is selected.
+10:58:46 INFO  : 'jtag frequency' command is executed.
+10:58:46 INFO  : Context for processor 'microblaze_0' is selected.
+10:58:46 INFO  : Hardware design information is loaded from 'E:/signal_generator/Mini_System-main/Mini_System.sdk/design_CPU_System_wrapper_hw_platform_0/system.hdf'.
+10:58:46 INFO  : Context for processor 'microblaze_0' is selected.
+10:58:46 INFO  : Processor reset is completed for 'microblaze_0'.
+10:58:46 INFO  : Context for processor 'microblaze_0' is selected.
+10:58:46 INFO  : The application 'E:/signal_generator/Mini_System-main/Mini_System.sdk/signal_generator/Debug/signal_generator.elf' is downloaded to processor 'microblaze_0'.
+10:58:46 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274533151A"} -index 0
+loadhw E:/signal_generator/Mini_System-main/Mini_System.sdk/design_CPU_System_wrapper_hw_platform_0/system.hdf
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274533151A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274533151A"} -index 0
+dow E:/signal_generator/Mini_System-main/Mini_System.sdk/signal_generator/Debug/signal_generator.elf
+----------------End of Script----------------
+
+10:58:46 INFO  : Memory regions updated for context MicroBlaze #0
+10:58:46 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+10:58:46 INFO  : Context for processor 'microblaze_0' is selected.
+10:58:46 INFO  : 'con' command is executed.
+10:58:46 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274533151A"} -index 0
+con
+----------------End of Script----------------
+
+10:58:46 INFO  : Launch script is exported to file 'E:\signal_generator\Mini_System-main\Mini_System.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_signal_generator.elf_on_local.tcl'
+11:02:12 INFO  : Disconnected from the channel tcfchan#29.
+11:02:13 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4 210274533151A" && level==0} -index 0' command is executed.
+11:02:13 INFO  : 'fpga -state' command is executed.
+11:02:13 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:02:13 INFO  : Jtag cable 'Digilent Nexys4 210274533151A' is selected.
+11:02:13 INFO  : 'jtag frequency' command is executed.
+11:02:13 INFO  : Context for processor 'microblaze_0' is selected.
+11:02:13 INFO  : Hardware design information is loaded from 'E:/signal_generator/Mini_System-main/Mini_System.sdk/design_CPU_System_wrapper_hw_platform_0/system.hdf'.
+11:02:13 INFO  : Context for processor 'microblaze_0' is selected.
+11:02:13 INFO  : Processor reset is completed for 'microblaze_0'.
+11:02:13 INFO  : Context for processor 'microblaze_0' is selected.
+11:02:14 INFO  : The application 'E:/signal_generator/Mini_System-main/Mini_System.sdk/signal_generator/Debug/signal_generator.elf' is downloaded to processor 'microblaze_0'.
+11:02:14 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274533151A"} -index 0
+loadhw E:/signal_generator/Mini_System-main/Mini_System.sdk/design_CPU_System_wrapper_hw_platform_0/system.hdf
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274533151A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274533151A"} -index 0
+dow E:/signal_generator/Mini_System-main/Mini_System.sdk/signal_generator/Debug/signal_generator.elf
+----------------End of Script----------------
+
+11:02:14 INFO  : Memory regions updated for context MicroBlaze #0
+11:02:14 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+11:02:14 INFO  : Context for processor 'microblaze_0' is selected.
+11:02:14 INFO  : 'con' command is executed.
+11:02:14 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274533151A"} -index 0
+con
+----------------End of Script----------------
+
+11:02:14 INFO  : Launch script is exported to file 'E:\signal_generator\Mini_System-main\Mini_System.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_signal_generator.elf_on_local.tcl'
+11:02:55 INFO  : Disconnected from the channel tcfchan#30.
+11:09:40 INFO  : Registering command handlers for SDK TCF services
+11:09:40 INFO  : Launching XSCT server: xsct.bat -interactive E:\signal_generator\Mini_System-main\Mini_System.sdk\temp_xsdb_launch_script.tcl
+11:09:41 INFO  : XSCT server has started successfully.
+11:09:41 INFO  : Successfully done setting XSCT server connection channel  
+11:09:41 INFO  : Successfully done setting SDK workspace  
+11:09:41 INFO  : Processing command line option -hwspec E:/signal_generator/Mini_System-main/Mini_System.sdk/design_CPU_System_wrapper.hdf.
+11:09:41 INFO  : Checking for hwspec changes in the project design_CPU_System_wrapper_hw_platform_2.
+11:25:30 INFO  : Registering command handlers for SDK TCF services
+11:25:30 INFO  : Launching XSCT server: xsct.bat -interactive E:\signal_generator\Mini_System-main\Mini_System.sdk\temp_xsdb_launch_script.tcl
+11:25:32 INFO  : XSCT server has started successfully.
+11:25:32 INFO  : Successfully done setting XSCT server connection channel  
+11:25:32 INFO  : Successfully done setting SDK workspace  
+11:25:32 INFO  : Processing command line option -hwspec E:/signal_generator/Mini_System-main/Mini_System.sdk/design_CPU_System_wrapper.hdf.
+11:25:32 INFO  : Checking for hwspec changes in the project design_CPU_System_wrapper_hw_platform_2.
+11:32:24 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:32:28 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4 210274533151A" && level==0} -index 0' command is executed.
+11:32:31 INFO  : FPGA configured successfully with bitstream "E:/signal_generator/Mini_System-main/Mini_System.sdk/design_CPU_System_wrapper_hw_platform_0/download.bit"
+11:36:22 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4 210274533151A" && level==0} -index 0' command is executed.
+11:36:23 INFO  : 'fpga -state' command is executed.
+11:36:23 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:36:38 INFO  : Jtag cable 'Digilent Nexys4 210274533151A' is selected.
+11:36:38 INFO  : 'jtag frequency' command is executed.
+11:36:38 INFO  : Context for processor 'microblaze_0' is selected.
+11:36:38 INFO  : Hardware design information is loaded from 'E:/signal_generator/Mini_System-main/Mini_System.sdk/design_CPU_System_wrapper_hw_platform_0/system.hdf'.
+11:36:38 INFO  : Context for processor 'microblaze_0' is selected.
+11:36:38 INFO  : Processor reset is completed for 'microblaze_0'.
+11:36:38 INFO  : Context for processor 'microblaze_0' is selected.
+11:36:38 INFO  : The application 'E:/signal_generator/Mini_System-main/Mini_System.sdk/signal_generator/Debug/signal_generator.elf' is downloaded to processor 'microblaze_0'.
+11:36:38 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274533151A"} -index 0
+loadhw E:/signal_generator/Mini_System-main/Mini_System.sdk/design_CPU_System_wrapper_hw_platform_0/system.hdf
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274533151A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274533151A"} -index 0
+dow E:/signal_generator/Mini_System-main/Mini_System.sdk/signal_generator/Debug/signal_generator.elf
+----------------End of Script----------------
+
+11:36:38 INFO  : Memory regions updated for context MicroBlaze #0
+11:36:38 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+11:36:38 INFO  : Context for processor 'microblaze_0' is selected.
+11:36:38 INFO  : 'con' command is executed.
+11:36:38 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274533151A"} -index 0
+con
+----------------End of Script----------------
+
+11:36:38 INFO  : Launch script is exported to file 'E:\signal_generator\Mini_System-main\Mini_System.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_signal_generator.elf_on_local.tcl'
+12:03:48 INFO  : Disconnected from the channel tcfchan#1.
+12:03:53 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4 210274533151A" && level==0} -index 0' command is executed.
+12:03:53 INFO  : 'fpga -state' command is executed.
+12:03:53 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:04:08 INFO  : Jtag cable 'Digilent Nexys4 210274533151A' is selected.
+12:04:08 INFO  : 'jtag frequency' command is executed.
+12:04:08 INFO  : Context for processor 'microblaze_0' is selected.
+12:04:08 INFO  : Hardware design information is loaded from 'E:/signal_generator/Mini_System-main/Mini_System.sdk/design_CPU_System_wrapper_hw_platform_0/system.hdf'.
+12:04:08 INFO  : Context for processor 'microblaze_0' is selected.
+12:04:08 INFO  : Processor reset is completed for 'microblaze_0'.
+12:04:09 INFO  : Context for processor 'microblaze_0' is selected.
+12:04:09 INFO  : The application 'E:/signal_generator/Mini_System-main/Mini_System.sdk/signal_generator/Debug/signal_generator.elf' is downloaded to processor 'microblaze_0'.
+12:04:09 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274533151A"} -index 0
+loadhw E:/signal_generator/Mini_System-main/Mini_System.sdk/design_CPU_System_wrapper_hw_platform_0/system.hdf
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274533151A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274533151A"} -index 0
+dow E:/signal_generator/Mini_System-main/Mini_System.sdk/signal_generator/Debug/signal_generator.elf
+----------------End of Script----------------
+
+12:04:09 INFO  : Memory regions updated for context MicroBlaze #0
+12:04:09 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+12:04:09 INFO  : Context for processor 'microblaze_0' is selected.
+12:04:09 INFO  : 'con' command is executed.
+12:04:09 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274533151A"} -index 0
+con
+----------------End of Script----------------
+
+12:04:09 INFO  : Launch script is exported to file 'E:\signal_generator\Mini_System-main\Mini_System.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_signal_generator.elf_on_local.tcl'
+12:13:27 INFO  : Disconnected from the channel tcfchan#2.
+19:25:28 INFO  : Registering command handlers for SDK TCF services
+19:25:28 INFO  : Launching XSCT server: xsct.bat -interactive E:\signal_generator\Mini_System-main\Mini_System.sdk\temp_xsdb_launch_script.tcl
+19:25:31 INFO  : XSCT server has started successfully.
+19:25:31 INFO  : Successfully done setting XSCT server connection channel  
+19:25:31 INFO  : Successfully done setting SDK workspace  
+19:25:31 INFO  : Processing command line option -hwspec E:/signal_generator/Mini_System-main/Mini_System.sdk/design_CPU_System_wrapper.hdf.
+19:25:31 INFO  : Checking for hwspec changes in the project design_CPU_System_wrapper_hw_platform_2.
+19:26:46 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+19:26:47 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4 210274533151A" && level==0} -index 0' command is executed.
+19:26:49 INFO  : FPGA configured successfully with bitstream "E:/signal_generator/Mini_System-main/Mini_System.sdk/design_CPU_System_wrapper_hw_platform_0/download.bit"
+19:29:36 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4 210274533151A" && level==0} -index 0' command is executed.
+19:29:36 INFO  : 'fpga -state' command is executed.
+19:29:36 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+19:29:37 INFO  : Jtag cable 'Digilent Nexys4 210274533151A' is selected.
+19:29:37 INFO  : 'jtag frequency' command is executed.
+19:29:37 INFO  : Context for processor 'microblaze_0' is selected.
+19:29:37 INFO  : Hardware design information is loaded from 'E:/signal_generator/Mini_System-main/Mini_System.sdk/design_CPU_System_wrapper_hw_platform_0/system.hdf'.
+19:29:37 INFO  : Context for processor 'microblaze_0' is selected.
+19:29:37 INFO  : Processor reset is completed for 'microblaze_0'.
+19:29:37 INFO  : Context for processor 'microblaze_0' is selected.
+19:29:37 INFO  : The application 'E:/signal_generator/Mini_System-main/Mini_System.sdk/signal_generator/Debug/signal_generator.elf' is downloaded to processor 'microblaze_0'.
+19:29:37 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274533151A"} -index 0
+loadhw E:/signal_generator/Mini_System-main/Mini_System.sdk/design_CPU_System_wrapper_hw_platform_0/system.hdf
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274533151A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274533151A"} -index 0
+dow E:/signal_generator/Mini_System-main/Mini_System.sdk/signal_generator/Debug/signal_generator.elf
+----------------End of Script----------------
+
+19:29:37 INFO  : Memory regions updated for context MicroBlaze #0
+19:29:37 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+19:29:37 INFO  : Context for processor 'microblaze_0' is selected.
+19:29:37 INFO  : 'con' command is executed.
+19:29:37 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274533151A"} -index 0
+con
+----------------End of Script----------------
+
+19:29:37 INFO  : Launch script is exported to file 'E:\signal_generator\Mini_System-main\Mini_System.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_signal_generator.elf_on_local.tcl'
+19:29:51 INFO  : Disconnected from the channel tcfchan#1.
+19:29:52 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4 210274533151A" && level==0} -index 0' command is executed.
+19:29:52 INFO  : 'fpga -state' command is executed.
+19:29:52 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+19:29:53 INFO  : Jtag cable 'Digilent Nexys4 210274533151A' is selected.
+19:29:53 INFO  : 'jtag frequency' command is executed.
+19:29:53 INFO  : Context for processor 'microblaze_0' is selected.
+19:29:53 INFO  : Hardware design information is loaded from 'E:/signal_generator/Mini_System-main/Mini_System.sdk/design_CPU_System_wrapper_hw_platform_0/system.hdf'.
+19:29:53 INFO  : Context for processor 'microblaze_0' is selected.
+19:29:53 INFO  : Processor reset is completed for 'microblaze_0'.
+19:29:53 INFO  : Context for processor 'microblaze_0' is selected.
+19:29:53 INFO  : The application 'E:/signal_generator/Mini_System-main/Mini_System.sdk/signal_generator/Debug/signal_generator.elf' is downloaded to processor 'microblaze_0'.
+19:29:53 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274533151A"} -index 0
+loadhw E:/signal_generator/Mini_System-main/Mini_System.sdk/design_CPU_System_wrapper_hw_platform_0/system.hdf
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274533151A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274533151A"} -index 0
+dow E:/signal_generator/Mini_System-main/Mini_System.sdk/signal_generator/Debug/signal_generator.elf
+----------------End of Script----------------
+
+19:29:53 INFO  : Memory regions updated for context MicroBlaze #0
+19:29:53 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+19:29:53 INFO  : Context for processor 'microblaze_0' is selected.
+19:29:53 INFO  : 'con' command is executed.
+19:29:53 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274533151A"} -index 0
+con
+----------------End of Script----------------
+
+19:29:53 INFO  : Launch script is exported to file 'E:\signal_generator\Mini_System-main\Mini_System.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_signal_generator.elf_on_local.tcl'
+19:34:09 INFO  : Disconnected from the channel tcfchan#2.
+19:34:10 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4 210274533151A" && level==0} -index 0' command is executed.
+19:34:10 INFO  : 'fpga -state' command is executed.
+19:34:10 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+19:34:10 INFO  : Jtag cable 'Digilent Nexys4 210274533151A' is selected.
+19:34:10 INFO  : 'jtag frequency' command is executed.
+19:34:10 INFO  : Context for processor 'microblaze_0' is selected.
+19:34:10 INFO  : Hardware design information is loaded from 'E:/signal_generator/Mini_System-main/Mini_System.sdk/design_CPU_System_wrapper_hw_platform_0/system.hdf'.
+19:34:10 INFO  : Context for processor 'microblaze_0' is selected.
+19:34:11 INFO  : Processor reset is completed for 'microblaze_0'.
+19:34:11 INFO  : Context for processor 'microblaze_0' is selected.
+19:34:11 INFO  : The application 'E:/signal_generator/Mini_System-main/Mini_System.sdk/signal_generator/Debug/signal_generator.elf' is downloaded to processor 'microblaze_0'.
+19:34:11 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274533151A"} -index 0
+loadhw E:/signal_generator/Mini_System-main/Mini_System.sdk/design_CPU_System_wrapper_hw_platform_0/system.hdf
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274533151A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274533151A"} -index 0
+dow E:/signal_generator/Mini_System-main/Mini_System.sdk/signal_generator/Debug/signal_generator.elf
+----------------End of Script----------------
+
+19:34:11 INFO  : Memory regions updated for context MicroBlaze #0
+19:34:11 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+19:34:11 INFO  : Context for processor 'microblaze_0' is selected.
+19:34:11 INFO  : 'con' command is executed.
+19:34:11 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274533151A"} -index 0
+con
+----------------End of Script----------------
+
+19:34:11 INFO  : Launch script is exported to file 'E:\signal_generator\Mini_System-main\Mini_System.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_signal_generator.elf_on_local.tcl'
+19:40:17 INFO  : Disconnected from the channel tcfchan#3.
+19:40:18 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4 210274533151A" && level==0} -index 0' command is executed.
+19:40:18 INFO  : 'fpga -state' command is executed.
+19:40:18 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+19:40:18 INFO  : Jtag cable 'Digilent Nexys4 210274533151A' is selected.
+19:40:18 INFO  : 'jtag frequency' command is executed.
+19:40:18 INFO  : Context for processor 'microblaze_0' is selected.
+19:40:18 INFO  : Hardware design information is loaded from 'E:/signal_generator/Mini_System-main/Mini_System.sdk/design_CPU_System_wrapper_hw_platform_0/system.hdf'.
+19:40:18 INFO  : Context for processor 'microblaze_0' is selected.
+19:40:18 INFO  : Processor reset is completed for 'microblaze_0'.
+19:40:18 INFO  : Context for processor 'microblaze_0' is selected.
+19:40:19 INFO  : The application 'E:/signal_generator/Mini_System-main/Mini_System.sdk/signal_generator/Debug/signal_generator.elf' is downloaded to processor 'microblaze_0'.
+19:40:19 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274533151A"} -index 0
+loadhw E:/signal_generator/Mini_System-main/Mini_System.sdk/design_CPU_System_wrapper_hw_platform_0/system.hdf
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274533151A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274533151A"} -index 0
+dow E:/signal_generator/Mini_System-main/Mini_System.sdk/signal_generator/Debug/signal_generator.elf
+----------------End of Script----------------
+
+19:40:19 INFO  : Memory regions updated for context MicroBlaze #0
+19:40:19 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+19:40:19 INFO  : Context for processor 'microblaze_0' is selected.
+19:40:19 INFO  : 'con' command is executed.
+19:40:19 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274533151A"} -index 0
+con
+----------------End of Script----------------
+
+19:40:19 INFO  : Launch script is exported to file 'E:\signal_generator\Mini_System-main\Mini_System.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_signal_generator.elf_on_local.tcl'
+19:44:43 INFO  : Disconnected from the channel tcfchan#4.
+19:44:44 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4 210274533151A" && level==0} -index 0' command is executed.
+19:44:44 INFO  : 'fpga -state' command is executed.
+19:44:44 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+19:44:44 INFO  : Jtag cable 'Digilent Nexys4 210274533151A' is selected.
+19:44:44 INFO  : 'jtag frequency' command is executed.
+19:44:44 INFO  : Context for processor 'microblaze_0' is selected.
+19:44:44 INFO  : Hardware design information is loaded from 'E:/signal_generator/Mini_System-main/Mini_System.sdk/design_CPU_System_wrapper_hw_platform_0/system.hdf'.
+19:44:44 INFO  : Context for processor 'microblaze_0' is selected.
+19:44:44 INFO  : Processor reset is completed for 'microblaze_0'.
+19:44:44 INFO  : Context for processor 'microblaze_0' is selected.
+19:44:44 INFO  : The application 'E:/signal_generator/Mini_System-main/Mini_System.sdk/signal_generator/Debug/signal_generator.elf' is downloaded to processor 'microblaze_0'.
+19:44:44 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274533151A"} -index 0
+loadhw E:/signal_generator/Mini_System-main/Mini_System.sdk/design_CPU_System_wrapper_hw_platform_0/system.hdf
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274533151A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274533151A"} -index 0
+dow E:/signal_generator/Mini_System-main/Mini_System.sdk/signal_generator/Debug/signal_generator.elf
+----------------End of Script----------------
+
+19:44:44 INFO  : Memory regions updated for context MicroBlaze #0
+19:44:44 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+19:44:44 INFO  : Context for processor 'microblaze_0' is selected.
+19:44:44 INFO  : 'con' command is executed.
+19:44:44 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274533151A"} -index 0
+con
+----------------End of Script----------------
+
+19:44:44 INFO  : Launch script is exported to file 'E:\signal_generator\Mini_System-main\Mini_System.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_signal_generator.elf_on_local.tcl'
+19:45:44 INFO  : Disconnected from the channel tcfchan#5.
+19:45:45 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4 210274533151A" && level==0} -index 0' command is executed.
+19:45:45 INFO  : 'fpga -state' command is executed.
+19:45:45 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+19:45:45 INFO  : Jtag cable 'Digilent Nexys4 210274533151A' is selected.
+19:45:45 INFO  : 'jtag frequency' command is executed.
+19:45:45 INFO  : Context for processor 'microblaze_0' is selected.
+19:45:45 INFO  : Hardware design information is loaded from 'E:/signal_generator/Mini_System-main/Mini_System.sdk/design_CPU_System_wrapper_hw_platform_0/system.hdf'.
+19:45:45 INFO  : Context for processor 'microblaze_0' is selected.
+19:45:45 INFO  : Processor reset is completed for 'microblaze_0'.
+19:45:45 INFO  : Context for processor 'microblaze_0' is selected.
+19:45:45 INFO  : The application 'E:/signal_generator/Mini_System-main/Mini_System.sdk/signal_generator/Debug/signal_generator.elf' is downloaded to processor 'microblaze_0'.
+19:45:45 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274533151A"} -index 0
+loadhw E:/signal_generator/Mini_System-main/Mini_System.sdk/design_CPU_System_wrapper_hw_platform_0/system.hdf
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274533151A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274533151A"} -index 0
+dow E:/signal_generator/Mini_System-main/Mini_System.sdk/signal_generator/Debug/signal_generator.elf
+----------------End of Script----------------
+
+19:45:45 INFO  : Memory regions updated for context MicroBlaze #0
+19:45:45 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+19:45:45 INFO  : Context for processor 'microblaze_0' is selected.
+19:45:45 INFO  : 'con' command is executed.
+19:45:45 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274533151A"} -index 0
+con
+----------------End of Script----------------
+
+19:45:45 INFO  : Launch script is exported to file 'E:\signal_generator\Mini_System-main\Mini_System.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_signal_generator.elf_on_local.tcl'
+19:46:41 INFO  : Disconnected from the channel tcfchan#6.
+19:46:42 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4 210274533151A" && level==0} -index 0' command is executed.
+19:46:42 INFO  : 'fpga -state' command is executed.
+19:46:42 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+19:46:42 INFO  : Jtag cable 'Digilent Nexys4 210274533151A' is selected.
+19:46:42 INFO  : 'jtag frequency' command is executed.
+19:46:42 INFO  : Context for processor 'microblaze_0' is selected.
+19:46:42 INFO  : Hardware design information is loaded from 'E:/signal_generator/Mini_System-main/Mini_System.sdk/design_CPU_System_wrapper_hw_platform_0/system.hdf'.
+19:46:42 INFO  : Context for processor 'microblaze_0' is selected.
+19:46:42 INFO  : Processor reset is completed for 'microblaze_0'.
+19:46:42 INFO  : Context for processor 'microblaze_0' is selected.
+19:46:43 INFO  : The application 'E:/signal_generator/Mini_System-main/Mini_System.sdk/signal_generator/Debug/signal_generator.elf' is downloaded to processor 'microblaze_0'.
+19:46:43 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274533151A"} -index 0
+loadhw E:/signal_generator/Mini_System-main/Mini_System.sdk/design_CPU_System_wrapper_hw_platform_0/system.hdf
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274533151A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274533151A"} -index 0
+dow E:/signal_generator/Mini_System-main/Mini_System.sdk/signal_generator/Debug/signal_generator.elf
+----------------End of Script----------------
+
+19:46:43 INFO  : Memory regions updated for context MicroBlaze #0
+19:46:43 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+19:46:43 INFO  : Context for processor 'microblaze_0' is selected.
+19:46:43 INFO  : 'con' command is executed.
+19:46:43 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274533151A"} -index 0
+con
+----------------End of Script----------------
+
+19:46:43 INFO  : Launch script is exported to file 'E:\signal_generator\Mini_System-main\Mini_System.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_signal_generator.elf_on_local.tcl'
+19:53:07 INFO  : Disconnected from the channel tcfchan#7.
+19:53:08 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4 210274533151A" && level==0} -index 0' command is executed.
+19:53:08 INFO  : 'fpga -state' command is executed.
+19:53:08 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+19:53:09 INFO  : Jtag cable 'Digilent Nexys4 210274533151A' is selected.
+19:53:09 INFO  : 'jtag frequency' command is executed.
+19:53:09 INFO  : Context for processor 'microblaze_0' is selected.
+19:53:09 INFO  : Hardware design information is loaded from 'E:/signal_generator/Mini_System-main/Mini_System.sdk/design_CPU_System_wrapper_hw_platform_0/system.hdf'.
+19:53:09 INFO  : Context for processor 'microblaze_0' is selected.
+19:53:09 INFO  : Processor reset is completed for 'microblaze_0'.
+19:53:09 INFO  : Context for processor 'microblaze_0' is selected.
+19:53:09 INFO  : The application 'E:/signal_generator/Mini_System-main/Mini_System.sdk/signal_generator/Debug/signal_generator.elf' is downloaded to processor 'microblaze_0'.
+19:53:09 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274533151A"} -index 0
+loadhw E:/signal_generator/Mini_System-main/Mini_System.sdk/design_CPU_System_wrapper_hw_platform_0/system.hdf
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274533151A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274533151A"} -index 0
+dow E:/signal_generator/Mini_System-main/Mini_System.sdk/signal_generator/Debug/signal_generator.elf
+----------------End of Script----------------
+
+19:53:09 INFO  : Memory regions updated for context MicroBlaze #0
+19:53:09 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+19:53:09 INFO  : Context for processor 'microblaze_0' is selected.
+19:53:09 INFO  : 'con' command is executed.
+19:53:09 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274533151A"} -index 0
+con
+----------------End of Script----------------
+
+19:53:09 INFO  : Launch script is exported to file 'E:\signal_generator\Mini_System-main\Mini_System.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_signal_generator.elf_on_local.tcl'
+20:04:33 INFO  : Disconnected from the channel tcfchan#8.

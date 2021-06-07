@@ -11,9 +11,9 @@ echo "Please update the PATH and LD_LIBRARY_PATH variables below, before executi
 exit
 
 if [ -z "$PATH" ]; then
-  PATH=D:/Vivado/Xilinx_Vivado_SDK_2016.4_1215_1/SDK/2016.4/bin;D:/Vivado/Xilinx_Vivado_SDK_2016.4_1215_1/Vivado/2016.4/ids_lite/ISE/bin/nt64;D:/Vivado/Xilinx_Vivado_SDK_2016.4_1215_1/Vivado/2016.4/ids_lite/ISE/lib/nt64:D:/Vivado/Xilinx_Vivado_SDK_2016.4_1215_1/Vivado/2016.4/bin
+  PATH=C:/Xilinx/SDK/2016.4/bin;C:/Xilinx/Vivado/2016.4/ids_lite/ISE/bin/nt64;C:/Xilinx/Vivado/2016.4/ids_lite/ISE/lib/nt64:C:/Xilinx/Vivado/2016.4/bin
 else
-  PATH=D:/Vivado/Xilinx_Vivado_SDK_2016.4_1215_1/SDK/2016.4/bin;D:/Vivado/Xilinx_Vivado_SDK_2016.4_1215_1/Vivado/2016.4/ids_lite/ISE/bin/nt64;D:/Vivado/Xilinx_Vivado_SDK_2016.4_1215_1/Vivado/2016.4/ids_lite/ISE/lib/nt64:D:/Vivado/Xilinx_Vivado_SDK_2016.4_1215_1/Vivado/2016.4/bin:$PATH
+  PATH=C:/Xilinx/SDK/2016.4/bin;C:/Xilinx/Vivado/2016.4/ids_lite/ISE/bin/nt64;C:/Xilinx/Vivado/2016.4/ids_lite/ISE/lib/nt64:C:/Xilinx/Vivado/2016.4/bin:$PATH
 fi
 export PATH
 
@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='D:/Vivado/digital_circuits/Mini_System/Mini_System.runs/synth_1'
+HD_PWD='E:/signal_generator/Mini_System-main/Mini_System.runs/synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

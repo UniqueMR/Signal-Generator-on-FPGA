@@ -2,12 +2,19 @@
 # Vivado v2016.4 (64-bit)
 # SW Build 1733598 on Wed Dec 14 22:35:39 MST 2016
 # IP Build 1731160 on Wed Dec 14 23:47:21 MST 2016
-# Start of session at: Sun May 30 10:40:40 2021
-# Process ID: 3988
-# Current directory: C:/vivado/project/Mini_System
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent3100 C:\vivado\project\Mini_System\Mini_System.xpr
-# Log file: C:/vivado/project/Mini_System/vivado.log
-# Journal file: C:/vivado/project/Mini_System\vivado.jou
+# Start of session at: Mon Jun 07 08:31:05 2021
+# Process ID: 17064
+# Current directory: E:/signal_generator/Mini_System-main
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent6908 E:\signal_generator\Mini_System-main\Mini_System.xpr
+# Log file: E:/signal_generator/Mini_System-main/vivado.log
+# Journal file: E:/signal_generator/Mini_System-main\vivado.jou
 #-----------------------------------------------------------
 start_gui
-open_project C:/vivado/project/Mini_System/Mini_System.xpr
+open_project E:/signal_generator/Mini_System-main/Mini_System.xpr
+open_bd_design {E:/signal_generator/Mini_System-main/Mini_System.srcs/sources_1/bd/design_CPU_System/design_CPU_System.bd}
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+file copy -force E:/signal_generator/Mini_System-main/Mini_System.runs/impl_1/design_CPU_System_wrapper.sysdef E:/signal_generator/Mini_System-main/Mini_System.sdk/design_CPU_System_wrapper.hdf
+
+launch_sdk -workspace E:/signal_generator/Mini_System-main/Mini_System.sdk -hwspec E:/signal_generator/Mini_System-main/Mini_System.sdk/design_CPU_System_wrapper.hdf

@@ -6,9 +6,12 @@
  */
 #include "include.hpp"
 
-void square_wave(int &volt,int &edge,int &counter)
+const int counter0_initial = 4095;
+
+void square_wave(int &volt,int &edge,int &counter,int &freq_change,int &volt_set)
 {
-	if(counter >= 0xfff)
+	const int counter_max = counter0_initial * 1000 / freq_change;
+	if(counter >= counter_max)
 	{
 		if(edge == 1)
 			edge = 0;
@@ -17,7 +20,7 @@ void square_wave(int &volt,int &edge,int &counter)
 		counter = 0;
 	}
 	if(edge == 0)
-		volt = 0xfff;
+		volt = 4095 * volt_set/333;
 	else
 		volt = 0;
 	counter++;

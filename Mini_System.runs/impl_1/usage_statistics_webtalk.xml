@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<webTalkData  fileName='usage_statistics_webtalk.xml'  majorVersion='1' minorVersion='0' timeStamp='Wed May 26 18:08:18 2021'>
+<webTalkData  fileName='usage_statistics_webtalk.xml'  majorVersion='1' minorVersion='0' timeStamp='Mon Jun 07 08:36:39 2021'>
 <section name="__ROOT__" level="0" order="1" description="">
  <section name="software_version_and_target_device" level="1" order="1" description="">
   <keyValuePair key="beta" value="FALSE" description="" />
   <keyValuePair key="build_version" value="1733598" description="" />
-  <keyValuePair key="date_generated" value="Wed May 26 18:08:16 2021" description="" />
+  <keyValuePair key="date_generated" value="Mon Jun 07 08:36:36 2021" description="" />
   <keyValuePair key="os_platform" value="WIN64" description="" />
   <keyValuePair key="product_version" value="Vivado v2016.4 (64-bit)" description="" />
   <keyValuePair key="project_id" value="c031e540b3f8445299fb3aee13609953" description="" />
-  <keyValuePair key="project_iteration" value="5" description="" />
-  <keyValuePair key="random_id" value="5b8b61dd-d8f0-4286-bacb-7394033a9de1" description="" />
-  <keyValuePair key="registration_id" value="5b8b61dd-d8f0-4286-bacb-7394033a9de1" description="" />
+  <keyValuePair key="project_iteration" value="6" description="" />
+  <keyValuePair key="random_id" value="b737ec92-c1af-4e24-992f-b13f48b180e6" description="" />
+  <keyValuePair key="registration_id" value="b737ec92-c1af-4e24-992f-b13f48b180e6" description="" />
   <keyValuePair key="route_design" value="TRUE" description="" />
   <keyValuePair key="target_device" value="xc7a100t" description="" />
   <keyValuePair key="target_family" value="artix7" description="" />
@@ -19,12 +19,12 @@
   <keyValuePair key="tool_flow" value="Vivado" description="" />
  </section>
  <section name="user_environment" level="1" order="2" description="">
-  <keyValuePair key="cpu_name" value="Intel(R) Core(TM) i7-9750H CPU @ 2.60GHz" description="" />
-  <keyValuePair key="cpu_speed" value="2592 MHz" description="" />
+  <keyValuePair key="cpu_name" value="AMD Ryzen 5 3600 6-Core Processor              " description="" />
+  <keyValuePair key="cpu_speed" value="3600 MHz" description="" />
   <keyValuePair key="os_name" value="Microsoft Windows 8 or later , 64-bit" description="" />
   <keyValuePair key="os_release" value="major release  (build 9200)" description="" />
-  <keyValuePair key="system_ram" value="8.000 GB" description="" />
-  <keyValuePair key="total_processors" value="1" description="" />
+  <keyValuePair key="system_ram" value="17.000 GB" description="" />
+  <keyValuePair key="total_processors" value="2" description="" />
  </section>
  <section name="ip_statistics" level="1" order="3" description="">
   <section name="IP_Integrator/1" level="2" order="1" description="">
@@ -9345,7 +9345,7 @@
    <keyValuePair key="output_load" value="5.000000" description="" />
    <keyValuePair key="output_toggle" value="12.500000" description="" />
    <keyValuePair key="package" value="csg324" description="" />
-   <keyValuePair key="pct_clock_constrained" value="5.000000" description="" />
+   <keyValuePair key="pct_clock_constrained" value="6.000000" description="" />
    <keyValuePair key="pct_inputs_defined" value="1" description="" />
    <keyValuePair key="platform" value="nt64" description="" />
    <keyValuePair key="process" value="typical" description="" />
@@ -9742,10 +9742,10 @@
    <keyValuePair key="-verilog_define" value="default::[not_specified]" description="" />
   </section>
   <section name="usage" level="2" order="2" description="">
-   <keyValuePair key="elapsed" value="00:00:22s" description="" />
+   <keyValuePair key="elapsed" value="00:00:21s" description="" />
    <keyValuePair key="hls_ip" value="0" description="" />
-   <keyValuePair key="memory_gain" value="415.410MB" description="" />
-   <keyValuePair key="memory_peak" value="785.586MB" description="" />
+   <keyValuePair key="memory_gain" value="416.516MB" description="" />
+   <keyValuePair key="memory_peak" value="786.414MB" description="" />
   </section>
  </section>
  <section name="unisim_transformation" level="1" order="11" description="">
@@ -9819,16 +9819,16 @@
    <keyValuePair key="autoconnectport" value="6" description="" />
    <keyValuePair key="createblockdesign" value="1" description="" />
    <keyValuePair key="createtophdl" value="1" description="" />
-   <keyValuePair key="customizersbblock" value="55" description="" />
+   <keyValuePair key="customizersbblock" value="56" description="" />
    <keyValuePair key="editdelete" value="4" description="" />
    <keyValuePair key="editproperties" value="1" description="" />
    <keyValuePair key="editredo" value="3" description="" />
    <keyValuePair key="editundo" value="3" description="" />
-   <keyValuePair key="newexporthardware" value="6" description="" />
-   <keyValuePair key="newlaunchhardware" value="12" description="" />
+   <keyValuePair key="newexporthardware" value="8" description="" />
+   <keyValuePair key="newlaunchhardware" value="16" description="" />
    <keyValuePair key="newproject" value="1" description="" />
    <keyValuePair key="projectsettingscmdhandler" value="3" description="" />
-   <keyValuePair key="runbitgen" value="9" description="" />
+   <keyValuePair key="runbitgen" value="10" description="" />
    <keyValuePair key="savedesign" value="3" description="" />
    <keyValuePair key="saversbdesign" value="9" description="" />
    <keyValuePair key="showview" value="2" description="" />
@@ -9836,11 +9836,11 @@
    <keyValuePair key="validatersbdesign" value="4" description="" />
    <keyValuePair key="viewtaskrtlanalysis" value="5" description="" />
    <keyValuePair key="zoomfit" value="16" description="" />
-   <keyValuePair key="zoomin" value="40" description="" />
+   <keyValuePair key="zoomin" value="43" description="" />
    <keyValuePair key="zoomout" value="13" description="" />
   </section>
   <section name="other_data" level="2" order="2" description="">
-   <keyValuePair key="guimode" value="6" description="" />
+   <keyValuePair key="guimode" value="10" description="" />
   </section>
   <section name="project_data" level="2" order="3" description="">
    <keyValuePair key="constraintsetcount" value="2" description="" />

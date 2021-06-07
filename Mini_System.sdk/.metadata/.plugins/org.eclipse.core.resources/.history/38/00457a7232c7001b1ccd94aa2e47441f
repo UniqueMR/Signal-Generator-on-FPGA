@@ -1,0 +1,28 @@
+/*
+ * include.hpp
+ *
+ *  Created on: 2021Äê5ÔÂ31ÈÕ
+ *      Author: Unique MR
+ */
+
+#ifndef SRC_INCLUDE_HPP_
+#define SRC_INCLUDE_HPP_
+
+
+#include "xil_io.h"
+#include "stdio.h"
+#include "xgpio_l.h"
+#include "xtmrctr_l.h"
+#include "xintc_l.h"
+#include"xspi_l.h"
+
+#define RESET_VALUE 10000
+
+void SwitchHandler();
+void Seg_TimerCounterHandler();
+void DA_Transformer(short control);
+void My_ISR() __attribute__ ((interrupt_handler));
+
+
+
+#endif /* SRC_INCLUDE_HPP_ */

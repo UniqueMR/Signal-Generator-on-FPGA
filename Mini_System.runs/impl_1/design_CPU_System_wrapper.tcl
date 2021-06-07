@@ -53,125 +53,125 @@ set rc [catch {
   set_property board_part digilentinc.com:nexys4:part0:1.1 [current_project]
   set_property design_mode GateLvl [current_fileset]
   set_param project.singleFileAddWarning.threshold 0
-  set_property webtalk.parent_dir D:/Vivado/digital_circuits/Mini_System/Mini_System.cache/wt [current_project]
-  set_property parent.project_path D:/Vivado/digital_circuits/Mini_System/Mini_System.xpr [current_project]
-  set_property ip_output_repo D:/Vivado/digital_circuits/Mini_System/Mini_System.cache/ip [current_project]
+  set_property webtalk.parent_dir E:/signal_generator/Mini_System-main/Mini_System.cache/wt [current_project]
+  set_property parent.project_path E:/signal_generator/Mini_System-main/Mini_System.xpr [current_project]
+  set_property ip_output_repo E:/signal_generator/Mini_System-main/Mini_System.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]
   set_property XPM_LIBRARIES {XPM_CDC XPM_MEMORY} [current_project]
-  add_files -quiet D:/Vivado/digital_circuits/Mini_System/Mini_System.runs/synth_1/design_CPU_System_wrapper.dcp
-  add_files -quiet d:/Vivado/digital_circuits/Mini_System/Mini_System.srcs/sources_1/bd/design_CPU_System/ip/design_CPU_System_microblaze_0_0/design_CPU_System_microblaze_0_0.dcp
-  set_property netlist_only true [get_files d:/Vivado/digital_circuits/Mini_System/Mini_System.srcs/sources_1/bd/design_CPU_System/ip/design_CPU_System_microblaze_0_0/design_CPU_System_microblaze_0_0.dcp]
-  add_files -quiet d:/Vivado/digital_circuits/Mini_System/Mini_System.srcs/sources_1/bd/design_CPU_System/ip/design_CPU_System_dlmb_v10_0/design_CPU_System_dlmb_v10_0.dcp
-  set_property netlist_only true [get_files d:/Vivado/digital_circuits/Mini_System/Mini_System.srcs/sources_1/bd/design_CPU_System/ip/design_CPU_System_dlmb_v10_0/design_CPU_System_dlmb_v10_0.dcp]
-  add_files -quiet d:/Vivado/digital_circuits/Mini_System/Mini_System.srcs/sources_1/bd/design_CPU_System/ip/design_CPU_System_ilmb_v10_0/design_CPU_System_ilmb_v10_0.dcp
-  set_property netlist_only true [get_files d:/Vivado/digital_circuits/Mini_System/Mini_System.srcs/sources_1/bd/design_CPU_System/ip/design_CPU_System_ilmb_v10_0/design_CPU_System_ilmb_v10_0.dcp]
-  add_files -quiet d:/Vivado/digital_circuits/Mini_System/Mini_System.srcs/sources_1/bd/design_CPU_System/ip/design_CPU_System_dlmb_bram_if_cntlr_0/design_CPU_System_dlmb_bram_if_cntlr_0.dcp
-  set_property netlist_only true [get_files d:/Vivado/digital_circuits/Mini_System/Mini_System.srcs/sources_1/bd/design_CPU_System/ip/design_CPU_System_dlmb_bram_if_cntlr_0/design_CPU_System_dlmb_bram_if_cntlr_0.dcp]
-  add_files -quiet d:/Vivado/digital_circuits/Mini_System/Mini_System.srcs/sources_1/bd/design_CPU_System/ip/design_CPU_System_ilmb_bram_if_cntlr_0/design_CPU_System_ilmb_bram_if_cntlr_0.dcp
-  set_property netlist_only true [get_files d:/Vivado/digital_circuits/Mini_System/Mini_System.srcs/sources_1/bd/design_CPU_System/ip/design_CPU_System_ilmb_bram_if_cntlr_0/design_CPU_System_ilmb_bram_if_cntlr_0.dcp]
-  add_files -quiet d:/Vivado/digital_circuits/Mini_System/Mini_System.srcs/sources_1/bd/design_CPU_System/ip/design_CPU_System_lmb_bram_0/design_CPU_System_lmb_bram_0.dcp
-  set_property netlist_only true [get_files d:/Vivado/digital_circuits/Mini_System/Mini_System.srcs/sources_1/bd/design_CPU_System/ip/design_CPU_System_lmb_bram_0/design_CPU_System_lmb_bram_0.dcp]
-  add_files -quiet d:/Vivado/digital_circuits/Mini_System/Mini_System.srcs/sources_1/bd/design_CPU_System/ip/design_CPU_System_mdm_1_0/design_CPU_System_mdm_1_0.dcp
-  set_property netlist_only true [get_files d:/Vivado/digital_circuits/Mini_System/Mini_System.srcs/sources_1/bd/design_CPU_System/ip/design_CPU_System_mdm_1_0/design_CPU_System_mdm_1_0.dcp]
-  add_files -quiet d:/Vivado/digital_circuits/Mini_System/Mini_System.srcs/sources_1/bd/design_CPU_System/ip/design_CPU_System_clk_wiz_1_0/design_CPU_System_clk_wiz_1_0.dcp
-  set_property netlist_only true [get_files d:/Vivado/digital_circuits/Mini_System/Mini_System.srcs/sources_1/bd/design_CPU_System/ip/design_CPU_System_clk_wiz_1_0/design_CPU_System_clk_wiz_1_0.dcp]
-  add_files -quiet d:/Vivado/digital_circuits/Mini_System/Mini_System.srcs/sources_1/bd/design_CPU_System/ip/design_CPU_System_rst_clk_wiz_1_100M_0/design_CPU_System_rst_clk_wiz_1_100M_0.dcp
-  set_property netlist_only true [get_files d:/Vivado/digital_circuits/Mini_System/Mini_System.srcs/sources_1/bd/design_CPU_System/ip/design_CPU_System_rst_clk_wiz_1_100M_0/design_CPU_System_rst_clk_wiz_1_100M_0.dcp]
-  add_files -quiet d:/Vivado/digital_circuits/Mini_System/Mini_System.srcs/sources_1/bd/design_CPU_System/ip/design_CPU_System_axi_uartlite_0_0/design_CPU_System_axi_uartlite_0_0.dcp
-  set_property netlist_only true [get_files d:/Vivado/digital_circuits/Mini_System/Mini_System.srcs/sources_1/bd/design_CPU_System/ip/design_CPU_System_axi_uartlite_0_0/design_CPU_System_axi_uartlite_0_0.dcp]
-  add_files -quiet d:/Vivado/digital_circuits/Mini_System/Mini_System.srcs/sources_1/bd/design_CPU_System/ip/design_CPU_System_axi_gpio_0_0/design_CPU_System_axi_gpio_0_0.dcp
-  set_property netlist_only true [get_files d:/Vivado/digital_circuits/Mini_System/Mini_System.srcs/sources_1/bd/design_CPU_System/ip/design_CPU_System_axi_gpio_0_0/design_CPU_System_axi_gpio_0_0.dcp]
-  add_files -quiet d:/Vivado/digital_circuits/Mini_System/Mini_System.srcs/sources_1/bd/design_CPU_System/ip/design_CPU_System_axi_gpio_1_0/design_CPU_System_axi_gpio_1_0.dcp
-  set_property netlist_only true [get_files d:/Vivado/digital_circuits/Mini_System/Mini_System.srcs/sources_1/bd/design_CPU_System/ip/design_CPU_System_axi_gpio_1_0/design_CPU_System_axi_gpio_1_0.dcp]
-  add_files -quiet d:/Vivado/digital_circuits/Mini_System/Mini_System.srcs/sources_1/bd/design_CPU_System/ip/design_CPU_System_axi_gpio_2_0/design_CPU_System_axi_gpio_2_0.dcp
-  set_property netlist_only true [get_files d:/Vivado/digital_circuits/Mini_System/Mini_System.srcs/sources_1/bd/design_CPU_System/ip/design_CPU_System_axi_gpio_2_0/design_CPU_System_axi_gpio_2_0.dcp]
-  add_files -quiet d:/Vivado/digital_circuits/Mini_System/Mini_System.srcs/sources_1/bd/design_CPU_System/ip/design_CPU_System_xbar_0/design_CPU_System_xbar_0.dcp
-  set_property netlist_only true [get_files d:/Vivado/digital_circuits/Mini_System/Mini_System.srcs/sources_1/bd/design_CPU_System/ip/design_CPU_System_xbar_0/design_CPU_System_xbar_0.dcp]
-  add_files -quiet d:/Vivado/digital_circuits/Mini_System/Mini_System.srcs/sources_1/bd/design_CPU_System/ip/design_CPU_System_axi_intc_0_0/design_CPU_System_axi_intc_0_0.dcp
-  set_property netlist_only true [get_files d:/Vivado/digital_circuits/Mini_System/Mini_System.srcs/sources_1/bd/design_CPU_System/ip/design_CPU_System_axi_intc_0_0/design_CPU_System_axi_intc_0_0.dcp]
-  add_files -quiet d:/Vivado/digital_circuits/Mini_System/Mini_System.srcs/sources_1/bd/design_CPU_System/ip/design_CPU_System_xlconcat_0_0/design_CPU_System_xlconcat_0_0.dcp
-  set_property netlist_only true [get_files d:/Vivado/digital_circuits/Mini_System/Mini_System.srcs/sources_1/bd/design_CPU_System/ip/design_CPU_System_xlconcat_0_0/design_CPU_System_xlconcat_0_0.dcp]
-  add_files -quiet d:/Vivado/digital_circuits/Mini_System/Mini_System.srcs/sources_1/bd/design_CPU_System/ip/design_CPU_System_axi_timer_0_0/design_CPU_System_axi_timer_0_0.dcp
-  set_property netlist_only true [get_files d:/Vivado/digital_circuits/Mini_System/Mini_System.srcs/sources_1/bd/design_CPU_System/ip/design_CPU_System_axi_timer_0_0/design_CPU_System_axi_timer_0_0.dcp]
-  add_files -quiet d:/Vivado/digital_circuits/Mini_System/Mini_System.srcs/sources_1/bd/design_CPU_System/ip/design_CPU_System_axi_uartlite_1_0/design_CPU_System_axi_uartlite_1_0.dcp
-  set_property netlist_only true [get_files d:/Vivado/digital_circuits/Mini_System/Mini_System.srcs/sources_1/bd/design_CPU_System/ip/design_CPU_System_axi_uartlite_1_0/design_CPU_System_axi_uartlite_1_0.dcp]
-  add_files -quiet d:/Vivado/digital_circuits/Mini_System/Mini_System.srcs/sources_1/bd/design_CPU_System/ip/design_CPU_System_axi_uartlite_2_0/design_CPU_System_axi_uartlite_2_0.dcp
-  set_property netlist_only true [get_files d:/Vivado/digital_circuits/Mini_System/Mini_System.srcs/sources_1/bd/design_CPU_System/ip/design_CPU_System_axi_uartlite_2_0/design_CPU_System_axi_uartlite_2_0.dcp]
-  add_files -quiet d:/Vivado/digital_circuits/Mini_System/Mini_System.srcs/sources_1/bd/design_CPU_System/ip/design_CPU_System_axi_quad_spi_0_0/design_CPU_System_axi_quad_spi_0_0.dcp
-  set_property netlist_only true [get_files d:/Vivado/digital_circuits/Mini_System/Mini_System.srcs/sources_1/bd/design_CPU_System/ip/design_CPU_System_axi_quad_spi_0_0/design_CPU_System_axi_quad_spi_0_0.dcp]
-  add_files -quiet d:/Vivado/digital_circuits/Mini_System/Mini_System.srcs/sources_1/bd/design_CPU_System/ip/design_CPU_System_axi_quad_spi_1_0/design_CPU_System_axi_quad_spi_1_0.dcp
-  set_property netlist_only true [get_files d:/Vivado/digital_circuits/Mini_System/Mini_System.srcs/sources_1/bd/design_CPU_System/ip/design_CPU_System_axi_quad_spi_1_0/design_CPU_System_axi_quad_spi_1_0.dcp]
-  add_files -quiet d:/Vivado/digital_circuits/Mini_System/Mini_System.srcs/sources_1/bd/design_CPU_System/ip/design_CPU_System_system_ila_0/design_CPU_System_system_ila_0.dcp
-  set_property netlist_only true [get_files d:/Vivado/digital_circuits/Mini_System/Mini_System.srcs/sources_1/bd/design_CPU_System/ip/design_CPU_System_system_ila_0/design_CPU_System_system_ila_0.dcp]
-  add_files -quiet d:/Vivado/digital_circuits/Mini_System/Mini_System.srcs/sources_1/bd/design_CPU_System/ip/design_CPU_System_auto_pc_0/design_CPU_System_auto_pc_0.dcp
-  set_property netlist_only true [get_files d:/Vivado/digital_circuits/Mini_System/Mini_System.srcs/sources_1/bd/design_CPU_System/ip/design_CPU_System_auto_pc_0/design_CPU_System_auto_pc_0.dcp]
-  add_files D:/Vivado/digital_circuits/Mini_System/Mini_System.srcs/sources_1/bd/design_CPU_System/design_CPU_System.bmm
-  set_property SCOPED_TO_REF design_CPU_System [get_files -all D:/Vivado/digital_circuits/Mini_System/Mini_System.srcs/sources_1/bd/design_CPU_System/design_CPU_System.bmm]
-  add_files d:/Vivado/digital_circuits/Mini_System/Mini_System.srcs/sources_1/bd/design_CPU_System/ip/design_CPU_System_microblaze_0_0/data/mb_bootloop_le.elf
-  set_property SCOPED_TO_REF design_CPU_System [get_files -all d:/Vivado/digital_circuits/Mini_System/Mini_System.srcs/sources_1/bd/design_CPU_System/ip/design_CPU_System_microblaze_0_0/data/mb_bootloop_le.elf]
-  set_property SCOPED_TO_CELLS microblaze_0 [get_files -all d:/Vivado/digital_circuits/Mini_System/Mini_System.srcs/sources_1/bd/design_CPU_System/ip/design_CPU_System_microblaze_0_0/data/mb_bootloop_le.elf]
-  read_xdc -ref design_CPU_System_microblaze_0_0 -cells U0 d:/Vivado/digital_circuits/Mini_System/Mini_System.srcs/sources_1/bd/design_CPU_System/ip/design_CPU_System_microblaze_0_0/design_CPU_System_microblaze_0_0.xdc
-  set_property processing_order EARLY [get_files d:/Vivado/digital_circuits/Mini_System/Mini_System.srcs/sources_1/bd/design_CPU_System/ip/design_CPU_System_microblaze_0_0/design_CPU_System_microblaze_0_0.xdc]
-  read_xdc -ref design_CPU_System_dlmb_v10_0 -cells U0 d:/Vivado/digital_circuits/Mini_System/Mini_System.srcs/sources_1/bd/design_CPU_System/ip/design_CPU_System_dlmb_v10_0/design_CPU_System_dlmb_v10_0.xdc
-  set_property processing_order EARLY [get_files d:/Vivado/digital_circuits/Mini_System/Mini_System.srcs/sources_1/bd/design_CPU_System/ip/design_CPU_System_dlmb_v10_0/design_CPU_System_dlmb_v10_0.xdc]
-  read_xdc -ref design_CPU_System_ilmb_v10_0 -cells U0 d:/Vivado/digital_circuits/Mini_System/Mini_System.srcs/sources_1/bd/design_CPU_System/ip/design_CPU_System_ilmb_v10_0/design_CPU_System_ilmb_v10_0.xdc
-  set_property processing_order EARLY [get_files d:/Vivado/digital_circuits/Mini_System/Mini_System.srcs/sources_1/bd/design_CPU_System/ip/design_CPU_System_ilmb_v10_0/design_CPU_System_ilmb_v10_0.xdc]
-  read_xdc -ref design_CPU_System_mdm_1_0 -cells U0 d:/Vivado/digital_circuits/Mini_System/Mini_System.srcs/sources_1/bd/design_CPU_System/ip/design_CPU_System_mdm_1_0/design_CPU_System_mdm_1_0.xdc
-  set_property processing_order EARLY [get_files d:/Vivado/digital_circuits/Mini_System/Mini_System.srcs/sources_1/bd/design_CPU_System/ip/design_CPU_System_mdm_1_0/design_CPU_System_mdm_1_0.xdc]
-  read_xdc -prop_thru_buffers -ref design_CPU_System_clk_wiz_1_0 -cells inst d:/Vivado/digital_circuits/Mini_System/Mini_System.srcs/sources_1/bd/design_CPU_System/ip/design_CPU_System_clk_wiz_1_0/design_CPU_System_clk_wiz_1_0_board.xdc
-  set_property processing_order EARLY [get_files d:/Vivado/digital_circuits/Mini_System/Mini_System.srcs/sources_1/bd/design_CPU_System/ip/design_CPU_System_clk_wiz_1_0/design_CPU_System_clk_wiz_1_0_board.xdc]
-  read_xdc -ref design_CPU_System_clk_wiz_1_0 -cells inst d:/Vivado/digital_circuits/Mini_System/Mini_System.srcs/sources_1/bd/design_CPU_System/ip/design_CPU_System_clk_wiz_1_0/design_CPU_System_clk_wiz_1_0.xdc
-  set_property processing_order EARLY [get_files d:/Vivado/digital_circuits/Mini_System/Mini_System.srcs/sources_1/bd/design_CPU_System/ip/design_CPU_System_clk_wiz_1_0/design_CPU_System_clk_wiz_1_0.xdc]
-  read_xdc -prop_thru_buffers -ref design_CPU_System_rst_clk_wiz_1_100M_0 -cells U0 d:/Vivado/digital_circuits/Mini_System/Mini_System.srcs/sources_1/bd/design_CPU_System/ip/design_CPU_System_rst_clk_wiz_1_100M_0/design_CPU_System_rst_clk_wiz_1_100M_0_board.xdc
-  set_property processing_order EARLY [get_files d:/Vivado/digital_circuits/Mini_System/Mini_System.srcs/sources_1/bd/design_CPU_System/ip/design_CPU_System_rst_clk_wiz_1_100M_0/design_CPU_System_rst_clk_wiz_1_100M_0_board.xdc]
-  read_xdc -ref design_CPU_System_rst_clk_wiz_1_100M_0 -cells U0 d:/Vivado/digital_circuits/Mini_System/Mini_System.srcs/sources_1/bd/design_CPU_System/ip/design_CPU_System_rst_clk_wiz_1_100M_0/design_CPU_System_rst_clk_wiz_1_100M_0.xdc
-  set_property processing_order EARLY [get_files d:/Vivado/digital_circuits/Mini_System/Mini_System.srcs/sources_1/bd/design_CPU_System/ip/design_CPU_System_rst_clk_wiz_1_100M_0/design_CPU_System_rst_clk_wiz_1_100M_0.xdc]
-  read_xdc -prop_thru_buffers -ref design_CPU_System_axi_uartlite_0_0 -cells U0 d:/Vivado/digital_circuits/Mini_System/Mini_System.srcs/sources_1/bd/design_CPU_System/ip/design_CPU_System_axi_uartlite_0_0/design_CPU_System_axi_uartlite_0_0_board.xdc
-  set_property processing_order EARLY [get_files d:/Vivado/digital_circuits/Mini_System/Mini_System.srcs/sources_1/bd/design_CPU_System/ip/design_CPU_System_axi_uartlite_0_0/design_CPU_System_axi_uartlite_0_0_board.xdc]
-  read_xdc -ref design_CPU_System_axi_uartlite_0_0 -cells U0 d:/Vivado/digital_circuits/Mini_System/Mini_System.srcs/sources_1/bd/design_CPU_System/ip/design_CPU_System_axi_uartlite_0_0/design_CPU_System_axi_uartlite_0_0.xdc
-  set_property processing_order EARLY [get_files d:/Vivado/digital_circuits/Mini_System/Mini_System.srcs/sources_1/bd/design_CPU_System/ip/design_CPU_System_axi_uartlite_0_0/design_CPU_System_axi_uartlite_0_0.xdc]
-  read_xdc -prop_thru_buffers -ref design_CPU_System_axi_gpio_0_0 -cells U0 d:/Vivado/digital_circuits/Mini_System/Mini_System.srcs/sources_1/bd/design_CPU_System/ip/design_CPU_System_axi_gpio_0_0/design_CPU_System_axi_gpio_0_0_board.xdc
-  set_property processing_order EARLY [get_files d:/Vivado/digital_circuits/Mini_System/Mini_System.srcs/sources_1/bd/design_CPU_System/ip/design_CPU_System_axi_gpio_0_0/design_CPU_System_axi_gpio_0_0_board.xdc]
-  read_xdc -ref design_CPU_System_axi_gpio_0_0 -cells U0 d:/Vivado/digital_circuits/Mini_System/Mini_System.srcs/sources_1/bd/design_CPU_System/ip/design_CPU_System_axi_gpio_0_0/design_CPU_System_axi_gpio_0_0.xdc
-  set_property processing_order EARLY [get_files d:/Vivado/digital_circuits/Mini_System/Mini_System.srcs/sources_1/bd/design_CPU_System/ip/design_CPU_System_axi_gpio_0_0/design_CPU_System_axi_gpio_0_0.xdc]
-  read_xdc -prop_thru_buffers -ref design_CPU_System_axi_gpio_1_0 -cells U0 d:/Vivado/digital_circuits/Mini_System/Mini_System.srcs/sources_1/bd/design_CPU_System/ip/design_CPU_System_axi_gpio_1_0/design_CPU_System_axi_gpio_1_0_board.xdc
-  set_property processing_order EARLY [get_files d:/Vivado/digital_circuits/Mini_System/Mini_System.srcs/sources_1/bd/design_CPU_System/ip/design_CPU_System_axi_gpio_1_0/design_CPU_System_axi_gpio_1_0_board.xdc]
-  read_xdc -ref design_CPU_System_axi_gpio_1_0 -cells U0 d:/Vivado/digital_circuits/Mini_System/Mini_System.srcs/sources_1/bd/design_CPU_System/ip/design_CPU_System_axi_gpio_1_0/design_CPU_System_axi_gpio_1_0.xdc
-  set_property processing_order EARLY [get_files d:/Vivado/digital_circuits/Mini_System/Mini_System.srcs/sources_1/bd/design_CPU_System/ip/design_CPU_System_axi_gpio_1_0/design_CPU_System_axi_gpio_1_0.xdc]
-  read_xdc -prop_thru_buffers -ref design_CPU_System_axi_gpio_2_0 -cells U0 d:/Vivado/digital_circuits/Mini_System/Mini_System.srcs/sources_1/bd/design_CPU_System/ip/design_CPU_System_axi_gpio_2_0/design_CPU_System_axi_gpio_2_0_board.xdc
-  set_property processing_order EARLY [get_files d:/Vivado/digital_circuits/Mini_System/Mini_System.srcs/sources_1/bd/design_CPU_System/ip/design_CPU_System_axi_gpio_2_0/design_CPU_System_axi_gpio_2_0_board.xdc]
-  read_xdc -ref design_CPU_System_axi_gpio_2_0 -cells U0 d:/Vivado/digital_circuits/Mini_System/Mini_System.srcs/sources_1/bd/design_CPU_System/ip/design_CPU_System_axi_gpio_2_0/design_CPU_System_axi_gpio_2_0.xdc
-  set_property processing_order EARLY [get_files d:/Vivado/digital_circuits/Mini_System/Mini_System.srcs/sources_1/bd/design_CPU_System/ip/design_CPU_System_axi_gpio_2_0/design_CPU_System_axi_gpio_2_0.xdc]
-  read_xdc -ref design_CPU_System_axi_intc_0_0 -cells U0 d:/Vivado/digital_circuits/Mini_System/Mini_System.srcs/sources_1/bd/design_CPU_System/ip/design_CPU_System_axi_intc_0_0/design_CPU_System_axi_intc_0_0.xdc
-  set_property processing_order EARLY [get_files d:/Vivado/digital_circuits/Mini_System/Mini_System.srcs/sources_1/bd/design_CPU_System/ip/design_CPU_System_axi_intc_0_0/design_CPU_System_axi_intc_0_0.xdc]
-  read_xdc -ref design_CPU_System_axi_timer_0_0 -cells U0 d:/Vivado/digital_circuits/Mini_System/Mini_System.srcs/sources_1/bd/design_CPU_System/ip/design_CPU_System_axi_timer_0_0/design_CPU_System_axi_timer_0_0.xdc
-  set_property processing_order EARLY [get_files d:/Vivado/digital_circuits/Mini_System/Mini_System.srcs/sources_1/bd/design_CPU_System/ip/design_CPU_System_axi_timer_0_0/design_CPU_System_axi_timer_0_0.xdc]
-  read_xdc -prop_thru_buffers -ref design_CPU_System_axi_uartlite_1_0 -cells U0 d:/Vivado/digital_circuits/Mini_System/Mini_System.srcs/sources_1/bd/design_CPU_System/ip/design_CPU_System_axi_uartlite_1_0/design_CPU_System_axi_uartlite_1_0_board.xdc
-  set_property processing_order EARLY [get_files d:/Vivado/digital_circuits/Mini_System/Mini_System.srcs/sources_1/bd/design_CPU_System/ip/design_CPU_System_axi_uartlite_1_0/design_CPU_System_axi_uartlite_1_0_board.xdc]
-  read_xdc -ref design_CPU_System_axi_uartlite_1_0 -cells U0 d:/Vivado/digital_circuits/Mini_System/Mini_System.srcs/sources_1/bd/design_CPU_System/ip/design_CPU_System_axi_uartlite_1_0/design_CPU_System_axi_uartlite_1_0.xdc
-  set_property processing_order EARLY [get_files d:/Vivado/digital_circuits/Mini_System/Mini_System.srcs/sources_1/bd/design_CPU_System/ip/design_CPU_System_axi_uartlite_1_0/design_CPU_System_axi_uartlite_1_0.xdc]
-  read_xdc -prop_thru_buffers -ref design_CPU_System_axi_uartlite_2_0 -cells U0 d:/Vivado/digital_circuits/Mini_System/Mini_System.srcs/sources_1/bd/design_CPU_System/ip/design_CPU_System_axi_uartlite_2_0/design_CPU_System_axi_uartlite_2_0_board.xdc
-  set_property processing_order EARLY [get_files d:/Vivado/digital_circuits/Mini_System/Mini_System.srcs/sources_1/bd/design_CPU_System/ip/design_CPU_System_axi_uartlite_2_0/design_CPU_System_axi_uartlite_2_0_board.xdc]
-  read_xdc -ref design_CPU_System_axi_uartlite_2_0 -cells U0 d:/Vivado/digital_circuits/Mini_System/Mini_System.srcs/sources_1/bd/design_CPU_System/ip/design_CPU_System_axi_uartlite_2_0/design_CPU_System_axi_uartlite_2_0.xdc
-  set_property processing_order EARLY [get_files d:/Vivado/digital_circuits/Mini_System/Mini_System.srcs/sources_1/bd/design_CPU_System/ip/design_CPU_System_axi_uartlite_2_0/design_CPU_System_axi_uartlite_2_0.xdc]
-  read_xdc -prop_thru_buffers -ref design_CPU_System_axi_quad_spi_0_0 -cells U0 d:/Vivado/digital_circuits/Mini_System/Mini_System.srcs/sources_1/bd/design_CPU_System/ip/design_CPU_System_axi_quad_spi_0_0/design_CPU_System_axi_quad_spi_0_0_board.xdc
-  set_property processing_order EARLY [get_files d:/Vivado/digital_circuits/Mini_System/Mini_System.srcs/sources_1/bd/design_CPU_System/ip/design_CPU_System_axi_quad_spi_0_0/design_CPU_System_axi_quad_spi_0_0_board.xdc]
-  read_xdc -ref design_CPU_System_axi_quad_spi_0_0 -cells U0 d:/Vivado/digital_circuits/Mini_System/Mini_System.srcs/sources_1/bd/design_CPU_System/ip/design_CPU_System_axi_quad_spi_0_0/design_CPU_System_axi_quad_spi_0_0.xdc
-  set_property processing_order EARLY [get_files d:/Vivado/digital_circuits/Mini_System/Mini_System.srcs/sources_1/bd/design_CPU_System/ip/design_CPU_System_axi_quad_spi_0_0/design_CPU_System_axi_quad_spi_0_0.xdc]
-  read_xdc -prop_thru_buffers -ref design_CPU_System_axi_quad_spi_1_0 -cells U0 d:/Vivado/digital_circuits/Mini_System/Mini_System.srcs/sources_1/bd/design_CPU_System/ip/design_CPU_System_axi_quad_spi_1_0/design_CPU_System_axi_quad_spi_1_0_board.xdc
-  set_property processing_order EARLY [get_files d:/Vivado/digital_circuits/Mini_System/Mini_System.srcs/sources_1/bd/design_CPU_System/ip/design_CPU_System_axi_quad_spi_1_0/design_CPU_System_axi_quad_spi_1_0_board.xdc]
-  read_xdc -ref design_CPU_System_axi_quad_spi_1_0 -cells U0 d:/Vivado/digital_circuits/Mini_System/Mini_System.srcs/sources_1/bd/design_CPU_System/ip/design_CPU_System_axi_quad_spi_1_0/design_CPU_System_axi_quad_spi_1_0.xdc
-  set_property processing_order EARLY [get_files d:/Vivado/digital_circuits/Mini_System/Mini_System.srcs/sources_1/bd/design_CPU_System/ip/design_CPU_System_axi_quad_spi_1_0/design_CPU_System_axi_quad_spi_1_0.xdc]
-  read_xdc -ref bd_addd_ila_lib_0 -cells inst d:/Vivado/digital_circuits/Mini_System/Mini_System.srcs/sources_1/bd/design_CPU_System/ip/design_CPU_System_system_ila_0/bd_0/ip/ip_0/ila_v6_2/constraints/ila.xdc
-  set_property processing_order EARLY [get_files d:/Vivado/digital_circuits/Mini_System/Mini_System.srcs/sources_1/bd/design_CPU_System/ip/design_CPU_System_system_ila_0/bd_0/ip/ip_0/ila_v6_2/constraints/ila.xdc]
-  read_xdc D:/Vivado/digital_circuits/Mini_System/Mini_System.srcs/constrs_1/new/Mini.xdc
-  read_xdc D:/Vivado/digital_circuits/Mini_System/Mini_System.srcs/constrs_1/new/adda.xdc
-  read_xdc -ref design_CPU_System_axi_intc_0_0 -cells U0 d:/Vivado/digital_circuits/Mini_System/Mini_System.srcs/sources_1/bd/design_CPU_System/ip/design_CPU_System_axi_intc_0_0/design_CPU_System_axi_intc_0_0_clocks.xdc
-  set_property processing_order LATE [get_files d:/Vivado/digital_circuits/Mini_System/Mini_System.srcs/sources_1/bd/design_CPU_System/ip/design_CPU_System_axi_intc_0_0/design_CPU_System_axi_intc_0_0_clocks.xdc]
-  read_xdc -ref design_CPU_System_axi_quad_spi_0_0 -cells U0 d:/Vivado/digital_circuits/Mini_System/Mini_System.srcs/sources_1/bd/design_CPU_System/ip/design_CPU_System_axi_quad_spi_0_0/design_CPU_System_axi_quad_spi_0_0_clocks.xdc
-  set_property processing_order LATE [get_files d:/Vivado/digital_circuits/Mini_System/Mini_System.srcs/sources_1/bd/design_CPU_System/ip/design_CPU_System_axi_quad_spi_0_0/design_CPU_System_axi_quad_spi_0_0_clocks.xdc]
-  read_xdc -ref design_CPU_System_axi_quad_spi_1_0 -cells U0 d:/Vivado/digital_circuits/Mini_System/Mini_System.srcs/sources_1/bd/design_CPU_System/ip/design_CPU_System_axi_quad_spi_1_0/design_CPU_System_axi_quad_spi_1_0_clocks.xdc
-  set_property processing_order LATE [get_files d:/Vivado/digital_circuits/Mini_System/Mini_System.srcs/sources_1/bd/design_CPU_System/ip/design_CPU_System_axi_quad_spi_1_0/design_CPU_System_axi_quad_spi_1_0_clocks.xdc]
+  add_files -quiet E:/signal_generator/Mini_System-main/Mini_System.runs/synth_1/design_CPU_System_wrapper.dcp
+  add_files -quiet e:/signal_generator/Mini_System-main/Mini_System.srcs/sources_1/bd/design_CPU_System/ip/design_CPU_System_microblaze_0_0/design_CPU_System_microblaze_0_0.dcp
+  set_property netlist_only true [get_files e:/signal_generator/Mini_System-main/Mini_System.srcs/sources_1/bd/design_CPU_System/ip/design_CPU_System_microblaze_0_0/design_CPU_System_microblaze_0_0.dcp]
+  add_files -quiet e:/signal_generator/Mini_System-main/Mini_System.srcs/sources_1/bd/design_CPU_System/ip/design_CPU_System_dlmb_v10_0/design_CPU_System_dlmb_v10_0.dcp
+  set_property netlist_only true [get_files e:/signal_generator/Mini_System-main/Mini_System.srcs/sources_1/bd/design_CPU_System/ip/design_CPU_System_dlmb_v10_0/design_CPU_System_dlmb_v10_0.dcp]
+  add_files -quiet e:/signal_generator/Mini_System-main/Mini_System.srcs/sources_1/bd/design_CPU_System/ip/design_CPU_System_ilmb_v10_0/design_CPU_System_ilmb_v10_0.dcp
+  set_property netlist_only true [get_files e:/signal_generator/Mini_System-main/Mini_System.srcs/sources_1/bd/design_CPU_System/ip/design_CPU_System_ilmb_v10_0/design_CPU_System_ilmb_v10_0.dcp]
+  add_files -quiet e:/signal_generator/Mini_System-main/Mini_System.srcs/sources_1/bd/design_CPU_System/ip/design_CPU_System_dlmb_bram_if_cntlr_0/design_CPU_System_dlmb_bram_if_cntlr_0.dcp
+  set_property netlist_only true [get_files e:/signal_generator/Mini_System-main/Mini_System.srcs/sources_1/bd/design_CPU_System/ip/design_CPU_System_dlmb_bram_if_cntlr_0/design_CPU_System_dlmb_bram_if_cntlr_0.dcp]
+  add_files -quiet e:/signal_generator/Mini_System-main/Mini_System.srcs/sources_1/bd/design_CPU_System/ip/design_CPU_System_ilmb_bram_if_cntlr_0/design_CPU_System_ilmb_bram_if_cntlr_0.dcp
+  set_property netlist_only true [get_files e:/signal_generator/Mini_System-main/Mini_System.srcs/sources_1/bd/design_CPU_System/ip/design_CPU_System_ilmb_bram_if_cntlr_0/design_CPU_System_ilmb_bram_if_cntlr_0.dcp]
+  add_files -quiet e:/signal_generator/Mini_System-main/Mini_System.srcs/sources_1/bd/design_CPU_System/ip/design_CPU_System_lmb_bram_0/design_CPU_System_lmb_bram_0.dcp
+  set_property netlist_only true [get_files e:/signal_generator/Mini_System-main/Mini_System.srcs/sources_1/bd/design_CPU_System/ip/design_CPU_System_lmb_bram_0/design_CPU_System_lmb_bram_0.dcp]
+  add_files -quiet e:/signal_generator/Mini_System-main/Mini_System.srcs/sources_1/bd/design_CPU_System/ip/design_CPU_System_mdm_1_0/design_CPU_System_mdm_1_0.dcp
+  set_property netlist_only true [get_files e:/signal_generator/Mini_System-main/Mini_System.srcs/sources_1/bd/design_CPU_System/ip/design_CPU_System_mdm_1_0/design_CPU_System_mdm_1_0.dcp]
+  add_files -quiet e:/signal_generator/Mini_System-main/Mini_System.srcs/sources_1/bd/design_CPU_System/ip/design_CPU_System_clk_wiz_1_0/design_CPU_System_clk_wiz_1_0.dcp
+  set_property netlist_only true [get_files e:/signal_generator/Mini_System-main/Mini_System.srcs/sources_1/bd/design_CPU_System/ip/design_CPU_System_clk_wiz_1_0/design_CPU_System_clk_wiz_1_0.dcp]
+  add_files -quiet e:/signal_generator/Mini_System-main/Mini_System.srcs/sources_1/bd/design_CPU_System/ip/design_CPU_System_rst_clk_wiz_1_100M_0/design_CPU_System_rst_clk_wiz_1_100M_0.dcp
+  set_property netlist_only true [get_files e:/signal_generator/Mini_System-main/Mini_System.srcs/sources_1/bd/design_CPU_System/ip/design_CPU_System_rst_clk_wiz_1_100M_0/design_CPU_System_rst_clk_wiz_1_100M_0.dcp]
+  add_files -quiet e:/signal_generator/Mini_System-main/Mini_System.srcs/sources_1/bd/design_CPU_System/ip/design_CPU_System_axi_uartlite_0_0/design_CPU_System_axi_uartlite_0_0.dcp
+  set_property netlist_only true [get_files e:/signal_generator/Mini_System-main/Mini_System.srcs/sources_1/bd/design_CPU_System/ip/design_CPU_System_axi_uartlite_0_0/design_CPU_System_axi_uartlite_0_0.dcp]
+  add_files -quiet e:/signal_generator/Mini_System-main/Mini_System.srcs/sources_1/bd/design_CPU_System/ip/design_CPU_System_axi_gpio_0_0/design_CPU_System_axi_gpio_0_0.dcp
+  set_property netlist_only true [get_files e:/signal_generator/Mini_System-main/Mini_System.srcs/sources_1/bd/design_CPU_System/ip/design_CPU_System_axi_gpio_0_0/design_CPU_System_axi_gpio_0_0.dcp]
+  add_files -quiet e:/signal_generator/Mini_System-main/Mini_System.srcs/sources_1/bd/design_CPU_System/ip/design_CPU_System_axi_gpio_1_0/design_CPU_System_axi_gpio_1_0.dcp
+  set_property netlist_only true [get_files e:/signal_generator/Mini_System-main/Mini_System.srcs/sources_1/bd/design_CPU_System/ip/design_CPU_System_axi_gpio_1_0/design_CPU_System_axi_gpio_1_0.dcp]
+  add_files -quiet e:/signal_generator/Mini_System-main/Mini_System.srcs/sources_1/bd/design_CPU_System/ip/design_CPU_System_axi_gpio_2_0/design_CPU_System_axi_gpio_2_0.dcp
+  set_property netlist_only true [get_files e:/signal_generator/Mini_System-main/Mini_System.srcs/sources_1/bd/design_CPU_System/ip/design_CPU_System_axi_gpio_2_0/design_CPU_System_axi_gpio_2_0.dcp]
+  add_files -quiet e:/signal_generator/Mini_System-main/Mini_System.srcs/sources_1/bd/design_CPU_System/ip/design_CPU_System_xbar_0/design_CPU_System_xbar_0.dcp
+  set_property netlist_only true [get_files e:/signal_generator/Mini_System-main/Mini_System.srcs/sources_1/bd/design_CPU_System/ip/design_CPU_System_xbar_0/design_CPU_System_xbar_0.dcp]
+  add_files -quiet e:/signal_generator/Mini_System-main/Mini_System.srcs/sources_1/bd/design_CPU_System/ip/design_CPU_System_axi_intc_0_0/design_CPU_System_axi_intc_0_0.dcp
+  set_property netlist_only true [get_files e:/signal_generator/Mini_System-main/Mini_System.srcs/sources_1/bd/design_CPU_System/ip/design_CPU_System_axi_intc_0_0/design_CPU_System_axi_intc_0_0.dcp]
+  add_files -quiet e:/signal_generator/Mini_System-main/Mini_System.srcs/sources_1/bd/design_CPU_System/ip/design_CPU_System_xlconcat_0_0/design_CPU_System_xlconcat_0_0.dcp
+  set_property netlist_only true [get_files e:/signal_generator/Mini_System-main/Mini_System.srcs/sources_1/bd/design_CPU_System/ip/design_CPU_System_xlconcat_0_0/design_CPU_System_xlconcat_0_0.dcp]
+  add_files -quiet e:/signal_generator/Mini_System-main/Mini_System.srcs/sources_1/bd/design_CPU_System/ip/design_CPU_System_axi_timer_0_0/design_CPU_System_axi_timer_0_0.dcp
+  set_property netlist_only true [get_files e:/signal_generator/Mini_System-main/Mini_System.srcs/sources_1/bd/design_CPU_System/ip/design_CPU_System_axi_timer_0_0/design_CPU_System_axi_timer_0_0.dcp]
+  add_files -quiet e:/signal_generator/Mini_System-main/Mini_System.srcs/sources_1/bd/design_CPU_System/ip/design_CPU_System_axi_uartlite_1_0/design_CPU_System_axi_uartlite_1_0.dcp
+  set_property netlist_only true [get_files e:/signal_generator/Mini_System-main/Mini_System.srcs/sources_1/bd/design_CPU_System/ip/design_CPU_System_axi_uartlite_1_0/design_CPU_System_axi_uartlite_1_0.dcp]
+  add_files -quiet e:/signal_generator/Mini_System-main/Mini_System.srcs/sources_1/bd/design_CPU_System/ip/design_CPU_System_axi_uartlite_2_0/design_CPU_System_axi_uartlite_2_0.dcp
+  set_property netlist_only true [get_files e:/signal_generator/Mini_System-main/Mini_System.srcs/sources_1/bd/design_CPU_System/ip/design_CPU_System_axi_uartlite_2_0/design_CPU_System_axi_uartlite_2_0.dcp]
+  add_files -quiet e:/signal_generator/Mini_System-main/Mini_System.srcs/sources_1/bd/design_CPU_System/ip/design_CPU_System_axi_quad_spi_0_0/design_CPU_System_axi_quad_spi_0_0.dcp
+  set_property netlist_only true [get_files e:/signal_generator/Mini_System-main/Mini_System.srcs/sources_1/bd/design_CPU_System/ip/design_CPU_System_axi_quad_spi_0_0/design_CPU_System_axi_quad_spi_0_0.dcp]
+  add_files -quiet e:/signal_generator/Mini_System-main/Mini_System.srcs/sources_1/bd/design_CPU_System/ip/design_CPU_System_axi_quad_spi_1_0/design_CPU_System_axi_quad_spi_1_0.dcp
+  set_property netlist_only true [get_files e:/signal_generator/Mini_System-main/Mini_System.srcs/sources_1/bd/design_CPU_System/ip/design_CPU_System_axi_quad_spi_1_0/design_CPU_System_axi_quad_spi_1_0.dcp]
+  add_files -quiet e:/signal_generator/Mini_System-main/Mini_System.srcs/sources_1/bd/design_CPU_System/ip/design_CPU_System_system_ila_0/design_CPU_System_system_ila_0.dcp
+  set_property netlist_only true [get_files e:/signal_generator/Mini_System-main/Mini_System.srcs/sources_1/bd/design_CPU_System/ip/design_CPU_System_system_ila_0/design_CPU_System_system_ila_0.dcp]
+  add_files -quiet e:/signal_generator/Mini_System-main/Mini_System.srcs/sources_1/bd/design_CPU_System/ip/design_CPU_System_auto_pc_0/design_CPU_System_auto_pc_0.dcp
+  set_property netlist_only true [get_files e:/signal_generator/Mini_System-main/Mini_System.srcs/sources_1/bd/design_CPU_System/ip/design_CPU_System_auto_pc_0/design_CPU_System_auto_pc_0.dcp]
+  add_files E:/signal_generator/Mini_System-main/Mini_System.srcs/sources_1/bd/design_CPU_System/design_CPU_System.bmm
+  set_property SCOPED_TO_REF design_CPU_System [get_files -all E:/signal_generator/Mini_System-main/Mini_System.srcs/sources_1/bd/design_CPU_System/design_CPU_System.bmm]
+  add_files e:/signal_generator/Mini_System-main/Mini_System.srcs/sources_1/bd/design_CPU_System/ip/design_CPU_System_microblaze_0_0/data/mb_bootloop_le.elf
+  set_property SCOPED_TO_REF design_CPU_System [get_files -all e:/signal_generator/Mini_System-main/Mini_System.srcs/sources_1/bd/design_CPU_System/ip/design_CPU_System_microblaze_0_0/data/mb_bootloop_le.elf]
+  set_property SCOPED_TO_CELLS microblaze_0 [get_files -all e:/signal_generator/Mini_System-main/Mini_System.srcs/sources_1/bd/design_CPU_System/ip/design_CPU_System_microblaze_0_0/data/mb_bootloop_le.elf]
+  read_xdc -ref design_CPU_System_microblaze_0_0 -cells U0 e:/signal_generator/Mini_System-main/Mini_System.srcs/sources_1/bd/design_CPU_System/ip/design_CPU_System_microblaze_0_0/design_CPU_System_microblaze_0_0.xdc
+  set_property processing_order EARLY [get_files e:/signal_generator/Mini_System-main/Mini_System.srcs/sources_1/bd/design_CPU_System/ip/design_CPU_System_microblaze_0_0/design_CPU_System_microblaze_0_0.xdc]
+  read_xdc -ref design_CPU_System_dlmb_v10_0 -cells U0 e:/signal_generator/Mini_System-main/Mini_System.srcs/sources_1/bd/design_CPU_System/ip/design_CPU_System_dlmb_v10_0/design_CPU_System_dlmb_v10_0.xdc
+  set_property processing_order EARLY [get_files e:/signal_generator/Mini_System-main/Mini_System.srcs/sources_1/bd/design_CPU_System/ip/design_CPU_System_dlmb_v10_0/design_CPU_System_dlmb_v10_0.xdc]
+  read_xdc -ref design_CPU_System_ilmb_v10_0 -cells U0 e:/signal_generator/Mini_System-main/Mini_System.srcs/sources_1/bd/design_CPU_System/ip/design_CPU_System_ilmb_v10_0/design_CPU_System_ilmb_v10_0.xdc
+  set_property processing_order EARLY [get_files e:/signal_generator/Mini_System-main/Mini_System.srcs/sources_1/bd/design_CPU_System/ip/design_CPU_System_ilmb_v10_0/design_CPU_System_ilmb_v10_0.xdc]
+  read_xdc -ref design_CPU_System_mdm_1_0 -cells U0 e:/signal_generator/Mini_System-main/Mini_System.srcs/sources_1/bd/design_CPU_System/ip/design_CPU_System_mdm_1_0/design_CPU_System_mdm_1_0.xdc
+  set_property processing_order EARLY [get_files e:/signal_generator/Mini_System-main/Mini_System.srcs/sources_1/bd/design_CPU_System/ip/design_CPU_System_mdm_1_0/design_CPU_System_mdm_1_0.xdc]
+  read_xdc -prop_thru_buffers -ref design_CPU_System_clk_wiz_1_0 -cells inst e:/signal_generator/Mini_System-main/Mini_System.srcs/sources_1/bd/design_CPU_System/ip/design_CPU_System_clk_wiz_1_0/design_CPU_System_clk_wiz_1_0_board.xdc
+  set_property processing_order EARLY [get_files e:/signal_generator/Mini_System-main/Mini_System.srcs/sources_1/bd/design_CPU_System/ip/design_CPU_System_clk_wiz_1_0/design_CPU_System_clk_wiz_1_0_board.xdc]
+  read_xdc -ref design_CPU_System_clk_wiz_1_0 -cells inst e:/signal_generator/Mini_System-main/Mini_System.srcs/sources_1/bd/design_CPU_System/ip/design_CPU_System_clk_wiz_1_0/design_CPU_System_clk_wiz_1_0.xdc
+  set_property processing_order EARLY [get_files e:/signal_generator/Mini_System-main/Mini_System.srcs/sources_1/bd/design_CPU_System/ip/design_CPU_System_clk_wiz_1_0/design_CPU_System_clk_wiz_1_0.xdc]
+  read_xdc -prop_thru_buffers -ref design_CPU_System_rst_clk_wiz_1_100M_0 -cells U0 e:/signal_generator/Mini_System-main/Mini_System.srcs/sources_1/bd/design_CPU_System/ip/design_CPU_System_rst_clk_wiz_1_100M_0/design_CPU_System_rst_clk_wiz_1_100M_0_board.xdc
+  set_property processing_order EARLY [get_files e:/signal_generator/Mini_System-main/Mini_System.srcs/sources_1/bd/design_CPU_System/ip/design_CPU_System_rst_clk_wiz_1_100M_0/design_CPU_System_rst_clk_wiz_1_100M_0_board.xdc]
+  read_xdc -ref design_CPU_System_rst_clk_wiz_1_100M_0 -cells U0 e:/signal_generator/Mini_System-main/Mini_System.srcs/sources_1/bd/design_CPU_System/ip/design_CPU_System_rst_clk_wiz_1_100M_0/design_CPU_System_rst_clk_wiz_1_100M_0.xdc
+  set_property processing_order EARLY [get_files e:/signal_generator/Mini_System-main/Mini_System.srcs/sources_1/bd/design_CPU_System/ip/design_CPU_System_rst_clk_wiz_1_100M_0/design_CPU_System_rst_clk_wiz_1_100M_0.xdc]
+  read_xdc -prop_thru_buffers -ref design_CPU_System_axi_uartlite_0_0 -cells U0 e:/signal_generator/Mini_System-main/Mini_System.srcs/sources_1/bd/design_CPU_System/ip/design_CPU_System_axi_uartlite_0_0/design_CPU_System_axi_uartlite_0_0_board.xdc
+  set_property processing_order EARLY [get_files e:/signal_generator/Mini_System-main/Mini_System.srcs/sources_1/bd/design_CPU_System/ip/design_CPU_System_axi_uartlite_0_0/design_CPU_System_axi_uartlite_0_0_board.xdc]
+  read_xdc -ref design_CPU_System_axi_uartlite_0_0 -cells U0 e:/signal_generator/Mini_System-main/Mini_System.srcs/sources_1/bd/design_CPU_System/ip/design_CPU_System_axi_uartlite_0_0/design_CPU_System_axi_uartlite_0_0.xdc
+  set_property processing_order EARLY [get_files e:/signal_generator/Mini_System-main/Mini_System.srcs/sources_1/bd/design_CPU_System/ip/design_CPU_System_axi_uartlite_0_0/design_CPU_System_axi_uartlite_0_0.xdc]
+  read_xdc -prop_thru_buffers -ref design_CPU_System_axi_gpio_0_0 -cells U0 e:/signal_generator/Mini_System-main/Mini_System.srcs/sources_1/bd/design_CPU_System/ip/design_CPU_System_axi_gpio_0_0/design_CPU_System_axi_gpio_0_0_board.xdc
+  set_property processing_order EARLY [get_files e:/signal_generator/Mini_System-main/Mini_System.srcs/sources_1/bd/design_CPU_System/ip/design_CPU_System_axi_gpio_0_0/design_CPU_System_axi_gpio_0_0_board.xdc]
+  read_xdc -ref design_CPU_System_axi_gpio_0_0 -cells U0 e:/signal_generator/Mini_System-main/Mini_System.srcs/sources_1/bd/design_CPU_System/ip/design_CPU_System_axi_gpio_0_0/design_CPU_System_axi_gpio_0_0.xdc
+  set_property processing_order EARLY [get_files e:/signal_generator/Mini_System-main/Mini_System.srcs/sources_1/bd/design_CPU_System/ip/design_CPU_System_axi_gpio_0_0/design_CPU_System_axi_gpio_0_0.xdc]
+  read_xdc -prop_thru_buffers -ref design_CPU_System_axi_gpio_1_0 -cells U0 e:/signal_generator/Mini_System-main/Mini_System.srcs/sources_1/bd/design_CPU_System/ip/design_CPU_System_axi_gpio_1_0/design_CPU_System_axi_gpio_1_0_board.xdc
+  set_property processing_order EARLY [get_files e:/signal_generator/Mini_System-main/Mini_System.srcs/sources_1/bd/design_CPU_System/ip/design_CPU_System_axi_gpio_1_0/design_CPU_System_axi_gpio_1_0_board.xdc]
+  read_xdc -ref design_CPU_System_axi_gpio_1_0 -cells U0 e:/signal_generator/Mini_System-main/Mini_System.srcs/sources_1/bd/design_CPU_System/ip/design_CPU_System_axi_gpio_1_0/design_CPU_System_axi_gpio_1_0.xdc
+  set_property processing_order EARLY [get_files e:/signal_generator/Mini_System-main/Mini_System.srcs/sources_1/bd/design_CPU_System/ip/design_CPU_System_axi_gpio_1_0/design_CPU_System_axi_gpio_1_0.xdc]
+  read_xdc -prop_thru_buffers -ref design_CPU_System_axi_gpio_2_0 -cells U0 e:/signal_generator/Mini_System-main/Mini_System.srcs/sources_1/bd/design_CPU_System/ip/design_CPU_System_axi_gpio_2_0/design_CPU_System_axi_gpio_2_0_board.xdc
+  set_property processing_order EARLY [get_files e:/signal_generator/Mini_System-main/Mini_System.srcs/sources_1/bd/design_CPU_System/ip/design_CPU_System_axi_gpio_2_0/design_CPU_System_axi_gpio_2_0_board.xdc]
+  read_xdc -ref design_CPU_System_axi_gpio_2_0 -cells U0 e:/signal_generator/Mini_System-main/Mini_System.srcs/sources_1/bd/design_CPU_System/ip/design_CPU_System_axi_gpio_2_0/design_CPU_System_axi_gpio_2_0.xdc
+  set_property processing_order EARLY [get_files e:/signal_generator/Mini_System-main/Mini_System.srcs/sources_1/bd/design_CPU_System/ip/design_CPU_System_axi_gpio_2_0/design_CPU_System_axi_gpio_2_0.xdc]
+  read_xdc -ref design_CPU_System_axi_intc_0_0 -cells U0 e:/signal_generator/Mini_System-main/Mini_System.srcs/sources_1/bd/design_CPU_System/ip/design_CPU_System_axi_intc_0_0/design_CPU_System_axi_intc_0_0.xdc
+  set_property processing_order EARLY [get_files e:/signal_generator/Mini_System-main/Mini_System.srcs/sources_1/bd/design_CPU_System/ip/design_CPU_System_axi_intc_0_0/design_CPU_System_axi_intc_0_0.xdc]
+  read_xdc -ref design_CPU_System_axi_timer_0_0 -cells U0 e:/signal_generator/Mini_System-main/Mini_System.srcs/sources_1/bd/design_CPU_System/ip/design_CPU_System_axi_timer_0_0/design_CPU_System_axi_timer_0_0.xdc
+  set_property processing_order EARLY [get_files e:/signal_generator/Mini_System-main/Mini_System.srcs/sources_1/bd/design_CPU_System/ip/design_CPU_System_axi_timer_0_0/design_CPU_System_axi_timer_0_0.xdc]
+  read_xdc -prop_thru_buffers -ref design_CPU_System_axi_uartlite_1_0 -cells U0 e:/signal_generator/Mini_System-main/Mini_System.srcs/sources_1/bd/design_CPU_System/ip/design_CPU_System_axi_uartlite_1_0/design_CPU_System_axi_uartlite_1_0_board.xdc
+  set_property processing_order EARLY [get_files e:/signal_generator/Mini_System-main/Mini_System.srcs/sources_1/bd/design_CPU_System/ip/design_CPU_System_axi_uartlite_1_0/design_CPU_System_axi_uartlite_1_0_board.xdc]
+  read_xdc -ref design_CPU_System_axi_uartlite_1_0 -cells U0 e:/signal_generator/Mini_System-main/Mini_System.srcs/sources_1/bd/design_CPU_System/ip/design_CPU_System_axi_uartlite_1_0/design_CPU_System_axi_uartlite_1_0.xdc
+  set_property processing_order EARLY [get_files e:/signal_generator/Mini_System-main/Mini_System.srcs/sources_1/bd/design_CPU_System/ip/design_CPU_System_axi_uartlite_1_0/design_CPU_System_axi_uartlite_1_0.xdc]
+  read_xdc -prop_thru_buffers -ref design_CPU_System_axi_uartlite_2_0 -cells U0 e:/signal_generator/Mini_System-main/Mini_System.srcs/sources_1/bd/design_CPU_System/ip/design_CPU_System_axi_uartlite_2_0/design_CPU_System_axi_uartlite_2_0_board.xdc
+  set_property processing_order EARLY [get_files e:/signal_generator/Mini_System-main/Mini_System.srcs/sources_1/bd/design_CPU_System/ip/design_CPU_System_axi_uartlite_2_0/design_CPU_System_axi_uartlite_2_0_board.xdc]
+  read_xdc -ref design_CPU_System_axi_uartlite_2_0 -cells U0 e:/signal_generator/Mini_System-main/Mini_System.srcs/sources_1/bd/design_CPU_System/ip/design_CPU_System_axi_uartlite_2_0/design_CPU_System_axi_uartlite_2_0.xdc
+  set_property processing_order EARLY [get_files e:/signal_generator/Mini_System-main/Mini_System.srcs/sources_1/bd/design_CPU_System/ip/design_CPU_System_axi_uartlite_2_0/design_CPU_System_axi_uartlite_2_0.xdc]
+  read_xdc -prop_thru_buffers -ref design_CPU_System_axi_quad_spi_0_0 -cells U0 e:/signal_generator/Mini_System-main/Mini_System.srcs/sources_1/bd/design_CPU_System/ip/design_CPU_System_axi_quad_spi_0_0/design_CPU_System_axi_quad_spi_0_0_board.xdc
+  set_property processing_order EARLY [get_files e:/signal_generator/Mini_System-main/Mini_System.srcs/sources_1/bd/design_CPU_System/ip/design_CPU_System_axi_quad_spi_0_0/design_CPU_System_axi_quad_spi_0_0_board.xdc]
+  read_xdc -ref design_CPU_System_axi_quad_spi_0_0 -cells U0 e:/signal_generator/Mini_System-main/Mini_System.srcs/sources_1/bd/design_CPU_System/ip/design_CPU_System_axi_quad_spi_0_0/design_CPU_System_axi_quad_spi_0_0.xdc
+  set_property processing_order EARLY [get_files e:/signal_generator/Mini_System-main/Mini_System.srcs/sources_1/bd/design_CPU_System/ip/design_CPU_System_axi_quad_spi_0_0/design_CPU_System_axi_quad_spi_0_0.xdc]
+  read_xdc -prop_thru_buffers -ref design_CPU_System_axi_quad_spi_1_0 -cells U0 e:/signal_generator/Mini_System-main/Mini_System.srcs/sources_1/bd/design_CPU_System/ip/design_CPU_System_axi_quad_spi_1_0/design_CPU_System_axi_quad_spi_1_0_board.xdc
+  set_property processing_order EARLY [get_files e:/signal_generator/Mini_System-main/Mini_System.srcs/sources_1/bd/design_CPU_System/ip/design_CPU_System_axi_quad_spi_1_0/design_CPU_System_axi_quad_spi_1_0_board.xdc]
+  read_xdc -ref design_CPU_System_axi_quad_spi_1_0 -cells U0 e:/signal_generator/Mini_System-main/Mini_System.srcs/sources_1/bd/design_CPU_System/ip/design_CPU_System_axi_quad_spi_1_0/design_CPU_System_axi_quad_spi_1_0.xdc
+  set_property processing_order EARLY [get_files e:/signal_generator/Mini_System-main/Mini_System.srcs/sources_1/bd/design_CPU_System/ip/design_CPU_System_axi_quad_spi_1_0/design_CPU_System_axi_quad_spi_1_0.xdc]
+  read_xdc -ref bd_addd_ila_lib_0 -cells inst e:/signal_generator/Mini_System-main/Mini_System.srcs/sources_1/bd/design_CPU_System/ip/design_CPU_System_system_ila_0/bd_0/ip/ip_0/ila_v6_2/constraints/ila.xdc
+  set_property processing_order EARLY [get_files e:/signal_generator/Mini_System-main/Mini_System.srcs/sources_1/bd/design_CPU_System/ip/design_CPU_System_system_ila_0/bd_0/ip/ip_0/ila_v6_2/constraints/ila.xdc]
+  read_xdc E:/signal_generator/Mini_System-main/Mini_System.srcs/constrs_1/new/Mini.xdc
+  read_xdc E:/signal_generator/Mini_System-main/Mini_System.srcs/constrs_1/new/adda.xdc
+  read_xdc -ref design_CPU_System_axi_intc_0_0 -cells U0 e:/signal_generator/Mini_System-main/Mini_System.srcs/sources_1/bd/design_CPU_System/ip/design_CPU_System_axi_intc_0_0/design_CPU_System_axi_intc_0_0_clocks.xdc
+  set_property processing_order LATE [get_files e:/signal_generator/Mini_System-main/Mini_System.srcs/sources_1/bd/design_CPU_System/ip/design_CPU_System_axi_intc_0_0/design_CPU_System_axi_intc_0_0_clocks.xdc]
+  read_xdc -ref design_CPU_System_axi_quad_spi_0_0 -cells U0 e:/signal_generator/Mini_System-main/Mini_System.srcs/sources_1/bd/design_CPU_System/ip/design_CPU_System_axi_quad_spi_0_0/design_CPU_System_axi_quad_spi_0_0_clocks.xdc
+  set_property processing_order LATE [get_files e:/signal_generator/Mini_System-main/Mini_System.srcs/sources_1/bd/design_CPU_System/ip/design_CPU_System_axi_quad_spi_0_0/design_CPU_System_axi_quad_spi_0_0_clocks.xdc]
+  read_xdc -ref design_CPU_System_axi_quad_spi_1_0 -cells U0 e:/signal_generator/Mini_System-main/Mini_System.srcs/sources_1/bd/design_CPU_System/ip/design_CPU_System_axi_quad_spi_1_0/design_CPU_System_axi_quad_spi_1_0_clocks.xdc
+  set_property processing_order LATE [get_files e:/signal_generator/Mini_System-main/Mini_System.srcs/sources_1/bd/design_CPU_System/ip/design_CPU_System_axi_quad_spi_1_0/design_CPU_System_axi_quad_spi_1_0_clocks.xdc]
   link_design -top design_CPU_System_wrapper -part xc7a100tcsg324-1
   write_hwdef -file design_CPU_System_wrapper.hwdef
   close_msg_db -file init_design.pb

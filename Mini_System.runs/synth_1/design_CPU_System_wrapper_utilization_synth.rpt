@@ -1,8 +1,8 @@
 Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2016.4 (win64) Build 1733598 Wed Dec 14 22:35:39 MST 2016
-| Date         : Wed May 26 18:04:39 2021
-| Host         : DESKTOP-F536KDH running 64-bit major release  (build 9200)
+| Date         : Mon Jun 07 08:33:42 2021
+| Host         : DESKTOP-6Q996E9 running 64-bit major release  (build 9200)
 | Command      : report_utilization -file design_CPU_System_wrapper_utilization_synth.rpt -pb design_CPU_System_wrapper_utilization_synth.pb
 | Design       : design_CPU_System_wrapper
 | Device       : 7a100tcsg324-1

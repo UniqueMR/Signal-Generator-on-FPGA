@@ -48,17 +48,22 @@ int main()
 }
 void My_ISR()
 {
+	int freq_change = 1000;
+	int volt_set = 250;//当volt_set取默认值时，输出电压最大值为1V
+	int segcode[8] = {0xc0,0xf9,0xa4,0xb0,0x99,0x92,0x83,0xf8};
+
     int status;
-    int control;
+    unsigned short control;
     status = Xil_In32(XPAR_AXI_INTC_0_BASEADDR+XIN_ISR_OFFSET);//读取ISR
     control = Xil_In32(XPAR_AXI_GPIO_0_BASEADDR+XGPIO_DATA_OFFSET);//读取16bits按键输入
+    transition(control,volt_set,freq_change,segcode);
     //xil_printf("%d\n",control);
     if(status&XPAR_AXI_GPIO_0_IP2INTC_IRPT_MASK)
     	SwitchHandler();
     if(status&XPAR_AXI_TIMER_0_INTERRUPT_MASK) //== XPAR_AXI_TIMER_0_INTERRUPT_MASK)
-        Seg_TimerCounterHandler();
+        Seg_TimerCounterHandler(segcode);
     if(status&XPAR_AXI_QUAD_SPI_0_IP2INTC_IRPT_MASK)
-    	DA_Transformer(control);
+    	DA_Transformer(control,freq_change,volt_set);
     Xil_Out32(XPAR_AXI_INTC_0_BASEADDR+XIN_IAR_OFFSET,status);
 }
 

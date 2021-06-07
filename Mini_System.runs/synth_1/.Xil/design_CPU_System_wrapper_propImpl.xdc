@@ -1,5 +1,5 @@
-set_property SRC_FILE_INFO {cfile:D:/Vivado/digital_circuits/Mini_System/Mini_System.srcs/constrs_1/new/Mini.xdc rfile:../../../Mini_System.srcs/constrs_1/new/Mini.xdc id:1} [current_design]
-set_property SRC_FILE_INFO {cfile:D:/Vivado/digital_circuits/Mini_System/Mini_System.srcs/constrs_1/new/adda.xdc rfile:../../../Mini_System.srcs/constrs_1/new/adda.xdc id:2} [current_design]
+set_property SRC_FILE_INFO {cfile:E:/signal_generator/Mini_System-main/Mini_System.srcs/constrs_1/new/Mini.xdc rfile:../../../Mini_System.srcs/constrs_1/new/Mini.xdc id:1} [current_design]
+set_property SRC_FILE_INFO {cfile:E:/signal_generator/Mini_System-main/Mini_System.srcs/constrs_1/new/adda.xdc rfile:../../../Mini_System.srcs/constrs_1/new/adda.xdc id:2} [current_design]
 set_property src_info {type:XDC file:1 line:1 export:INPUT save:INPUT read:READ} [current_design]
 set_property IOSTANDARD LVCMOS33 [get_ports {seven_seg_led_an_tri_o[7]}]
 set_property src_info {type:XDC file:1 line:2 export:INPUT save:INPUT read:READ} [current_design]

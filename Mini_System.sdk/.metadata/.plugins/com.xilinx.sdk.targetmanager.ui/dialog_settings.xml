@@ -5,6 +5,6 @@
 	<item value="design_CPU_System_wrapper.bit" key="design_CPU_System_wrapper_hw_platform_0-bitFile"/>
 	<item value="false" key="design_CPU_System_wrapper_hw_platform_0-partial_bit"/>
 	<item value="Auto Detect" key="design_CPU_System_wrapper_hw_platform_0-device"/>
-	<item value="C:\vivado\project\Mini_System\Mini_System.sdk\signal_generator\Debug\signal_generator.elf" key="design_CPU_System_wrapper_hw_platform_0-microblaze_0-initElf"/>
+	<item value="E:\signal_generator\Mini_System-main\Mini_System.sdk\signal_generator\Debug\signal_generator.elf" key="design_CPU_System_wrapper_hw_platform_0-microblaze_0-initElf"/>
 	<item value="Local" key="design_CPU_System_wrapper_hw_platform_0-target"/>
 </section>

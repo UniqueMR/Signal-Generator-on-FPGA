@@ -2,21 +2,59 @@
 # Vivado v2016.4 (64-bit)
 # SW Build 1733598 on Wed Dec 14 22:35:39 MST 2016
 # IP Build 1731160 on Wed Dec 14 23:47:21 MST 2016
-# Start of session at: Sun May 30 10:40:40 2021
-# Process ID: 3988
-# Current directory: C:/vivado/project/Mini_System
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent3100 C:\vivado\project\Mini_System\Mini_System.xpr
-# Log file: C:/vivado/project/Mini_System/vivado.log
-# Journal file: C:/vivado/project/Mini_System\vivado.jou
+# Start of session at: Mon Jun 07 08:31:05 2021
+# Process ID: 17064
+# Current directory: E:/signal_generator/Mini_System-main
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent6908 E:\signal_generator\Mini_System-main\Mini_System.xpr
+# Log file: E:/signal_generator/Mini_System-main/vivado.log
+# Journal file: E:/signal_generator/Mini_System-main\vivado.jou
 #-----------------------------------------------------------
 start_gui
-open_project C:/vivado/project/Mini_System/Mini_System.xpr
+open_project E:/signal_generator/Mini_System-main/Mini_System.xpr
 INFO: [Project 1-313] Project file moved from 'D:/Vivado/digital_circuits/Mini_System' since last save.
 Scanning sources...
 Finished scanning sources
+WARNING: [filemgmt 56-2] IPUserFilesDir: Could not find the directory 'E:/signal_generator/Mini_System-main/Mini_System.ip_user_files', nor could it be found using path 'D:/Vivado/digital_circuits/Mini_System/Mini_System.ip_user_files'.
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2016.4/data/ip'.
-open_project: Time (s): cpu = 00:00:21 ; elapsed = 00:00:16 . Memory (MB): peak = 993.301 ; gain = 334.965
+open_project: Time (s): cpu = 00:00:18 ; elapsed = 00:00:13 . Memory (MB): peak = 1012.801 ; gain = 321.117
+open_bd_design {E:/signal_generator/Mini_System-main/Mini_System.srcs/sources_1/bd/design_CPU_System/design_CPU_System.bd}
+Adding cell -- xilinx.com:ip:microblaze:10.0 - microblaze_0
+Adding cell -- xilinx.com:ip:mdm:3.2 - mdm_1
+Adding cell -- xilinx.com:ip:clk_wiz:5.3 - clk_wiz_1
+Adding cell -- xilinx.com:ip:proc_sys_reset:5.0 - rst_clk_wiz_1_100M
+Adding cell -- xilinx.com:ip:axi_uartlite:2.0 - axi_uartlite_0
+Adding cell -- xilinx.com:ip:axi_gpio:2.0 - axi_gpio_0
+Adding cell -- xilinx.com:ip:axi_gpio:2.0 - axi_gpio_1
+Adding cell -- xilinx.com:ip:axi_gpio:2.0 - axi_gpio_2
+Adding cell -- xilinx.com:ip:axi_intc:4.1 - axi_intc_0
+Adding cell -- xilinx.com:ip:xlconcat:2.1 - xlconcat_0
+Adding cell -- xilinx.com:ip:axi_timer:2.0 - axi_timer_0
+Adding cell -- xilinx.com:ip:axi_uartlite:2.0 - axi_uartlite_1
+Adding cell -- xilinx.com:ip:axi_uartlite:2.0 - axi_uartlite_2
+Adding cell -- xilinx.com:ip:axi_quad_spi:3.2 - axi_quad_spi_0
+Adding cell -- xilinx.com:ip:axi_quad_spi:3.2 - axi_quad_spi_1
+Adding cell -- xilinx.com:ip:system_ila:1.0 - system_ila
+Adding cell -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding cell -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding cell -- xilinx.com:ip:lmb_v10:3.0 - dlmb_v10
+Adding cell -- xilinx.com:ip:lmb_v10:3.0 - ilmb_v10
+Adding cell -- xilinx.com:ip:lmb_bram_if_cntlr:4.0 - dlmb_bram_if_cntlr
+Adding cell -- xilinx.com:ip:lmb_bram_if_cntlr:4.0 - ilmb_bram_if_cntlr
+Adding cell -- xilinx.com:ip:blk_mem_gen:8.3 - lmb_bram
+Successfully read diagram <design_CPU_System> from BD file <E:/signal_generator/Mini_System-main/Mini_System.srcs/sources_1/bd/design_CPU_System/design_CPU_System.bd>
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Mon Jun 07 08:33:07 2021] Launched synth_1...
+Run output will be captured here: E:/signal_generator/Mini_System-main/Mini_System.runs/synth_1/runme.log
+[Mon Jun 07 08:33:07 2021] Launched impl_1...
+Run output will be captured here: E:/signal_generator/Mini_System-main/Mini_System.runs/impl_1/runme.log
+file copy -force E:/signal_generator/Mini_System-main/Mini_System.runs/impl_1/design_CPU_System_wrapper.sysdef E:/signal_generator/Mini_System-main/Mini_System.sdk/design_CPU_System_wrapper.hdf
+
+launch_sdk -workspace E:/signal_generator/Mini_System-main/Mini_System.sdk -hwspec E:/signal_generator/Mini_System-main/Mini_System.sdk/design_CPU_System_wrapper.hdf
+INFO: [Vivado 12-393] Launching SDK...
+INFO: [Vivado 12-417] Running xsdk -workspace E:/signal_generator/Mini_System-main/Mini_System.sdk -hwspec E:/signal_generator/Mini_System-main/Mini_System.sdk/design_CPU_System_wrapper.hdf
+INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages.
 exit
-INFO: [Common 17-206] Exiting Vivado at Sun May 30 10:42:05 2021...
+INFO: [Common 17-206] Exiting Vivado at Mon Jun 07 11:03:13 2021...

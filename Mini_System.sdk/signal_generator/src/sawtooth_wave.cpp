@@ -6,8 +6,15 @@
  */
 #include "include.hpp"
 
-void sawtooth_wave(int& volt)
+const int counter1_initial = 4095;
+
+void sawtooth_wave(int& volt,int &counter,int &freq_change,int &volt_set)
 {
-	volt++;
+	const int counter_max = counter1_initial * 1000 /freq_change;
+	if(counter <= counter_max)
+		counter++;
+	else
+		counter = 0;
+	volt = 4095 * volt_set * counter / (counter_max * 333);
 	Xil_Out16(XPAR_AXI_QUAD_SPI_0_BASEADDR+XSP_DTR_OFFSET,volt&0xfff);//启动SPI传输，产生时钟和片选信号
 }

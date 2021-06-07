@@ -1,6 +1,6 @@
-16:27:55 **** Incremental Build of configuration Debug for project signal_generator ****
+19:53:06 **** Incremental Build of configuration Debug for project signal_generator ****
 make all 
 make: Nothing to be done for `all'.
 
-16:27:56 Build Finished (took 392ms)
+19:53:06 Build Finished (took 178ms)
 

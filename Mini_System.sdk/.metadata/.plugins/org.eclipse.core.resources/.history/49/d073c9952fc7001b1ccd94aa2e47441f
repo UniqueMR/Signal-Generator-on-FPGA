@@ -1,0 +1,16 @@
+/*
+ * waves.hpp
+ *
+ *  Created on: 2021Äê5ÔÂ31ÈÕ
+ *      Author: Unique MR
+ */
+
+
+
+
+void triangle_wave(int& volt, int& edge);
+void sawtooth_wave(int& volt);
+void square_wave(int &volt,int &edge,int &counter,int &freq_change,int &volt_set);
+void sin_wave(int &volt,int &count,const int *sample);
+
+

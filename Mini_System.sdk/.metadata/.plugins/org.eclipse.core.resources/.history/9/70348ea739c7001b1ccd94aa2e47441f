@@ -1,0 +1,21 @@
+/*
+ * transition.cpp
+ *
+ *  Created on: 2021年6月7日
+ *      Author: uniqueMR
+ */
+#include "include.hpp"
+void transition(unsigned short control,int &volt_set,int &freq_change)
+{
+	int volt_set_control = (control >> 2)&0x3f;
+	int freq_change_control = (control >> 8)&0x3f;
+
+	volt_set /= (volt_set_control+1);
+	int freq_change_regulation = 0;//控制频率改变的方向，即增加频率还是减小频率
+	if(((freq_change_control >> 5)&0x1) == 1)
+		freq_change_regulation = 1;
+	else freq_change_regulation = 0;
+	if(freq_change == 0)
+
+	return;
+}

@@ -1,6 +1,6 @@
-18:45:03 **** Incremental Build of configuration Debug for project segment_roll ****
+11:27:39 **** Build of configuration Debug for project segment_roll ****
 make all 
 make: Nothing to be done for `all'.
 
-18:45:03 Build Finished (took 245ms)
+11:27:39 Build Finished (took 175ms)
 

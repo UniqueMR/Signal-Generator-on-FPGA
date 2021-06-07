@@ -1,6 +1,6 @@
-18:45:08 **** Incremental Build of configuration Debug for project switch_in ****
+11:27:40 **** Build of configuration Debug for project switch_in ****
 make all 
 make: Nothing to be done for `all'.
 
-18:45:08 Build Finished (took 203ms)
+11:27:41 Build Finished (took 172ms)
 

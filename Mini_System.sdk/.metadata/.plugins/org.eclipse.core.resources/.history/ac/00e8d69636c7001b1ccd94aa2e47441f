@@ -1,0 +1,15 @@
+/*
+ * transition.cpp
+ *
+ *  Created on: 2021Äê6ÔÂ7ÈÕ
+ *      Author: uniqueMR
+ */
+void transition(unsigned short control,int &volt_set,int &freq_change)
+{
+	int volt_set_control = (control >> 2)&0x3f;
+	int freq_change_control = (control >> 8)&0x3f;
+
+	volt_set /= volt_set_control;
+	freq_change /= freq_change_control;
+	return;
+}

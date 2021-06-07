@@ -14,6 +14,7 @@ CPP_SRCS += \
 ../src/sawtooth_wave.cpp \
 ../src/sin_wave.cpp \
 ../src/square_wave.cpp \
+../src/transition.cpp \
 ../src/triangle_wave.cpp 
 
 OBJS += \
@@ -24,6 +25,7 @@ OBJS += \
 ./src/sawtooth_wave.o \
 ./src/sin_wave.o \
 ./src/square_wave.o \
+./src/transition.o \
 ./src/triangle_wave.o 
 
 CPP_DEPS += \
@@ -34,6 +36,7 @@ CPP_DEPS += \
 ./src/sawtooth_wave.d \
 ./src/sin_wave.d \
 ./src/square_wave.d \
+./src/transition.d \
 ./src/triangle_wave.d 
 
 

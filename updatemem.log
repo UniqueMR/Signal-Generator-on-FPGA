@@ -1,0 +1,19 @@
+#-----------------------------------------------------------
+# updatemem v2016.4 (64-bit)
+# SW Build 1733598 on Wed Dec 14 22:35:39 MST 2016
+# 
+# Start of session at: Mon Jun 07 08:42:08 2021
+# Process ID: 18376
+# Current directory: E:/signal_generator/Mini_System-main
+# Command line: updatemem.exe -mode batch -source C:/Xilinx/SDK/2016.4/scripts/updatemem/main.tcl -notrace -tclargs -meminfo E:/signal_generator/Mini_System-main/Mini_System.sdk/design_CPU_System_wrapper_hw_platform_0/design_CPU_System_wrapper.mmi -data E:/signal_generator/Mini_System-main/Mini_System.sdk/signal_generator/Debug/signal_generator.elf -proc design_CPU_System_i/microblaze_0 -bit E:/signal_generator/Mini_System-main/Mini_System.sdk/design_CPU_System_wrapper_hw_platform_0/design_CPU_System_wrapper.bit -out E:/signal_generator/Mini_System-main/Mini_System.sdk/design_CPU_System_wrapper_hw_platform_0/download.bit -force
+# Log file: E:/signal_generator/Mini_System-main/updatemem.log
+# Journal file: E:/signal_generator/Mini_System-main\updatemem.jou
+#-----------------------------------------------------------
+source C:/Xilinx/SDK/2016.4/scripts/updatemem/main.tcl -notrace
+ Loading bitfile E:/signal_generator/Mini_System-main/Mini_System.sdk/design_CPU_System_wrapper_hw_platform_0/design_CPU_System_wrapper.bit
+Loading data files...
+Updating memory content...
+Creating bitstream...
+Writing bitstream E:/signal_generator/Mini_System-main/Mini_System.sdk/design_CPU_System_wrapper_hw_platform_0/download.bit...
+  update_mem: Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 518.625 ; gain = 465.445
+INFO: [Common 17-206] Exiting updatemem at Mon Jun 07 08:42:20 2021...
