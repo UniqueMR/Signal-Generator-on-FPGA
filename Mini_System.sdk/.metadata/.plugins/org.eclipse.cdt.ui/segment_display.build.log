@@ -1,6 +1,6 @@
-11:27:39 **** Build of configuration Debug for project segment_display ****
+17:14:42 **** Build of configuration Debug for project segment_display ****
 make all 
 make: Nothing to be done for `all'.
 
-11:27:39 Build Finished (took 172ms)
+17:14:42 Build Finished (took 179ms)
 

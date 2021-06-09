@@ -20,9 +20,10 @@
 
 void SwitchHandler();
 void Seg_TimerCounterHandler(int *segcode);
-void DA_Transformer(unsigned short control,int freq_change,int volt_set);
+void DA_Transformer(unsigned short control,int freq_change,int volt_set,int blank);
 void My_ISR() __attribute__ ((interrupt_handler));
 void transition(unsigned short control,int &volt_set,int &freq_change,int *segcode);
+void button_handle(int &blank);
 
 
 

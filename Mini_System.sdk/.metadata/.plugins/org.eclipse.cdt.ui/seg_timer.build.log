@@ -1,6 +1,6 @@
-11:27:22 **** Build of configuration Debug for project seg_timer ****
+17:14:20 **** Build of configuration Debug for project seg_timer ****
 make all 
 make: Nothing to be done for `all'.
 
-11:27:22 Build Finished (took 172ms)
+17:14:20 Build Finished (took 168ms)
 

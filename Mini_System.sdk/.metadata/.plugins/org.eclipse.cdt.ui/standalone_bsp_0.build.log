@@ -1,4 +1,4 @@
-11:27:32 **** Build of project standalone_bsp_0 ****
+17:14:31 **** Build of project standalone_bsp_0 ****
 make -k all 
 "Running Make include in microblaze_0/libsrc/bram_v4_1/src"
 make -C microblaze_0/libsrc/bram_v4_1/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
@@ -42,5 +42,5 @@ make -C microblaze_0/libsrc/uartlite_v3_2/src -s libs  "SHELL=CMD" "COMPILER=mb-
 "Compiling uartlite"
 'Finished building libraries'
 
-11:27:39 Build Finished (took 7s.81ms)
+17:14:39 Build Finished (took 7s.871ms)
 

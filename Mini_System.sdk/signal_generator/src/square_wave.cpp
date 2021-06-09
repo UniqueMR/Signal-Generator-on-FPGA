@@ -6,21 +6,16 @@
  */
 #include "include.hpp"
 
-const int counter0_initial = 4095;
+const int counter0_initial = 144;
 
-void square_wave(int &volt,int &edge,int &counter,int &freq_change,int &volt_set)
+void square_wave(int &volt,int &edge,int &counter,int &freq_change,int &volt_set,int &blank)
 {
-	const int counter_max = counter0_initial * 1000 / freq_change;
-	if(counter >= counter_max)
-	{
-		if(edge == 1)
-			edge = 0;
-		else
-			edge = 1;
+	const int counter_max = counter0_initial * 100 / freq_change;
+
+	if(counter <= ((counter_max*2*blank)/100))//countermax * 2表示一个周期的计数长度，blank调整高电平所占的百分比
+		volt = 4095 * volt_set/340;
+	else if(counter >= counter_max*2 )
 		counter = 0;
-	}
-	if(edge == 0)
-		volt = 4095 * volt_set/333;
 	else
 		volt = 0;
 	counter++;

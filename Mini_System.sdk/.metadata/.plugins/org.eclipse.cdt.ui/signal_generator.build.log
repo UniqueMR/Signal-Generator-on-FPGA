@@ -1,6 +1,21 @@
-19:53:06 **** Incremental Build of configuration Debug for project signal_generator ****
+17:43:38 **** Auto Build of configuration Debug for project signal_generator ****
 make all 
-make: Nothing to be done for `all'.
+'Building file: ../src/square_wave.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/square_wave.o" -I../../signal_generator_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/square_wave.d" -MT"src/square_wave.o" -o "src/square_wave.o" "../src/square_wave.cpp"
+'Finished building: ../src/square_wave.cpp'
+' '
+'Building target: signal_generator.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../signal_generator_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -o "signal_generator.elf"  ./src/DA_Transformer.o ./src/Seg_TimerCounterHandler.o ./src/SwitchHandler.o ./src/button_handle.o ./src/main.o ./src/sawtooth_wave.o ./src/sin_wave.o ./src/square_wave.o ./src/transition.o ./src/triangle_wave.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: signal_generator.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size signal_generator.elf  |tee "signal_generator.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  13856	    528	   3128	  17512	   4468	signal_generator.elf
+'Finished building: signal_generator.elf.size'
+' '
 
-19:53:06 Build Finished (took 178ms)
+17:43:39 Build Finished (took 715ms)
 

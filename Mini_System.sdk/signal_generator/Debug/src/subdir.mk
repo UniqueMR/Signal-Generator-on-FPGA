@@ -10,6 +10,7 @@ CPP_SRCS += \
 ../src/DA_Transformer.cpp \
 ../src/Seg_TimerCounterHandler.cpp \
 ../src/SwitchHandler.cpp \
+../src/button_handle.cpp \
 ../src/main.cpp \
 ../src/sawtooth_wave.cpp \
 ../src/sin_wave.cpp \
@@ -21,6 +22,7 @@ OBJS += \
 ./src/DA_Transformer.o \
 ./src/Seg_TimerCounterHandler.o \
 ./src/SwitchHandler.o \
+./src/button_handle.o \
 ./src/main.o \
 ./src/sawtooth_wave.o \
 ./src/sin_wave.o \
@@ -32,6 +34,7 @@ CPP_DEPS += \
 ./src/DA_Transformer.d \
 ./src/Seg_TimerCounterHandler.d \
 ./src/SwitchHandler.d \
+./src/button_handle.d \
 ./src/main.d \
 ./src/sawtooth_wave.d \
 ./src/sin_wave.d \

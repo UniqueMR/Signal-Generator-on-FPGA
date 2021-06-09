@@ -1,18 +1,5 @@
-/*
- * main.cpp
- *
- *  Created on: 2021年5月31日
- *      Author: Unique MR
- */
-/*
- * main.c
- *
- *  Created on: 2021年5月30日
- *      Author: Unique MR
- */
-
 #include "include.hpp"
-
+int blank=50;
 int main()
 {
 	xil_printf("The program is running.\n");
@@ -22,6 +9,13 @@ int main()
 	Xil_Out32(XPAR_AXI_GPIO_0_BASEADDR+XGPIO_GIE_OFFSET,XGPIO_GIE_GINTR_ENABLE_MASK);
     Xil_Out32(XPAR_AXI_GPIO_1_BASEADDR+XGPIO_TRI_OFFSET,0X0);//设定为输出方式
     Xil_Out32(XPAR_AXI_GPIO_1_BASEADDR+XGPIO_TRI2_OFFSET,0X0);//设定为输出方式
+
+    Xil_Out32(XPAR_AXI_GPIO_2_BASEADDR+XGPIO_TRI_OFFSET,0X1f);//设定button为输入方式
+	Xil_Out32(XPAR_AXI_GPIO_2_BASEADDR+XGPIO_IER_OFFSET,XGPIO_IR_CH1_MASK);//通道1允许中断
+	Xil_Out32(XPAR_AXI_GPIO_2_BASEADDR+XGPIO_GIE_OFFSET,XGPIO_GIE_GINTR_ENABLE_MASK);//允许GPIO中断输出
+
+
+
     Xil_Out32(XPAR_AXI_TIMER_0_BASEADDR+XTC_TCSR_OFFSET,Xil_In32(XPAR_AXI_TIMER_0_BASEADDR+XTC_TCSR_OFFSET)&~XTC_CSR_ENABLE_TMR_MASK);//写TCSR，停止计数器
     Xil_Out32(XPAR_AXI_TIMER_0_BASEADDR+XTC_TLR_OFFSET,RESET_VALUE);//写TLR预置计数值
     Xil_Out32(XPAR_AXI_TIMER_0_BASEADDR+XTC_TCSR_OFFSET,
@@ -37,20 +31,22 @@ int main()
 	Xil_Out32(XPAR_AXI_QUAD_SPI_0_BASEADDR+XSP_IIER_OFFSET,XSP_INTR_TX_EMPTY_MASK);
 	Xil_Out32(XPAR_AXI_QUAD_SPI_0_BASEADDR+XSP_DGIER_OFFSET,XSP_GINTR_ENABLE_MASK);
 	//中断控制器intr0中断源使能
-    Xil_Out32(XPAR_AXI_INTC_0_BASEADDR+XIN_IER_OFFSET,XPAR_AXI_TIMER_0_INTERRUPT_MASK|XPAR_AXI_GPIO_0_IP2INTC_IRPT_MASK|XPAR_AXI_QUAD_SPI_0_IP2INTC_IRPT_MASK);
+    Xil_Out32(XPAR_AXI_INTC_0_BASEADDR+XIN_IER_OFFSET,XPAR_AXI_GPIO_2_IP2INTC_IRPT_MASK|XPAR_AXI_TIMER_0_INTERRUPT_MASK|XPAR_AXI_GPIO_0_IP2INTC_IRPT_MASK|XPAR_AXI_QUAD_SPI_0_IP2INTC_IRPT_MASK);
     //对中断控制器进行中断使能
     Xil_Out32(XPAR_AXI_INTC_0_BASEADDR+XIN_MER_OFFSET,XIN_INT_MASTER_ENABLE_MASK|XIN_INT_HARDWARE_ENABLE_MASK);
     microblaze_enable_interrupts();
     //允许微处理器接受中断
 	Xil_Out16(XPAR_AXI_QUAD_SPI_0_BASEADDR+XSP_DTR_OFFSET,0);//启动SPI传输，产生时钟和片选信号
     while(1);
+
     return 0;
 }
 void My_ISR()
 {
-	int freq_change = 1000;
-	int volt_set = 250;//当volt_set取默认值时，输出电压最大值为1V
+	int freq_change = 640;////当freq_change取默认值时，输出信号频率为100Hz
+	int volt_set = 320;//当volt_set取默认值时，输出电压最大值为3.2V
 	int segcode[8] = {0xc0,0xf9,0xa4,0xb0,0x99,0x92,0x83,0xf8};
+
 
     int status;
     unsigned short control;
@@ -58,12 +54,17 @@ void My_ISR()
     control = Xil_In32(XPAR_AXI_GPIO_0_BASEADDR+XGPIO_DATA_OFFSET);//读取16bits按键输入
     transition(control,volt_set,freq_change,segcode);
     //xil_printf("%d\n",control);
-    if(status&XPAR_AXI_GPIO_0_IP2INTC_IRPT_MASK)
+
+    if((status&XPAR_AXI_GPIO_0_IP2INTC_IRPT_MASK) == XPAR_AXI_GPIO_0_IP2INTC_IRPT_MASK)
     	SwitchHandler();
-    if(status&XPAR_AXI_TIMER_0_INTERRUPT_MASK) //== XPAR_AXI_TIMER_0_INTERRUPT_MASK)
-        Seg_TimerCounterHandler(segcode);
-    if(status&XPAR_AXI_QUAD_SPI_0_IP2INTC_IRPT_MASK)
-    	DA_Transformer(control,freq_change,volt_set);
+    if((status&XPAR_AXI_TIMER_0_INTERRUPT_MASK) == XPAR_AXI_TIMER_0_INTERRUPT_MASK)
+    	Seg_TimerCounterHandler(segcode);
+    if((status&XPAR_AXI_GPIO_2_IP2INTC_IRPT_MASK)==XPAR_AXI_GPIO_2_IP2INTC_IRPT_MASK)
+    	button_handle(blank);
+    if((status&XPAR_AXI_QUAD_SPI_0_IP2INTC_IRPT_MASK) == XPAR_AXI_QUAD_SPI_0_IP2INTC_IRPT_MASK)
+        DA_Transformer(control,freq_change,volt_set,blank);
+
+
     Xil_Out32(XPAR_AXI_INTC_0_BASEADDR+XIN_IAR_OFFSET,status);
 }
 

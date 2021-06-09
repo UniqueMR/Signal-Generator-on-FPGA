@@ -1,6 +1,6 @@
-11:27:40 **** Build of configuration Debug for project UART_COMMUNICATION_IOWR ****
+17:14:43 **** Build of configuration Debug for project UART_COMMUNICATION_IOWR ****
 make all 
 make: Nothing to be done for `all'.
 
-11:27:40 Build Finished (took 172ms)
+17:14:43 Build Finished (took 178ms)
 

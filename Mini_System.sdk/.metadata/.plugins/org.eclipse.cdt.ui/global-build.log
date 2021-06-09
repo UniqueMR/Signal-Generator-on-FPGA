@@ -10013,3 +10013,649 @@ mb-size signal_generator.elf  |tee "signal_generator.elf.size"
 19:53:06 **** Incremental Build of configuration Debug for project signal_generator ****
 make all 
 make: Nothing to be done for `all'.
+17:13:54 **** Build of project intergration_test1_bsp ****
+make -k all 
+"Running Make include in microblaze_0/libsrc/bram_v4_1/src"
+make -C microblaze_0/libsrc/bram_v4_1/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in microblaze_0/libsrc/cpu_v2_5/src"
+make -C microblaze_0/libsrc/cpu_v2_5/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in microblaze_0/libsrc/gpio_v4_3/src"
+make -C microblaze_0/libsrc/gpio_v4_3/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in microblaze_0/libsrc/intc_v3_5/src"
+make -C microblaze_0/libsrc/intc_v3_5/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in microblaze_0/libsrc/spi_v4_2/src"
+make -C microblaze_0/libsrc/spi_v4_2/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in microblaze_0/libsrc/standalone_v6_1/src"
+make -C microblaze_0/libsrc/standalone_v6_1/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in microblaze_0/libsrc/tmrctr_v4_2/src"
+make -C microblaze_0/libsrc/tmrctr_v4_2/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in microblaze_0/libsrc/uartlite_v3_2/src"
+make -C microblaze_0/libsrc/uartlite_v3_2/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make libs in microblaze_0/libsrc/bram_v4_1/src"
+make -C microblaze_0/libsrc/bram_v4_1/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling bram"
+"Running Make libs in microblaze_0/libsrc/cpu_v2_5/src"
+make -C microblaze_0/libsrc/cpu_v2_5/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling cpu"
+"Running Make libs in microblaze_0/libsrc/gpio_v4_3/src"
+make -C microblaze_0/libsrc/gpio_v4_3/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling gpio"
+"Running Make libs in microblaze_0/libsrc/intc_v3_5/src"
+make -C microblaze_0/libsrc/intc_v3_5/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling intc"
+"Running Make libs in microblaze_0/libsrc/spi_v4_2/src"
+make -C microblaze_0/libsrc/spi_v4_2/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling spi"
+"Running Make libs in microblaze_0/libsrc/standalone_v6_1/src"
+make -C microblaze_0/libsrc/standalone_v6_1/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling standalone";
+"Running Make libs in microblaze_0/libsrc/tmrctr_v4_2/src"
+make -C microblaze_0/libsrc/tmrctr_v4_2/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling tmrctr"
+"Running Make libs in microblaze_0/libsrc/uartlite_v3_2/src"
+make -C microblaze_0/libsrc/uartlite_v3_2/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling uartlite"
+'Finished building libraries'
+17:14:03 **** Build of configuration Debug for project intergration_test1 ****
+make all 
+make: Nothing to be done for `all'.
+17:14:03 **** Build of project intergration_test_bsp ****
+make -k all 
+"Running Make include in microblaze_0/libsrc/bram_v4_1/src"
+make -C microblaze_0/libsrc/bram_v4_1/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in microblaze_0/libsrc/cpu_v2_5/src"
+make -C microblaze_0/libsrc/cpu_v2_5/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in microblaze_0/libsrc/gpio_v4_3/src"
+make -C microblaze_0/libsrc/gpio_v4_3/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in microblaze_0/libsrc/intc_v3_5/src"
+make -C microblaze_0/libsrc/intc_v3_5/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in microblaze_0/libsrc/spi_v4_2/src"
+make -C microblaze_0/libsrc/spi_v4_2/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in microblaze_0/libsrc/standalone_v6_1/src"
+make -C microblaze_0/libsrc/standalone_v6_1/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in microblaze_0/libsrc/tmrctr_v4_2/src"
+make -C microblaze_0/libsrc/tmrctr_v4_2/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in microblaze_0/libsrc/uartlite_v3_2/src"
+make -C microblaze_0/libsrc/uartlite_v3_2/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make libs in microblaze_0/libsrc/bram_v4_1/src"
+make -C microblaze_0/libsrc/bram_v4_1/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling bram"
+"Running Make libs in microblaze_0/libsrc/cpu_v2_5/src"
+make -C microblaze_0/libsrc/cpu_v2_5/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling cpu"
+"Running Make libs in microblaze_0/libsrc/gpio_v4_3/src"
+make -C microblaze_0/libsrc/gpio_v4_3/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling gpio"
+"Running Make libs in microblaze_0/libsrc/intc_v3_5/src"
+make -C microblaze_0/libsrc/intc_v3_5/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling intc"
+"Running Make libs in microblaze_0/libsrc/spi_v4_2/src"
+make -C microblaze_0/libsrc/spi_v4_2/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling spi"
+"Running Make libs in microblaze_0/libsrc/standalone_v6_1/src"
+make -C microblaze_0/libsrc/standalone_v6_1/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling standalone";
+"Running Make libs in microblaze_0/libsrc/tmrctr_v4_2/src"
+make -C microblaze_0/libsrc/tmrctr_v4_2/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling tmrctr"
+"Running Make libs in microblaze_0/libsrc/uartlite_v3_2/src"
+make -C microblaze_0/libsrc/uartlite_v3_2/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling uartlite"
+'Finished building libraries'
+17:14:12 **** Build of project seg_timer_bsp ****
+make -k all 
+"Running Make include in microblaze_0/libsrc/bram_v4_1/src"
+make -C microblaze_0/libsrc/bram_v4_1/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in microblaze_0/libsrc/cpu_v2_5/src"
+make -C microblaze_0/libsrc/cpu_v2_5/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in microblaze_0/libsrc/gpio_v4_3/src"
+make -C microblaze_0/libsrc/gpio_v4_3/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in microblaze_0/libsrc/intc_v3_5/src"
+make -C microblaze_0/libsrc/intc_v3_5/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in microblaze_0/libsrc/spi_v4_2/src"
+make -C microblaze_0/libsrc/spi_v4_2/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in microblaze_0/libsrc/standalone_v6_1/src"
+make -C microblaze_0/libsrc/standalone_v6_1/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in microblaze_0/libsrc/tmrctr_v4_2/src"
+make -C microblaze_0/libsrc/tmrctr_v4_2/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in microblaze_0/libsrc/uartlite_v3_2/src"
+make -C microblaze_0/libsrc/uartlite_v3_2/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make libs in microblaze_0/libsrc/bram_v4_1/src"
+make -C microblaze_0/libsrc/bram_v4_1/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling bram"
+"Running Make libs in microblaze_0/libsrc/cpu_v2_5/src"
+make -C microblaze_0/libsrc/cpu_v2_5/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling cpu"
+"Running Make libs in microblaze_0/libsrc/gpio_v4_3/src"
+make -C microblaze_0/libsrc/gpio_v4_3/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling gpio"
+"Running Make libs in microblaze_0/libsrc/intc_v3_5/src"
+make -C microblaze_0/libsrc/intc_v3_5/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling intc"
+"Running Make libs in microblaze_0/libsrc/spi_v4_2/src"
+make -C microblaze_0/libsrc/spi_v4_2/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling spi"
+"Running Make libs in microblaze_0/libsrc/standalone_v6_1/src"
+make -C microblaze_0/libsrc/standalone_v6_1/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling standalone";
+"Running Make libs in microblaze_0/libsrc/tmrctr_v4_2/src"
+make -C microblaze_0/libsrc/tmrctr_v4_2/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling tmrctr"
+"Running Make libs in microblaze_0/libsrc/uartlite_v3_2/src"
+make -C microblaze_0/libsrc/uartlite_v3_2/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling uartlite"
+'Finished building libraries'
+17:14:20 **** Build of configuration Debug for project seg_timer ****
+make all 
+make: Nothing to be done for `all'.
+17:14:20 **** Build of project signal_generator_bsp ****
+make -k all 
+"Running Make include in microblaze_0/libsrc/bram_v4_1/src"
+make -C microblaze_0/libsrc/bram_v4_1/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in microblaze_0/libsrc/cpu_v2_5/src"
+make -C microblaze_0/libsrc/cpu_v2_5/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in microblaze_0/libsrc/gpio_v4_3/src"
+make -C microblaze_0/libsrc/gpio_v4_3/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in microblaze_0/libsrc/intc_v3_5/src"
+make -C microblaze_0/libsrc/intc_v3_5/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in microblaze_0/libsrc/spi_v4_2/src"
+make -C microblaze_0/libsrc/spi_v4_2/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in microblaze_0/libsrc/standalone_v6_1/src"
+make -C microblaze_0/libsrc/standalone_v6_1/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in microblaze_0/libsrc/tmrctr_v4_2/src"
+make -C microblaze_0/libsrc/tmrctr_v4_2/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in microblaze_0/libsrc/uartlite_v3_2/src"
+make -C microblaze_0/libsrc/uartlite_v3_2/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make libs in microblaze_0/libsrc/bram_v4_1/src"
+make -C microblaze_0/libsrc/bram_v4_1/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling bram"
+"Running Make libs in microblaze_0/libsrc/cpu_v2_5/src"
+make -C microblaze_0/libsrc/cpu_v2_5/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling cpu"
+"Running Make libs in microblaze_0/libsrc/gpio_v4_3/src"
+make -C microblaze_0/libsrc/gpio_v4_3/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling gpio"
+"Running Make libs in microblaze_0/libsrc/intc_v3_5/src"
+make -C microblaze_0/libsrc/intc_v3_5/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling intc"
+"Running Make libs in microblaze_0/libsrc/spi_v4_2/src"
+make -C microblaze_0/libsrc/spi_v4_2/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling spi"
+"Running Make libs in microblaze_0/libsrc/standalone_v6_1/src"
+make -C microblaze_0/libsrc/standalone_v6_1/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling standalone";
+"Running Make libs in microblaze_0/libsrc/tmrctr_v4_2/src"
+make -C microblaze_0/libsrc/tmrctr_v4_2/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling tmrctr"
+"Running Make libs in microblaze_0/libsrc/uartlite_v3_2/src"
+make -C microblaze_0/libsrc/uartlite_v3_2/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling uartlite"
+'Finished building libraries'
+17:14:28 **** Build of configuration Debug for project signal_generator ****
+make all 
+'Building file: ../src/DA_Transformer.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/DA_Transformer.o" -I../../signal_generator_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/DA_Transformer.d" -MT"src/DA_Transformer.o" -o "src/DA_Transformer.o" "../src/DA_Transformer.cpp"
+'Finished building: ../src/DA_Transformer.cpp'
+' '
+'Building file: ../src/Seg_TimerCounterHandler.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/Seg_TimerCounterHandler.o" -I../../signal_generator_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/Seg_TimerCounterHandler.d" -MT"src/Seg_TimerCounterHandler.o" -o "src/Seg_TimerCounterHandler.o" "../src/Seg_TimerCounterHandler.cpp"
+'Finished building: ../src/Seg_TimerCounterHandler.cpp'
+' '
+'Building file: ../src/SwitchHandler.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/SwitchHandler.o" -I../../signal_generator_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/SwitchHandler.d" -MT"src/SwitchHandler.o" -o "src/SwitchHandler.o" "../src/SwitchHandler.cpp"
+'Finished building: ../src/SwitchHandler.cpp'
+' '
+'Building file: ../src/main.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../signal_generator_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+'Finished building: ../src/main.cpp'
+' '
+'Building file: ../src/sawtooth_wave.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/sawtooth_wave.o" -I../../signal_generator_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/sawtooth_wave.d" -MT"src/sawtooth_wave.o" -o "src/sawtooth_wave.o" "../src/sawtooth_wave.cpp"
+'Finished building: ../src/sawtooth_wave.cpp'
+' '
+'Building file: ../src/sin_wave.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/sin_wave.o" -I../../signal_generator_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/sin_wave.d" -MT"src/sin_wave.o" -o "src/sin_wave.o" "../src/sin_wave.cpp"
+'Finished building: ../src/sin_wave.cpp'
+' '
+'Building file: ../src/square_wave.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/square_wave.o" -I../../signal_generator_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/square_wave.d" -MT"src/square_wave.o" -o "src/square_wave.o" "../src/square_wave.cpp"
+'Finished building: ../src/square_wave.cpp'
+' '
+'Building file: ../src/transition.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/transition.o" -I../../signal_generator_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/transition.d" -MT"src/transition.o" -o "src/transition.o" "../src/transition.cpp"
+'Finished building: ../src/transition.cpp'
+' '
+'Building file: ../src/triangle_wave.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/triangle_wave.o" -I../../signal_generator_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/triangle_wave.d" -MT"src/triangle_wave.o" -o "src/triangle_wave.o" "../src/triangle_wave.cpp"
+'Finished building: ../src/triangle_wave.cpp'
+' '
+'Building file: ../src/button_handle.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/button_handle.o" -I../../signal_generator_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/button_handle.d" -MT"src/button_handle.o" -o "src/button_handle.o" "../src/button_handle.cpp"
+../src/button_handle.cpp: In function 'void button_handle(int&)':
+../src/button_handle.cpp:10:20: error: 'XPAR_AXI_GPIO_2_BASEADDR' was not declared in this scope
+  btncode =Xil_In32(XPAR_AXI_GPIO_2_BASEADDR+XGPIO_DATA_OFFSET);
+                    ^
+../src/button_handle.cpp:10:45: error: 'XGPIO_DATA_OFFSET' was not declared in this scope
+  btncode =Xil_In32(XPAR_AXI_GPIO_2_BASEADDR+XGPIO_DATA_OFFSET);
+                                             ^
+../src/button_handle.cpp:10:62: error: 'Xil_In32' was not declared in this scope
+  btncode =Xil_In32(XPAR_AXI_GPIO_2_BASEADDR+XGPIO_DATA_OFFSET);
+                                                              ^
+../src/button_handle.cpp:18:59: error: 'xil_printf' was not declared in this scope
+    xil_printf("The pushed button's code is 0x%x\n",btncode);
+                                                           ^
+../src/button_handle.cpp:22:45: error: 'XGPIO_ISR_OFFSET' was not declared in this scope
+          Xil_Out32(XPAR_AXI_GPIO_2_BASEADDR+XGPIO_ISR_OFFSET,Xil_In32(XPAR_AXI_GPIO_2_BASEADDR+XGPIO_ISR_OFFSET));
+                                             ^
+../src/button_handle.cpp:22:113: error: 'Xil_Out32' was not declared in this scope
+          Xil_Out32(XPAR_AXI_GPIO_2_BASEADDR+XGPIO_ISR_OFFSET,Xil_In32(XPAR_AXI_GPIO_2_BASEADDR+XGPIO_ISR_OFFSET));
+                                                                                                                 ^
+make: *** [src/button_handle.o] ´íÎó 1
+17:14:31 **** Build of project standalone_bsp_0 ****
+make -k all 
+"Running Make include in microblaze_0/libsrc/bram_v4_1/src"
+make -C microblaze_0/libsrc/bram_v4_1/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in microblaze_0/libsrc/cpu_v2_5/src"
+make -C microblaze_0/libsrc/cpu_v2_5/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in microblaze_0/libsrc/gpio_v4_3/src"
+make -C microblaze_0/libsrc/gpio_v4_3/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in microblaze_0/libsrc/intc_v3_5/src"
+make -C microblaze_0/libsrc/intc_v3_5/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in microblaze_0/libsrc/spi_v4_2/src"
+make -C microblaze_0/libsrc/spi_v4_2/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in microblaze_0/libsrc/standalone_v6_1/src"
+make -C microblaze_0/libsrc/standalone_v6_1/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in microblaze_0/libsrc/tmrctr_v4_2/src"
+make -C microblaze_0/libsrc/tmrctr_v4_2/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in microblaze_0/libsrc/uartlite_v3_2/src"
+make -C microblaze_0/libsrc/uartlite_v3_2/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make libs in microblaze_0/libsrc/bram_v4_1/src"
+make -C microblaze_0/libsrc/bram_v4_1/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling bram"
+"Running Make libs in microblaze_0/libsrc/cpu_v2_5/src"
+make -C microblaze_0/libsrc/cpu_v2_5/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling cpu"
+"Running Make libs in microblaze_0/libsrc/gpio_v4_3/src"
+make -C microblaze_0/libsrc/gpio_v4_3/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling gpio"
+"Running Make libs in microblaze_0/libsrc/intc_v3_5/src"
+make -C microblaze_0/libsrc/intc_v3_5/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling intc"
+"Running Make libs in microblaze_0/libsrc/spi_v4_2/src"
+make -C microblaze_0/libsrc/spi_v4_2/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling spi"
+"Running Make libs in microblaze_0/libsrc/standalone_v6_1/src"
+make -C microblaze_0/libsrc/standalone_v6_1/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling standalone";
+"Running Make libs in microblaze_0/libsrc/tmrctr_v4_2/src"
+make -C microblaze_0/libsrc/tmrctr_v4_2/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling tmrctr"
+"Running Make libs in microblaze_0/libsrc/uartlite_v3_2/src"
+make -C microblaze_0/libsrc/uartlite_v3_2/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling uartlite"
+'Finished building libraries'
+17:14:39 **** Auto Build of configuration Debug for project signal_generator ****
+make all 
+'Building file: ../src/DA_Transformer.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/DA_Transformer.o" -I../../signal_generator_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/DA_Transformer.d" -MT"src/DA_Transformer.o" -o "src/DA_Transformer.o" "../src/DA_Transformer.cpp"
+'Finished building: ../src/DA_Transformer.cpp'
+' '
+'Building file: ../src/Seg_TimerCounterHandler.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/Seg_TimerCounterHandler.o" -I../../signal_generator_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/Seg_TimerCounterHandler.d" -MT"src/Seg_TimerCounterHandler.o" -o "src/Seg_TimerCounterHandler.o" "../src/Seg_TimerCounterHandler.cpp"
+'Finished building: ../src/Seg_TimerCounterHandler.cpp'
+' '
+'Building file: ../src/SwitchHandler.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/SwitchHandler.o" -I../../signal_generator_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/SwitchHandler.d" -MT"src/SwitchHandler.o" -o "src/SwitchHandler.o" "../src/SwitchHandler.cpp"
+'Finished building: ../src/SwitchHandler.cpp'
+' '
+'Building file: ../src/main.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../signal_generator_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+'Finished building: ../src/main.cpp'
+' '
+'Building file: ../src/sawtooth_wave.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/sawtooth_wave.o" -I../../signal_generator_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/sawtooth_wave.d" -MT"src/sawtooth_wave.o" -o "src/sawtooth_wave.o" "../src/sawtooth_wave.cpp"
+'Finished building: ../src/sawtooth_wave.cpp'
+' '
+'Building file: ../src/sin_wave.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/sin_wave.o" -I../../signal_generator_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/sin_wave.d" -MT"src/sin_wave.o" -o "src/sin_wave.o" "../src/sin_wave.cpp"
+'Finished building: ../src/sin_wave.cpp'
+' '
+'Building file: ../src/square_wave.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/square_wave.o" -I../../signal_generator_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/square_wave.d" -MT"src/square_wave.o" -o "src/square_wave.o" "../src/square_wave.cpp"
+'Finished building: ../src/square_wave.cpp'
+' '
+'Building file: ../src/transition.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/transition.o" -I../../signal_generator_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/transition.d" -MT"src/transition.o" -o "src/transition.o" "../src/transition.cpp"
+'Finished building: ../src/transition.cpp'
+' '
+'Building file: ../src/triangle_wave.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/triangle_wave.o" -I../../signal_generator_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/triangle_wave.d" -MT"src/triangle_wave.o" -o "src/triangle_wave.o" "../src/triangle_wave.cpp"
+'Finished building: ../src/triangle_wave.cpp'
+' '
+'Building file: ../src/button_handle.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/button_handle.o" -I../../signal_generator_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/button_handle.d" -MT"src/button_handle.o" -o "src/button_handle.o" "../src/button_handle.cpp"
+../src/button_handle.cpp: In function 'void button_handle(int&)':
+../src/button_handle.cpp:10:20: error: 'XPAR_AXI_GPIO_2_BASEADDR' was not declared in this scope
+  btncode =Xil_In32(XPAR_AXI_GPIO_2_BASEADDR+XGPIO_DATA_OFFSET);
+                    ^
+../src/button_handle.cpp:10:45: error: 'XGPIO_DATA_OFFSET' was not declared in this scope
+  btncode =Xil_In32(XPAR_AXI_GPIO_2_BASEADDR+XGPIO_DATA_OFFSET);
+                                             ^
+../src/button_handle.cpp:10:62: error: 'Xil_In32' was not declared in this scope
+  btncode =Xil_In32(XPAR_AXI_GPIO_2_BASEADDR+XGPIO_DATA_OFFSET);
+                                                              ^
+../src/button_handle.cpp:18:59: error: 'xil_printf' was not declared in this scope
+    xil_printf("The pushed button's code is 0x%x\n",btncode);
+                                                           ^
+../src/button_handle.cpp:22:45: error: 'XGPIO_ISR_OFFSET' was not declared in this scope
+          Xil_Out32(XPAR_AXI_GPIO_2_BASEADDR+XGPIO_ISR_OFFSET,Xil_In32(XPAR_AXI_GPIO_2_BASEADDR+XGPIO_ISR_OFFSET));
+                                             ^
+../src/button_handle.cpp:22:113: error: 'Xil_Out32' was not declared in this scope
+          Xil_Out32(XPAR_AXI_GPIO_2_BASEADDR+XGPIO_ISR_OFFSET,Xil_In32(XPAR_AXI_GPIO_2_BASEADDR+XGPIO_ISR_OFFSET));
+                                                                                                                 ^
+make: *** [src/button_handle.o] ´íÎó 1
+17:14:42 **** Build of configuration Debug for project segment_roll ****
+make all 
+make: Nothing to be done for `all'.
+17:14:42 **** Build of configuration Debug for project segment_display ****
+make all 
+make: Nothing to be done for `all'.
+17:14:42 **** Build of configuration Debug for project seg_timer_intr ****
+make all 
+make: Nothing to be done for `all'.
+17:14:42 **** Build of configuration Debug for project led_out ****
+make all 
+make: Nothing to be done for `all'.
+17:14:42 **** Build of configuration Debug for project button_in ****
+make all 
+make: Nothing to be done for `all'.
+17:14:43 **** Build of configuration Debug for project UART_COMMUNICATION_IOWR ****
+make all 
+make: Nothing to be done for `all'.
+17:14:43 **** Build of configuration Debug for project SPI_DA_IO ****
+make all 
+make: Nothing to be done for `all'.
+17:14:43 **** Build of configuration Debug for project Hello_World ****
+make all 
+make: Nothing to be done for `all'.
+17:14:43 **** Build of configuration Debug for project switch_in ****
+make all 
+make: Nothing to be done for `all'.
+17:15:05 **** Auto Build of configuration Debug for project signal_generator ****
+make all 
+'Building file: ../src/button_handle.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/button_handle.o" -I../../signal_generator_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/button_handle.d" -MT"src/button_handle.o" -o "src/button_handle.o" "../src/button_handle.cpp"
+../src/button_handle.cpp:7:23: fatal error: include.cpp: No such file or directory
+compilation terminated.
+make: *** [src/button_handle.o] ´íÎó 1
+17:15:12 **** Auto Build of configuration Debug for project signal_generator ****
+make all 
+'Building file: ../src/button_handle.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/button_handle.o" -I../../signal_generator_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/button_handle.d" -MT"src/button_handle.o" -o "src/button_handle.o" "../src/button_handle.cpp"
+'Finished building: ../src/button_handle.cpp'
+' '
+'Building target: signal_generator.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../signal_generator_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -o "signal_generator.elf"  ./src/DA_Transformer.o ./src/Seg_TimerCounterHandler.o ./src/SwitchHandler.o ./src/button_handle.o ./src/main.o ./src/sawtooth_wave.o ./src/sin_wave.o ./src/square_wave.o ./src/transition.o ./src/triangle_wave.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: signal_generator.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size signal_generator.elf  |tee "signal_generator.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  13612	    524	   3136	  17272	   4378	signal_generator.elf
+'Finished building: signal_generator.elf.size'
+' '
+17:22:56 **** Auto Build of configuration Debug for project signal_generator ****
+make all 
+'Building file: ../src/DA_Transformer.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/DA_Transformer.o" -I../../signal_generator_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/DA_Transformer.d" -MT"src/DA_Transformer.o" -o "src/DA_Transformer.o" "../src/DA_Transformer.cpp"
+../src/DA_Transformer.cpp: In function 'void DA_Transformer(short unsigned int, int, int)':
+../src/DA_Transformer.cpp:33:56: error: too few arguments to function 'void square_wave(int&, int&, int&, int&, int&, int&)'
+      square_wave(volt,edge,counter,freq_change,volt_set);
+                                                        ^
+In file included from ../src/DA_Transformer.cpp:8:0:
+../src/waves.hpp:13:6: note: declared here
+ void square_wave(int &volt,int &edge,int &counter,int &freq_change,int &volt_set,int &blank);
+      ^
+make: *** [src/DA_Transformer.o] ´íÎó 1
+17:23:00 **** Auto Build of configuration Debug for project signal_generator ****
+make all 
+'Building file: ../src/DA_Transformer.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/DA_Transformer.o" -I../../signal_generator_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/DA_Transformer.d" -MT"src/DA_Transformer.o" -o "src/DA_Transformer.o" "../src/DA_Transformer.cpp"
+../src/DA_Transformer.cpp: In function 'void DA_Transformer(short unsigned int, int, int)':
+../src/DA_Transformer.cpp:33:56: error: too few arguments to function 'void square_wave(int&, int&, int&, int&, int&, int&)'
+      square_wave(volt,edge,counter,freq_change,volt_set);
+                                                        ^
+In file included from ../src/DA_Transformer.cpp:8:0:
+../src/waves.hpp:13:6: note: declared here
+ void square_wave(int &volt,int &edge,int &counter,int &freq_change,int &volt_set,int &blank);
+      ^
+make: *** [src/DA_Transformer.o] ´íÎó 1
+17:24:10 **** Auto Build of configuration Debug for project signal_generator ****
+make all 
+'Building file: ../src/DA_Transformer.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/DA_Transformer.o" -I../../signal_generator_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/DA_Transformer.d" -MT"src/DA_Transformer.o" -o "src/DA_Transformer.o" "../src/DA_Transformer.cpp"
+'Finished building: ../src/DA_Transformer.cpp'
+' '
+'Building file: ../src/square_wave.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/square_wave.o" -I../../signal_generator_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/square_wave.d" -MT"src/square_wave.o" -o "src/square_wave.o" "../src/square_wave.cpp"
+'Finished building: ../src/square_wave.cpp'
+' '
+'Building target: signal_generator.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../signal_generator_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -o "signal_generator.elf"  ./src/DA_Transformer.o ./src/Seg_TimerCounterHandler.o ./src/SwitchHandler.o ./src/button_handle.o ./src/main.o ./src/sawtooth_wave.o ./src/sin_wave.o ./src/square_wave.o ./src/transition.o ./src/triangle_wave.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+./src/main.o: In function `My_ISR()':
+E:\signal_generator\Mini_System-main\Mini_System.sdk\signal_generator\Debug/../src/main.cpp:66: undefined reference to `DA_Transformer(unsigned short, int, int)'
+collect2.exe: error: ld returned 1 exit status
+make: *** [signal_generator.elf] ´íÎó 1
+17:25:03 **** Auto Build of configuration Debug for project signal_generator ****
+make all 
+'Building file: ../src/main.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../signal_generator_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp: In function 'void My_ISR()':
+../src/main.cpp:67:58: error: too many arguments to function 'void DA_Transformer(short unsigned int, int, int)'
+         DA_Transformer(control,freq_change,volt_set,blank);
+                                                          ^
+In file included from ../src/main.cpp:1:0:
+../src/include.hpp:23:6: note: declared here
+ void DA_Transformer(unsigned short control,int freq_change,int volt_set);
+      ^
+make: *** [src/main.o] ´íÎó 1
+17:25:44 **** Auto Build of configuration Debug for project signal_generator ****
+make all 
+'Building file: ../src/DA_Transformer.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/DA_Transformer.o" -I../../signal_generator_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/DA_Transformer.d" -MT"src/DA_Transformer.o" -o "src/DA_Transformer.o" "../src/DA_Transformer.cpp"
+'Finished building: ../src/DA_Transformer.cpp'
+' '
+'Building file: ../src/Seg_TimerCounterHandler.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/Seg_TimerCounterHandler.o" -I../../signal_generator_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/Seg_TimerCounterHandler.d" -MT"src/Seg_TimerCounterHandler.o" -o "src/Seg_TimerCounterHandler.o" "../src/Seg_TimerCounterHandler.cpp"
+'Finished building: ../src/Seg_TimerCounterHandler.cpp'
+' '
+'Building file: ../src/SwitchHandler.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/SwitchHandler.o" -I../../signal_generator_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/SwitchHandler.d" -MT"src/SwitchHandler.o" -o "src/SwitchHandler.o" "../src/SwitchHandler.cpp"
+'Finished building: ../src/SwitchHandler.cpp'
+' '
+'Building file: ../src/button_handle.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/button_handle.o" -I../../signal_generator_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/button_handle.d" -MT"src/button_handle.o" -o "src/button_handle.o" "../src/button_handle.cpp"
+'Finished building: ../src/button_handle.cpp'
+' '
+'Building file: ../src/main.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../signal_generator_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+'Finished building: ../src/main.cpp'
+' '
+'Building file: ../src/sawtooth_wave.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/sawtooth_wave.o" -I../../signal_generator_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/sawtooth_wave.d" -MT"src/sawtooth_wave.o" -o "src/sawtooth_wave.o" "../src/sawtooth_wave.cpp"
+'Finished building: ../src/sawtooth_wave.cpp'
+' '
+'Building file: ../src/sin_wave.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/sin_wave.o" -I../../signal_generator_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/sin_wave.d" -MT"src/sin_wave.o" -o "src/sin_wave.o" "../src/sin_wave.cpp"
+'Finished building: ../src/sin_wave.cpp'
+' '
+'Building file: ../src/square_wave.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/square_wave.o" -I../../signal_generator_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/square_wave.d" -MT"src/square_wave.o" -o "src/square_wave.o" "../src/square_wave.cpp"
+'Finished building: ../src/square_wave.cpp'
+' '
+'Building file: ../src/transition.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/transition.o" -I../../signal_generator_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/transition.d" -MT"src/transition.o" -o "src/transition.o" "../src/transition.cpp"
+'Finished building: ../src/transition.cpp'
+' '
+'Building file: ../src/triangle_wave.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/triangle_wave.o" -I../../signal_generator_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/triangle_wave.d" -MT"src/triangle_wave.o" -o "src/triangle_wave.o" "../src/triangle_wave.cpp"
+'Finished building: ../src/triangle_wave.cpp'
+' '
+'Building target: signal_generator.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../signal_generator_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -o "signal_generator.elf"  ./src/DA_Transformer.o ./src/Seg_TimerCounterHandler.o ./src/SwitchHandler.o ./src/button_handle.o ./src/main.o ./src/sawtooth_wave.o ./src/sin_wave.o ./src/square_wave.o ./src/transition.o ./src/triangle_wave.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: signal_generator.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size signal_generator.elf  |tee "signal_generator.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  13772	    528	   3132	  17432	   4418	signal_generator.elf
+'Finished building: signal_generator.elf.size'
+' '
+17:26:15 **** Auto Build of configuration Debug for project signal_generator ****
+make all 
+'Building file: ../src/sawtooth_wave.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/sawtooth_wave.o" -I../../signal_generator_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/sawtooth_wave.d" -MT"src/sawtooth_wave.o" -o "src/sawtooth_wave.o" "../src/sawtooth_wave.cpp"
+'Finished building: ../src/sawtooth_wave.cpp'
+' '
+'Building target: signal_generator.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../signal_generator_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -o "signal_generator.elf"  ./src/DA_Transformer.o ./src/Seg_TimerCounterHandler.o ./src/SwitchHandler.o ./src/button_handle.o ./src/main.o ./src/sawtooth_wave.o ./src/sin_wave.o ./src/square_wave.o ./src/transition.o ./src/triangle_wave.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: signal_generator.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size signal_generator.elf  |tee "signal_generator.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  13764	    528	   3132	  17424	   4410	signal_generator.elf
+'Finished building: signal_generator.elf.size'
+' '
+17:27:14 **** Auto Build of configuration Debug for project signal_generator ****
+make all 
+'Building file: ../src/sin_wave.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/sin_wave.o" -I../../signal_generator_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/sin_wave.d" -MT"src/sin_wave.o" -o "src/sin_wave.o" "../src/sin_wave.cpp"
+'Finished building: ../src/sin_wave.cpp'
+' '
+'Building target: signal_generator.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../signal_generator_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -o "signal_generator.elf"  ./src/DA_Transformer.o ./src/Seg_TimerCounterHandler.o ./src/SwitchHandler.o ./src/button_handle.o ./src/main.o ./src/sawtooth_wave.o ./src/sin_wave.o ./src/square_wave.o ./src/transition.o ./src/triangle_wave.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: signal_generator.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size signal_generator.elf  |tee "signal_generator.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  13788	    528	   3132	  17448	   4428	signal_generator.elf
+'Finished building: signal_generator.elf.size'
+' '
+17:27:33 **** Auto Build of configuration Debug for project signal_generator ****
+make all 
+'Building file: ../src/triangle_wave.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/triangle_wave.o" -I../../signal_generator_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/triangle_wave.d" -MT"src/triangle_wave.o" -o "src/triangle_wave.o" "../src/triangle_wave.cpp"
+'Finished building: ../src/triangle_wave.cpp'
+' '
+'Building target: signal_generator.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../signal_generator_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -o "signal_generator.elf"  ./src/DA_Transformer.o ./src/Seg_TimerCounterHandler.o ./src/SwitchHandler.o ./src/button_handle.o ./src/main.o ./src/sawtooth_wave.o ./src/sin_wave.o ./src/square_wave.o ./src/transition.o ./src/triangle_wave.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: signal_generator.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size signal_generator.elf  |tee "signal_generator.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  13780	    528	   3132	  17440	   4420	signal_generator.elf
+'Finished building: signal_generator.elf.size'
+' '
+17:28:12 **** Auto Build of configuration Debug for project signal_generator ****
+make all 
+'Building file: ../src/transition.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/transition.o" -I../../signal_generator_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/transition.d" -MT"src/transition.o" -o "src/transition.o" "../src/transition.cpp"
+'Finished building: ../src/transition.cpp'
+' '
+'Building target: signal_generator.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../signal_generator_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -o "signal_generator.elf"  ./src/DA_Transformer.o ./src/Seg_TimerCounterHandler.o ./src/SwitchHandler.o ./src/button_handle.o ./src/main.o ./src/sawtooth_wave.o ./src/sin_wave.o ./src/square_wave.o ./src/transition.o ./src/triangle_wave.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: signal_generator.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size signal_generator.elf  |tee "signal_generator.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  13856	    528	   3128	  17512	   4468	signal_generator.elf
+'Finished building: signal_generator.elf.size'
+' '
+17:40:11 **** Auto Build of configuration Debug for project signal_generator ****
+make all 
+'Building file: ../src/main.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../signal_generator_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+'Finished building: ../src/main.cpp'
+' '
+'Building target: signal_generator.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../signal_generator_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -o "signal_generator.elf"  ./src/DA_Transformer.o ./src/Seg_TimerCounterHandler.o ./src/SwitchHandler.o ./src/button_handle.o ./src/main.o ./src/sawtooth_wave.o ./src/sin_wave.o ./src/square_wave.o ./src/transition.o ./src/triangle_wave.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: signal_generator.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size signal_generator.elf  |tee "signal_generator.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  13856	    528	   3128	  17512	   4468	signal_generator.elf
+'Finished building: signal_generator.elf.size'
+' '
+17:43:38 **** Auto Build of configuration Debug for project signal_generator ****
+make all 
+'Building file: ../src/square_wave.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/square_wave.o" -I../../signal_generator_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/square_wave.d" -MT"src/square_wave.o" -o "src/square_wave.o" "../src/square_wave.cpp"
+'Finished building: ../src/square_wave.cpp'
+' '
+'Building target: signal_generator.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../signal_generator_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -o "signal_generator.elf"  ./src/DA_Transformer.o ./src/Seg_TimerCounterHandler.o ./src/SwitchHandler.o ./src/button_handle.o ./src/main.o ./src/sawtooth_wave.o ./src/sin_wave.o ./src/square_wave.o ./src/transition.o ./src/triangle_wave.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: signal_generator.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size signal_generator.elf  |tee "signal_generator.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  13856	    528	   3128	  17512	   4468	signal_generator.elf
+'Finished building: signal_generator.elf.size'
+' '
