@@ -1,16 +1,25 @@
-# Mini_System
-基于Nexy4 FPGA的信号发生器
+# Signal Generator on FPGA
 
-## 项目说明
-该项目基于Xilinx公司的Nexy4 FPGA开发板打造，使用vivado作为开发工具。利用vivado中的IP核，以创建block design的方式搭建硬件平台。使用C语言进行软件模块的开发。
-## 功能说明
-基于Nexy4 FPGA的信号发生器可以产生锯齿波、三角波、正弦波以及方波四种信号。信号的类型、频率以及幅度可以现实在七段数码管上。利用16位开关可对信号类型进行选择，还可以调节信号的频率与幅度。
-其中，switch[13]高电平为衰减，低电平为增加；switch[1 : 0]中00选择锯齿波，01选择三角波，10选择正弦波，11选择方波
-## 硬件设计
-利用vivado中的IP核，以创建block design的方式搭建嵌入式系统。主要模块包含microblaze微处理器、本地寄存器、中断控制器、定时器、3个GPIO核、2个UART总线模块以及2个SPI总线模块。各个模块通过AXI总线与CPU相连。定时器、3个GPIO核、2个UART总线模块以及2个SPI总线模块均可以产生中断。16位开关控制逻辑经由GPIO核输入，开关状态以及7段数码管的段码和位码均由GPIO核输出。产生的波形数字信号经由SPI总线输出，输出端口为开发板上的JB端口。输出的波形数字信号需要经过DA转换模块转换成模拟信号输出。
-## 软件设计
-使用C语言进行软件模块的开发。在主程序中完成对GPIO、定时器以及SPI总线模块的初始化以及中断使能，设置中断方式为硬件中断，允许微处理器接受中断请求并启动SPI传输。在主中断服务程序中，读取中断状态以及开关状态，根据中断状态选择开发者创建的中断服务程序，将开关状态转换成波形选择信号、幅度设置信号、频率调节信号以及需要七段数码管显示的段码。在波形生成模块中，根据波形选择信号，选择执行相应的波形生成模块，并将幅度设置信号与频率调节信号传入各个波形生成模块，实现对频率和幅度的调节。
-## 备注
-* 由于vivado sdk中的C语言版本不支持传引用调用函数，为编写程序的方便，采用C++编译器对工程进行编译。程序的编写依旧采用C语言风格。
-* 本项目基于华中科技大学 模拟电路与数字系统（三）的实验课程。更多资源请参考课程相关的课本以及mooc。
-* 如果您觉得本项目对您有帮助，请不要吝啬您的star，这对开发者是非常大的鼓励。如果您对此项目有任何的疑惑或想法，随时可以交流。再次由衷感谢您的支持。
+Nexy4 FPGA-based signal generator
+
+## Project description
+
+The project is based on Xilinx's Nexy4 FPGA development board, using vivado as a development tool. IP cores in vivado are used to build the hardware platform by creating a block design. Software modules are implemented in C.
+
+## Function description
+
+Nexy4 FPGA-based signal generators can generate sawtooth, triangle, sine and square waves. The type, frequency and amplitude of the signal can be realistically displayed on a seven-band digital tube. The 16-bit switch allows the signal type to be selected and the frequency and amplitude of the signal can be adjusted. Among them, the switch [13] high level is attenuation, low level is increase; In switch[1 : 0], 00 selects sawtooth wave, 01 selects triangle wave, 10 selects sine wave, and 11 selects square wave
+
+## Hardware design
+
+Use the IP cores in vivado to build embedded systems by creating block design. The main modules include a microblaze microprocessor, local registers, interrupt controller, timer, 3 GPIO cores, 2 UART bus modules, and 2 SPI bus modules. The individual modules are connected to the CPU via the AXI bus. Timers, 3 GPIO cores, 2 UART bus modules, and 2 SPI bus modules can generate interrupts. The 16-bit switch control logic is input through the GPIO core, and the switch state and the segment code and bit code of the 7-segment digital tube are output by the GPIO core. The generated waveform digital signal is output via the SPI bus, and the output port is the JB port on the development board. The output waveform-digital signal needs to be converted into analog signal output by the DA conversion module.
+
+## Software design
+
+Development of software modules in C. Complete the initialization and interrupt enablement of the GPIO, timer and SPI bus module in the main program, and set the interrupt mode to hardware interrupt, allowing the microprocessor to accept the interrupt request and start the SPI transmission. In the main interrupt service program, read the interrupt state and the switch state, select the interrupt service program created by the developer according to the interrupt state, and convert the switch state into a waveform selection signal, an amplitude setting signal, a frequency adjustment signal, and a segment code that requires a seven-segment digital tube display. In the waveform generation module, according to the waveform selection signal, select and execute the corresponding waveform generation module, and transmit the amplitude setting signal and frequency adjustment signal to each waveform generation module to realize the adjustment of frequency and amplitude.
+
+## Note
+
+- Since the C version of the vivado SDK does not support calling functions by reference, for the convenience of writing programs, the C++ compiler is used to compile the project. The program is still written in the C style.
+- This project is based on the experimental course of Analog Circuits and Digital Systems (III) of Huazhong University of Science and Technology. For more resources, please refer to the textbooks and MOOCs.
+- If you find this project helpful, please don't skimp on your star, it's a great encouragement to developers. If you have any doubts or ideas about this project, feel free to communicate. Thank you again for your support.
