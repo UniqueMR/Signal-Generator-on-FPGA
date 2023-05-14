@@ -7,15 +7,6 @@ Nexy4 FPGA-based signal generator
 The project is based on Xilinx's Nexy4 FPGA development board, using vivado as a development tool. IP cores in vivado are used to build the hardware platform by creating a block design. Software modules are implemented in C.
 
 ## Function description
-<p align="center">
-
-| Name | Age | Gender |
-| ---- | --- | ------ |
-| Alice | 20 | F |
-| Bob | 22 | M |
-
-</p>
-
 Nexy4 FPGA-based signal generators can generate sawtooth, triangle, sine and square waves. The type, frequency and amplitude of the signal can be realistically displayed on a seven-band digital tube. The 16-bit switch allows the signal type to be selected and the frequency and amplitude of the signal can be adjusted. Among them, the switch [13] high level is attenuation, low level is increase; In switch[1 : 0], 00 selects sawtooth wave, 01 selects triangle wave, 10 selects sine wave, and 11 selects square wave.
 
 ## Hardware design
