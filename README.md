@@ -12,7 +12,7 @@ Nexy4 FPGA-based signal generators can generate sawtooth, triangle, sine and squ
 
 ## Hardware design
 
-![hardware](https://github.com/UniqueMR/Signal-Generator-on-FPGA/blob/main/images/hardware.png=200x)
+![hardware](https://github.com/UniqueMR/Signal-Generator-on-FPGA/blob/main/images/hardware.png =200x)
 
 IP cores in vivado are used to build embedded systems by creating block design. The main modules include a microblaze microprocessor, local registers, interrupt controller, timer, 3 GPIO cores, 2 UART bus modules, and 2 SPI bus modules. The individual modules are connected to the CPU via the AXI bus. Timers, 3 GPIO cores, 2 UART bus modules, and 2 SPI bus modules can generate interrupts. The 16-bit switch control logic is input through the GPIO core, and the switch state and the segment code and bit code of the 7-segment digital tube are output by the GPIO core. The generated waveform digital signal is output via the SPI bus, and the output port is the JB port on the development board. The output waveform-digital signal needs to be converted into analog signal output by the DA conversion module.
 
